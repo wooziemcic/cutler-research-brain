@@ -1,0 +1,73 @@
+change_status,document_id,relative_path,file_name,extension,file_size,modified_time,old_hash,new_hash,action_taken,status,error_message,ticker_candidates,note
+repair,doc_a44e3e1fcd00092d,SEPT 2026\9.11.26\Research\SFL Arctic 9.11.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_dab5650cee516c34,SEPT 2026\9.11.26\Research\SFL Fearnley 9.11.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_0378c17b3604170c,SEPT 2026\9.11.26\Credit\SFL Arctic 9.11.26 Credit (2).pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_e5c52a413103a125,SEPT 2026\9.11.26\Credit\SFL Arctic 9.11.26 Credit.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_d33f774e140716a0,SEPT 2026\9.11.26\Companies\ABBV Declares Quarterly Dividend 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_e03c949e42afeec5,SEPT 2026\9.11.26\Companies\BANC Form 144 9.10.26.pdf,,.pdf,0,,,,extraction skipped_missing_file,ok,,,repair of run
+repair,doc_4758897c0995118d,SEPT 2026\9.11.26\Companies\ET Form 8-K 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_3eec3d3a2c89320f,SEPT 2026\9.11.26\Companies\KR Form 8-K 9.11.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_06a9bae1ae1df6a0,SEPT 2026\9.11.26\Companies\KR GS 9.11.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_c1bd79e5bf687ab0,SEPT 2026\9.11.26\Companies\KR Q2 2026 Earnings Press Release 9.11.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_bea8aca5ab756d53,SEPT 2026\9.11.26\Companies\LCII Form 8-K 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_617c477b7534577c,SEPT 2026\9.11.26\Companies\LCII Form 8-K 9.10.26.pdf (2).pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_f9987b3b3b625aae,SEPT 2026\9.11.26\Companies\MMM Form 8-K 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_37734c1b7acf1aec,"SEPT 2026\9.11.26\Companies\SFL  Charter Extension for 6 x 15,400 TEU vessels adding $750 Million Backlog 9.11.26.pdf",,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_8c0b561644cf9a8a,SEPT 2026\9.11.26\Companies\SFL Arctic 9.11.26.pdf,,.pdf,0,,,,extraction skipped_missing_file,ok,,,repair of run
+repair,doc_9f8d99ceb0255360,SEPT 2026\9.11.26\Companies\SHEL Signs US Power Plan Transactions 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_8d0915a2cb356198,SEPT 2026\9.10.26\CNN Fear & Greed 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_42d048244b9ec605,SEPT 2026\9.10.26\Insider Trading 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_8ffded6c000d6502,SEPT 2026\9.10.26\Research\ABBV MRK BI 9.10.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_64cb83da56f93788,SEPT 2026\9.10.26\Research\ABBV WF 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_4ec14acf185b40d0,SEPT 2026\9.10.26\Research\ACI WF 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_c5b31aed6ad5068e,SEPT 2026\9.10.26\Research\AIG Morningstar 9.10.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_b065f90d8c60c6b1,SEPT 2026\9.10.26\Research\ALB Jefferies 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_f6fe8c0f6ab06620,SEPT 2026\9.10.26\Research\ALB UBS 9.4.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_c1d1c42bdefdbb9b,SEPT 2026\9.10.26\Research\AMZN BI 9.9.26 Credit.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_be4c5f5435c600e2,SEPT 2026\9.10.26\Research\AMZN ETSY NI 9.9.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_c1c5bf75d3516493,SEPT 2026\9.10.26\Research\CPKF Zacks Research 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_bf53c5b78e04db7c,SEPT 2026\9.10.26\Research\CVX Barclays 9.8.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_1746565f032a7ebf,SEPT 2026\9.10.26\Research\GLPI JPM 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_de557f92035ef5fd,SEPT 2026\9.10.26\Research\IBM GS 9.10.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_32bcbbad4a0e064f,SEPT 2026\9.10.26\Research\KHC Barclays 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_6afbddebfb67d4c7,SEPT 2026\9.10.26\Research\MRK WF 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_1edd6478e1b5f266,SEPT 2026\9.10.26\Research\MSFT AMZN GOOG BI 9.9.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_b0663c4eb18b3383,SEPT 2026\9.10.26\Research\MSFT BI 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_85aa4696b3bda3ef,SEPT 2026\9.10.26\Research\MSFT RBC 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_1a0d138aa7d684bd,SEPT 2026\9.10.26\Research\SHEL GS 9.10.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_93920615dc862277,SEPT 2026\9.10.26\Research\SIRI GS 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_0968f0890c25acfe,SEPT 2026\9.10.26\Research\VZ BI 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_bc38754374958e2c,SEPT 2026\9.10.26\Research\XOM Barclays 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_86db2297f27de2ac,SEPT 2026\9.10.26\Research\XRN Huntington 9.9.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_d7f1729ce8dea039,SEPT 2026\9.10.26\Research\XRN Huntington 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_67ade83a2fdf33ec,SEPT 2026\9.10.26\Green Street\AI Debt-Hypersclaers Green Street 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_947812dbede15afc,SEPT 2026\9.10.26\Green Street\Data Centres Green Street 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_77d12f6ef36ad7a3,SEPT 2026\9.10.26\Green Street\KIM Green Street 9.9.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_2c2e9df01138dc5c,SEPT 2026\9.10.26\Green Street\LXP KIM STWD Green Street 9.9.26 Industry-DC Region.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_0b0c99438a8bb005,SEPT 2026\9.10.26\Companies\ACI Appoints Meg Whitman as Executive Chair 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_7aef1aae8b26d186,SEPT 2026\9.10.26\Companies\AEM ANNOUNCES DISPOSITION OF DELTA AND HELM BAY PROJECTS AND INVESTMENT IN VIZSLA COPPER 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_3293fe07ee4c44cc,SEPT 2026\9.10.26\Companies\AGI Corporate PPT 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_a140090dbec9f768,SEPT 2026\9.10.26\Companies\AMZN Free Writing Prospectus 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_8a4df06aa7587574,SEPT 2026\9.10.26\Companies\J and AECOM joint venture appointed program delivery partner for MetroLink 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_2809590a9e8d2b5f,SEPT 2026\9.10.26\Companies\J to enhance wastewater system performance for Oklahoma City 9.10.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_891fd42322b28908,SEPT 2026\9.10.26\Companies\JCI  Announces Quarterly Dividend 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_5f010c92075f9829,SEPT 2026\9.10.26\Companies\SHEL and FAW TRUCKS advance Immersion Cooling Battery Technology for Commercial Vehicles 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_71525c64eeca45d5,SEPT 2026\9.10.26\Companies\VICI Releases 2025-2026 Corporate Responsibility Report 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_135ac9f7a2c07e5c,"SEPT 2026\9.10.26\Companies\VSH XClampR® Bidirectional Flat Clamping TVS in DO-218AC Package Deliver Low Clamping Voltage, High Power Density 9.10.26.pdf",,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_02a6526781e29930,SEPT 2026\9.10.26\Companies\VZ declares quarterly dividend 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_b277c256528df535,"SEPT 2026\9.10.26\Companies\WGO Barletta Boats unveils model year 2027 lineup with design refinements, new tech & Innovative features 9.10.26.pdf",,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_a830873730acf62f,SEPT 2026\9.10.26\Banks\FCCO 8K-Regulation FD Disclosure & Financials Exhibit 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_576b8bb494c5613a,SEPT 2026\9.10.26\Banks\FISI 8K-Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Officers 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_8836d18413716cb9,SEPT 2026\9.10.26\Banks\FLG Jefferies 9.9.26 Industry.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_76cda85c88bf36d1,SEPT 2026\9.10.26\Banks\FMBM 8K-Regulation FD Disclosure & Presentation 9.9.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_4d5386ed77fe5148,SEPT 2026\9.8.26\Research\GWRE Morningstar 9.4.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_34551f13aea59562,SEPT 2026\9.4.26\Research\GWRE Citizens 9.4.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_b345086081f6c356,SEPT 2026\9.4.26\Research\GWRE Guggenheim 9.4.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_0890eaeb689cae12,SEPT 2026\9.4.26\Research\GWRE JPM 9.3.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_598c0998c39240ba,SEPT 2026\9.4.26\Research\GWRE Morningstar 9.2.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_d7c06f6d6563bc45,SEPT 2026\9.4.26\Research\GWRE RBC 9.4.26-1.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_94d2107a0c3d677d,SEPT 2026\9.4.26\Research\GWRE RBC 9.4.26-2.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_fc5f5af3c66f375e,SEPT 2026\9.4.26\Research\GWRE WF 9.3.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_fb2c364084a15072,SEPT 2026\9.3.26\Companies\VICI Properties Inc. Increases Regular Quarterly Dividend 9.3.26.pdf,,.pdf,0,,,,card created,ok,,,repair of run
+repair,doc_92912d08b2d2321c,SEPT 2026\9.10.26\Green Street\Data Centres Green Street 9.10.26.xlsx,,.xlsx,0,,,,card skipped_failed_extraction,ok,,,repair of run
+repair,doc_7eda404d0dd6d46d,SEPT 2026\9.10.26\Green Street\KIM Green Street 9.9.26 Industry.xlsx,,.xlsx,0,,,,card skipped_failed_extraction,ok,,,repair of run

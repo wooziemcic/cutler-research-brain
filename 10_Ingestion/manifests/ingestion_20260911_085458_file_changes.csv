@@ -1,0 +1,434 @@
+change_status,document_id,relative_path,file_name,extension,file_size,modified_time,old_hash,new_hash,action_taken,status,error_message,ticker_candidates,note
+new_file,doc_37b3f59623e76cc5,SEPT 2026\9.11.26\Research\KIM GS 9.10.26 Industry.pdf,,.pdf,541452,2026-09-11T08:50:29,,eac6c20c3b9a8d17d2c255c8368e0282d7156eedb8a61594362efd10267190c1,text extracted; card created,ok,,KIM,not in the metadata index
+new_file,doc_a44e3e1fcd00092d,SEPT 2026\9.11.26\Research\SFL Arctic 9.11.26 Industry.pdf,,.pdf,770221,2026-09-11T08:26:49,,9d0a57af11df5ed6403388d5b3008226f945f757b6095dfafe17ef492c129717,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",SFL,not in the metadata index
+new_file,doc_dab5650cee516c34,SEPT 2026\9.11.26\Research\SFL Fearnley 9.11.26 Industry.pdf,,.pdf,563180,2026-09-11T08:43:15,,fcb8158a4d6ed9984f3eb3dacfa824c73ef3cc4430efece4282922141b2a1541,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",SFL,not in the metadata index
+new_file,doc_0378c17b3604170c,SEPT 2026\9.11.26\Credit\SFL Arctic 9.11.26 Credit (2).pdf,,.pdf,312667,2026-09-11T08:33:52,,84d5dc771991bfcc2764af049e53fc3f1f22159861d631d7a0d4555fc94c72e8,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",SFL,not in the metadata index
+new_file,doc_e5c52a413103a125,SEPT 2026\9.11.26\Credit\SFL Arctic 9.11.26 Credit.pdf,,.pdf,1514513,2026-09-11T08:26:02,,95c99ae259f321cfa20671b93713fe69070fcd7b24fa747befbd38154350ee7e,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",SFL,not in the metadata index
+new_file,doc_d33f774e140716a0,SEPT 2026\9.11.26\Companies\ABBV Declares Quarterly Dividend 9.10.26.pdf,,.pdf,5457,2026-09-11T08:11:36,,357c61c4b0f25df1e322eb51e18026a28180e2ed25fec22bb2989ec733eb2ae6,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",ABBV,not in the metadata index
+new_file,doc_e03c949e42afeec5,SEPT 2026\9.11.26\Companies\BANC Form 144 9.10.26.pdf,,.pdf,102030,2026-09-11T08:24:02,,ffbec32b08fd322bddded7662a84fabb621ef25619face0ad26ff8c2c37937c9,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",BANC,not in the metadata index
+new_file,doc_4758897c0995118d,SEPT 2026\9.11.26\Companies\ET Form 8-K 9.10.26.pdf,,.pdf,241313,2026-09-11T08:18:59,,4999454a5f3b7792b6093f29dbcb15aea20d056a7d20c271311495d532668781,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",ET,not in the metadata index
+new_file,doc_3eec3d3a2c89320f,SEPT 2026\9.11.26\Companies\KR Form 8-K 9.11.26.pdf,,.pdf,217826,2026-09-11T08:32:56,,ee1607584e7743fa7369a201b32aff27f6f571d2bbe146ab05aed6772f56f8f7,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",KR,not in the metadata index
+new_file,doc_06a9bae1ae1df6a0,SEPT 2026\9.11.26\Companies\KR GS 9.11.26.pdf,,.pdf,433335,2026-09-11T08:51:03,,396c7802a23695720f92cb59893f970377a6817e39088251304faa3f73aa3001,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",KR,not in the metadata index
+new_file,doc_c1bd79e5bf687ab0,SEPT 2026\9.11.26\Companies\KR Q2 2026 Earnings Press Release 9.11.26.pdf,,.pdf,545000,2026-09-11T08:50:35,,8ef597e195ef1dfac618b3c741590a710102e9bbe6940fd8f4b29d0eeb64ebe6,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",KR,not in the metadata index
+new_file,doc_bea8aca5ab756d53,SEPT 2026\9.11.26\Companies\LCII Form 8-K 9.10.26.pdf,,.pdf,127908,2026-09-11T08:20:15,,df982c014002fa5b9b8b32c438b9f4241c2be069c791af98dc5f50d9e0afd6fe,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",LCII,not in the metadata index
+new_file,doc_617c477b7534577c,SEPT 2026\9.11.26\Companies\LCII Form 8-K 9.10.26.pdf (2).pdf,,.pdf,1114880,2026-09-11T08:22:39,,11e68657b3be50680ac1e29a994e92029eee357de81b693e7d16b732eef211c2,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",LCII,not in the metadata index
+new_file,doc_f9987b3b3b625aae,SEPT 2026\9.11.26\Companies\MMM Form 8-K 9.10.26.pdf,,.pdf,1818474,2026-09-11T08:53:16,,9140f80287352d30d2d41bf9564c960cb25ae6e949d037d5cd0a0ac0a959d31b,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",MMM,not in the metadata index
+new_file,doc_37734c1b7acf1aec,"SEPT 2026\9.11.26\Companies\SFL  Charter Extension for 6 x 15,400 TEU vessels adding $750 Million Backlog 9.11.26.pdf",,.pdf,177415,2026-09-11T08:31:03,,b28835a4a9bd450a391e1185c040772802a95b5a38cde74b5bee0ab6e67eaed5,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+","SFL,TEU",not in the metadata index
+new_file,doc_8c0b561644cf9a8a,SEPT 2026\9.11.26\Companies\SFL Arctic 9.11.26.pdf,,.pdf,325179,2026-09-11T08:44:57,,f12f146beb767e0455b7485284ef8157c8d7c69404c9ed05238ab73d17541bc4,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",SFL,not in the metadata index
+new_file,doc_9f8d99ceb0255360,SEPT 2026\9.11.26\Companies\SHEL Signs US Power Plan Transactions 9.10.26.pdf,,.pdf,3594486,2026-09-11T08:13:59,,ae2f0c3afd6342602f2d6579fefa0a0a8f341ae36f8e93696b838d5916f5c2de,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",SHEL,not in the metadata index
+new_file,doc_8d0915a2cb356198,SEPT 2026\9.10.26\CNN Fear & Greed 9.10.26.pdf,,.pdf,1723766,2026-09-10T09:32:22,,7b37769bc7dc3dc66469cf162f1c4b58f307db2c5e5de2d12ec619b88aff4d92,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",,not in the metadata index
+new_file,doc_42d048244b9ec605,SEPT 2026\9.10.26\Insider Trading 9.10.26.pdf,,.pdf,282601,2026-09-10T09:31:46,,7511bed3eed1cf6e06de4e255cc7245ec474b875d22e3b083ba9ff8c8f6fb066,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",,not in the metadata index
+new_file,doc_8ffded6c000d6502,SEPT 2026\9.10.26\Research\ABBV MRK BI 9.10.26 Industry.pdf,,.pdf,1970391,2026-09-10T09:01:52,,ed68be450e3eb8c5dde5aa46741241164425befeeb0cf4e80cc25986f72079b6,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+","ABBV,MRK",not in the metadata index
+new_file,doc_64cb83da56f93788,SEPT 2026\9.10.26\Research\ABBV WF 9.10.26.pdf,,.pdf,505815,2026-09-10T09:01:10,,539bff0f3abda2ed25a1b7c75038adbea0d6d0e15d6b290db510b55d61045311,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",ABBV,not in the metadata index
+new_file,doc_4ec14acf185b40d0,SEPT 2026\9.10.26\Research\ACI WF 9.9.26.pdf,,.pdf,184666,2026-09-10T11:37:24,,18c851d3bc0fce65f058c52f202f8f7064cd130074b5b4fa47d1e1e0e5a97b4f,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",ACI,not in the metadata index
+new_file,doc_c5b31aed6ad5068e,SEPT 2026\9.10.26\Research\AIG Morningstar 9.10.26 Industry.pdf,,.pdf,561257,2026-09-10T09:01:10,,a6ef0940218f51b0f5ac6c876bc6a87c1cc7192e1d66b1b7b4870b3d60e06dd5,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",AIG,not in the metadata index
+new_file,doc_b065f90d8c60c6b1,SEPT 2026\9.10.26\Research\ALB Jefferies 9.9.26.pdf,,.pdf,369955,2026-09-10T08:45:26,,e061ed520072e76525a47ace5b89ef59f36460f0d4ee00e0e3079f21e941b781,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",ALB,not in the metadata index
+new_file,doc_f6fe8c0f6ab06620,SEPT 2026\9.10.26\Research\ALB UBS 9.4.26 Industry.pdf,,.pdf,433736,2026-09-10T09:01:12,,ed6ed37faea487963086bbdf62e4c1db4b5b5184dcb641f574559ed11baa39c0,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",ALB,not in the metadata index
+new_file,doc_c1d1c42bdefdbb9b,SEPT 2026\9.10.26\Research\AMZN BI 9.9.26 Credit.pdf,,.pdf,8349854,2026-09-10T09:01:44,,6785db7931990a959e28f02848cc412b844ab04ed7aecf0f2c9a5e792ce2f1cb,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",AMZN,not in the metadata index
+new_file,doc_be4c5f5435c600e2,SEPT 2026\9.10.26\Research\AMZN ETSY NI 9.9.26 Industry.pdf,,.pdf,2384723,2026-09-10T09:01:50,,5e690e476f21584f9aadcbed1fed7a730e5ff63768617bf1d66fd77dd8a436a3,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+","AMZN,ETSY,NI",not in the metadata index
+new_file,doc_c1c5bf75d3516493,SEPT 2026\9.10.26\Research\CPKF Zacks Research 9.9.26.pdf,,.pdf,445635,2026-09-10T09:01:12,,eaca201995e9ebad65b1164e040e3b7243c1695e3d51b2d281c195adceb80ced,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",CPKF,not in the metadata index
+new_file,doc_bf53c5b78e04db7c,SEPT 2026\9.10.26\Research\CVX Barclays 9.8.26.pdf,,.pdf,245637,2026-09-10T09:01:10,,0daefd42f0facd0630967d009c472e1de281fc294ebaa275e5f4639fa0624203,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",CVX,not in the metadata index
+new_file,doc_1746565f032a7ebf,SEPT 2026\9.10.26\Research\GLPI JPM 9.9.26.pdf,,.pdf,470487,2026-09-10T09:01:12,,2a14009d3cb77dacbc2cd9e0c876424fffa217fb5bd77597bc8bc2891529c405,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",GLPI,not in the metadata index
+new_file,doc_de557f92035ef5fd,SEPT 2026\9.10.26\Research\IBM GS 9.10.26 Industry.pdf,,.pdf,721331,2026-09-10T08:53:34,,ff04cbbb7693922123abe1602f3c1c076f441580e078aaca7afae6d511a8c7c5,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",IBM,not in the metadata index
+new_file,doc_32bcbbad4a0e064f,SEPT 2026\9.10.26\Research\KHC Barclays 9.9.26.pdf,,.pdf,258151,2026-09-10T09:01:10,,915fa3f721e50237da943009b9d2513580379feeb7c8fc6a08a4c5b4328b7562,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",KHC,not in the metadata index
+new_file,doc_6afbddebfb67d4c7,SEPT 2026\9.10.26\Research\MRK WF 9.10.26.pdf,,.pdf,172263,2026-09-10T09:01:12,,2191629437dc51d844e76f26bf37867d300c192a63351a8e5938d406373c9554,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",MRK,not in the metadata index
+new_file,doc_1edd6478e1b5f266,SEPT 2026\9.10.26\Research\MSFT AMZN GOOG BI 9.9.26 Industry.pdf,,.pdf,2488143,2026-09-10T09:01:46,,1b0abca298df25153daaf9fe3bc3bd1c651b7537e13a650ee126e6b3973aabd8,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+","MSFT,AMZN,GOOG",not in the metadata index
+new_file,doc_b0663c4eb18b3383,SEPT 2026\9.10.26\Research\MSFT BI 9.10.26.pdf,,.pdf,2592430,2026-09-10T09:01:36,,b613fde13e84c9cfe6b694d019a57ac182d3da89e1612d8b36206ee3b4ac08d6,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",MSFT,not in the metadata index
+new_file,doc_85aa4696b3bda3ef,SEPT 2026\9.10.26\Research\MSFT RBC 9.9.26.pdf,,.pdf,554022,2026-09-10T08:43:52,,5b8b3bb58017298ca4d026789fad4b5de10209f030274f878bb27bfe778f4275,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",MSFT,not in the metadata index
+new_file,doc_1a0d138aa7d684bd,SEPT 2026\9.10.26\Research\SHEL GS 9.10.26 Industry.pdf,,.pdf,1440321,2026-09-10T09:22:54,,658fed751a44689d8f51ac6741be5530f4b26bb7d16fc16905b9d922ad56fb1e,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",SHEL,not in the metadata index
+new_file,doc_93920615dc862277,SEPT 2026\9.10.26\Research\SIRI GS 9.9.26.pdf,,.pdf,424560,2026-09-10T09:21:22,,5dda1bb47ab2cfd74af71276a8089b63731f9d73fdd206f06b170190678619cc,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",SIRI,not in the metadata index
+new_file,doc_0968f0890c25acfe,SEPT 2026\9.10.26\Research\VZ BI 9.9.26.pdf,,.pdf,1295455,2026-09-10T09:01:38,,6df62e9fe96e57d8b6503b43c883b5c7ec6a7bb36cfcce075dea5df7ca746573,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",VZ,not in the metadata index
+new_file,doc_bc38754374958e2c,SEPT 2026\9.10.26\Research\XOM Barclays 9.9.26.pdf,,.pdf,244132,2026-09-10T09:01:12,,650ad4762f5aff3a0fd1614bff89a00af04516c1c310f283dee926dc319b30e1,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",XOM,not in the metadata index
+new_file,doc_86db2297f27de2ac,SEPT 2026\9.10.26\Research\XRN Huntington 9.9.26 Industry.pdf,,.pdf,274809,2026-09-10T08:26:01,,a0bc87cb749be768462b7acf4a7fb0a132b23874143ae7c4a0ae330005b311e9,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",XRN,not in the metadata index
+new_file,doc_d7f1729ce8dea039,SEPT 2026\9.10.26\Research\XRN Huntington 9.9.26.pdf,,.pdf,1025335,2026-09-10T08:25:24,,b42b1a7a61a7d9780f7ef2b7e9df1b23d75d8e885504739036cbac50788309bf,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",XRN,not in the metadata index
+new_file,doc_67ade83a2fdf33ec,SEPT 2026\9.10.26\Green Street\AI Debt-Hypersclaers Green Street 9.9.26.pdf,,.pdf,1545643,2026-09-10T09:33:06,,dace137cfe91cff1e4dd0cec9d716a7a6ab10d6f049b9dab72e6b92ee46a48f1,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",AI,not in the metadata index
+new_file,doc_947812dbede15afc,SEPT 2026\9.10.26\Green Street\Data Centres Green Street 9.10.26.pdf,,.pdf,898010,2026-09-10T09:33:06,,544fa4bc991ee5765a863164094b404a1950b13f771d28ec292a174ecf75c408,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",,not in the metadata index
+new_file,doc_92912d08b2d2321c,SEPT 2026\9.10.26\Green Street\Data Centres Green Street 9.10.26.xlsx,,.xlsx,43726,2026-09-10T09:47:31,,7128bd21186f2a7fc45351d381a726cd2fb432cddcf176b9f66a21facec38593,extraction skipped (not a PDF); card FAILED,error,"ild_document_cards.py"", line 1088, in main
+    upsert_card(conn, make_record(document_id, CARD_SKIPPED_FAILED_EXTRACTION,
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\build_document_cards.py"", line 476, in upsert_card
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",,not in the metadata index
+new_file,doc_77d12f6ef36ad7a3,SEPT 2026\9.10.26\Green Street\KIM Green Street 9.9.26 Industry.pdf,,.pdf,793438,2026-09-10T09:33:06,,f63457cc8ee7f6c56d57a7f1f5432d29a96d1a34ded937e9284e4e1e6ef8ff5e,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",KIM,not in the metadata index
+new_file,doc_7eda404d0dd6d46d,SEPT 2026\9.10.26\Green Street\KIM Green Street 9.9.26 Industry.xlsx,,.xlsx,253933,2026-09-10T09:46:39,,1be986d5727304e769b403ee8e6a40070f71a69953ee9545f7e5ed8fcec33137,extraction skipped (not a PDF); card FAILED,error,"ild_document_cards.py"", line 1088, in main
+    upsert_card(conn, make_record(document_id, CARD_SKIPPED_FAILED_EXTRACTION,
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\build_document_cards.py"", line 476, in upsert_card
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",KIM,not in the metadata index
+new_file,doc_2c2e9df01138dc5c,SEPT 2026\9.10.26\Green Street\LXP KIM STWD Green Street 9.9.26 Industry-DC Region.pdf,,.pdf,358006,2026-09-10T09:33:06,,784653ab333cd4e26ce77d3badc0bcfb9bd0af1c99340af02db4a71e34a76716,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+","LXP,KIM,STWD,DC",not in the metadata index
+new_file,doc_0b0c99438a8bb005,SEPT 2026\9.10.26\Companies\ACI Appoints Meg Whitman as Executive Chair 9.9.26.pdf,,.pdf,306509,2026-09-10T11:19:33,,867fd7519a127cef8d1389fa79326fd3777bb09e25aa4fd2deef5e65dfcd159a,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",ACI,not in the metadata index
+new_file,doc_7aef1aae8b26d186,SEPT 2026\9.10.26\Companies\AEM ANNOUNCES DISPOSITION OF DELTA AND HELM BAY PROJECTS AND INVESTMENT IN VIZSLA COPPER 9.9.26.pdf,,.pdf,163095,2026-09-10T08:33:08,,fa744ae7e64a7c1ad16783d05fbc8578c184e9b556aa66f3582fd67b6ae307dc,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",,not in the metadata index
+new_file,doc_3293fe07ee4c44cc,SEPT 2026\9.10.26\Companies\AGI Corporate PPT 9.9.26.pdf,,.pdf,8073806,2026-09-10T08:37:16,,899501989b43ca12571d468e99f307b55c53db5b19419bcec5f309409675dac5,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",AGI,not in the metadata index
+new_file,doc_a140090dbec9f768,SEPT 2026\9.10.26\Companies\AMZN Free Writing Prospectus 9.9.26.pdf,,.pdf,124577,2026-09-10T08:39:29,,298bae19d5c7baf7a7dad71789f92dc22630e5f15d858eb632115e6c5e17b43c,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",AMZN,not in the metadata index
+new_file,doc_8a4df06aa7587574,SEPT 2026\9.10.26\Companies\J and AECOM joint venture appointed program delivery partner for MetroLink 9.10.26.pdf,,.pdf,148990,2026-09-10T11:34:36,,30b0ecfd687004a05a96b9abfd220735e395484fc3af6fcfccb0d83de3e390f5,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+","J,AECOM",not in the metadata index
+new_file,doc_2809590a9e8d2b5f,SEPT 2026\9.10.26\Companies\J to enhance wastewater system performance for Oklahoma City 9.10.26.pdf,,.pdf,143148,2026-09-10T08:41:34,,5d383ead62a310e341bc4d20122b5dd9e096151587b43e63fa645b305ab1853b,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",J,not in the metadata index
+new_file,doc_891fd42322b28908,SEPT 2026\9.10.26\Companies\JCI  Announces Quarterly Dividend 9.9.26.pdf,,.pdf,136904,2026-09-10T08:35:20,,7d61917d4ee3494ca856d486854ed60b1c57e0f9bcd85e368d89be1bd1163839,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",JCI,not in the metadata index
+new_file,doc_5f010c92075f9829,SEPT 2026\9.10.26\Companies\SHEL and FAW TRUCKS advance Immersion Cooling Battery Technology for Commercial Vehicles 9.9.26.pdf,,.pdf,463556,2026-09-10T08:34:09,,21b94ef826ff6a6219804b75dcf656be474d05143c8f30a3206b751c291a806c,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+","SHEL,FAW",not in the metadata index
+new_file,doc_71525c64eeca45d5,SEPT 2026\9.10.26\Companies\VICI Releases 2025-2026 Corporate Responsibility Report 9.9.26.pdf,,.pdf,114550,2026-09-10T08:32:10,,ae1277b5d1d4624fd3a12856608813217f17b10dd4a67f857cbd5574def36e42,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",VICI,not in the metadata index
+new_file,doc_135ac9f7a2c07e5c,"SEPT 2026\9.10.26\Companies\VSH XClampR® Bidirectional Flat Clamping TVS in DO-218AC Package Deliver Low Clamping Voltage, High Power Density 9.10.26.pdf",,.pdf,179014,2026-09-10T11:35:29,,7df63439b757c9a62e0918e53ed292c41ecc45b3cac586d5ca724d2816bb8f09,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+","VSH,TVS,DO",not in the metadata index
+new_file,doc_02a6526781e29930,SEPT 2026\9.10.26\Companies\VZ declares quarterly dividend 9.9.26.pdf,,.pdf,1605491,2026-09-10T08:36:31,,54b6cd7ac92106b173906f37f85c8e83a06fb34e8b44ef15c36b20b177683389,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",VZ,not in the metadata index
+new_file,doc_b277c256528df535,"SEPT 2026\9.10.26\Companies\WGO Barletta Boats unveils model year 2027 lineup with design refinements, new tech & Innovative features 9.10.26.pdf",,.pdf,117547,2026-09-10T09:24:37,,a6704332811509e5b1c26394c6e2d6e36b28aea7028ce3b52340ae4c7683749b,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",WGO,not in the metadata index
+new_file,doc_a830873730acf62f,SEPT 2026\9.10.26\Banks\FCCO 8K-Regulation FD Disclosure & Financials Exhibit 9.9.26.pdf,,.pdf,10563303,2026-09-10T08:31:22,,6fd0019e18abed4e48a5b6fcbb503b3b0f74f77b8ddd3d7c9e8fd2eb08127225,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+","FCCO,FD",not in the metadata index
+new_file,doc_576b8bb494c5613a,SEPT 2026\9.10.26\Banks\FISI 8K-Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Officers 9.9.26.pdf,,.pdf,96603,2026-09-10T08:29:29,,65576542a43bd1f2c71190ead4f4c76bbd4f47dc7e16e03bd66fd8fab74756e9,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",FISI,not in the metadata index
+new_file,doc_8836d18413716cb9,SEPT 2026\9.10.26\Banks\FLG Jefferies 9.9.26 Industry.pdf,,.pdf,8391315,2026-09-10T08:47:36,,9d6fe7241893d4b57796a5f8a2945239229ad36d3226c26d623b69fb16342d94,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",FLG,not in the metadata index
+new_file,doc_76cda85c88bf36d1,SEPT 2026\9.10.26\Banks\FMBM 8K-Regulation FD Disclosure & Presentation 9.9.26.pdf,,.pdf,3649085,2026-09-10T08:38:23,,1d6ef33aff84c2175acfce9b34c7b9baeb7aa4c9329b11d2d470efa052963a5e,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+","FMBM,FD",not in the metadata index
+changed_file,doc_4d5386ed77fe5148,SEPT 2026\9.8.26\Research\GWRE Morningstar 9.4.26.pdf,,.pdf,465222,2026-09-10T11:40:09,4e39a7a6bee85121e2f8b43f3d3abf50f0b26f55b5b9aff6c29cc017a563bee2,0e18b09fd46b19fae9a40e45728e1f244e27b53e0ae7f2851ed04dbb879db3ff,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",GWRE,content hash differs
+changed_file,doc_34551f13aea59562,SEPT 2026\9.4.26\Research\GWRE Citizens 9.4.26.pdf,,.pdf,915823,2026-09-10T11:47:27,af3bc2d3665c271ac6f48bf113e4232d42fcfe1b8cff89fd91d4ac22c5bad594,f5fbe898ca6b453cb8d202bddab6d61556bc991ae2a23c5f8934e5ec1e68d0cc,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",GWRE,content hash differs
+changed_file,doc_b345086081f6c356,SEPT 2026\9.4.26\Research\GWRE Guggenheim 9.4.26.pdf,,.pdf,790511,2026-09-10T12:01:01,36622060273e644b63bf04865cb9ea2edb2f141d5ef5952dedaaed701437de8e,eaa597bd706e70a61d3576a923c944d4c7e7c0f075938257838a929292308d88,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",GWRE,content hash differs
+changed_file,doc_0890eaeb689cae12,SEPT 2026\9.4.26\Research\GWRE JPM 9.3.26.pdf,,.pdf,735456,2026-09-10T12:03:04,e406f6715ce44db1647bfa71afbaa6b864b096aa13ed3abc4d059db742e14396,67ef81cc8537a34ac8ef4523efa88dd0c9dc4dd6448f482d4ba372d4f8cb0aa9,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",GWRE,content hash differs
+changed_file,doc_598c0998c39240ba,SEPT 2026\9.4.26\Research\GWRE Morningstar 9.2.26.pdf,,.pdf,674504,2026-09-10T12:59:54,eb9d6840e6975e6e632f32e4884c378cf3082261893cc19c09ad5297d0c9cb07,e64e52d14b1d2d2524fceb2ff31f410d088a8e4980315627b736ab7841cea1a2,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",GWRE,content hash differs
+changed_file,doc_d7c06f6d6563bc45,SEPT 2026\9.4.26\Research\GWRE RBC 9.4.26-1.pdf,,.pdf,180410,2026-09-10T12:04:19,f4fbe7f2b086ecce5af2acca9dccab214cd525468c5fb6c6832dc7b3a418743d,037f7eee87708091e393d74f33e0b371c72d22c71457f2738f8757893bc9b4d9,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",GWRE,content hash differs
+changed_file,doc_94d2107a0c3d677d,SEPT 2026\9.4.26\Research\GWRE RBC 9.4.26-2.pdf,,.pdf,630880,2026-09-10T12:05:41,e7b2156e988354f0b0178c9f09679e991284d5c8dc3e9a3d20ce349f4aaffa9f,977651cc94dcfa246d5f51677b0effde1601150869ff03bba3c0a3aaede62d28,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",GWRE,content hash differs
+changed_file,doc_fc5f5af3c66f375e,SEPT 2026\9.4.26\Research\GWRE WF 9.3.26.pdf,,.pdf,1326575,2026-09-10T12:07:02,1855e0b93ee0d61da84ebea122356dc824579657b797f1c02d1ce16ee982cf03,779bbb13baf447f4ce7d1d36308dce06374b4a3f7be276ea56ef10243a20d717,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",GWRE,content hash differs
+changed_file,doc_fb2c364084a15072,SEPT 2026\9.3.26\Companies\VICI Properties Inc. Increases Regular Quarterly Dividend 9.3.26.pdf,,.pdf,111762,2026-09-10T11:37:41,185b1a3ff4fcb849d61b169e85aee27e3a46d1208d2400f6f1d21303912bc1e3,84428719e9c49e3ff35b2a55e831004b7635e3df7faf48d6c5aa67fb33f7c62d,extraction FAILED,error,"Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 662, in main
+    create_extraction_schema(conn)
+  File ""C:\Users\AI Admin\Documents\CutlerResearchBrain\scripts\extract_pdf_text.py"", line 286, in create_extraction_schema
+    conn.execute(
+sqlite3.OperationalError: database is locked
+",VICI,content hash differs

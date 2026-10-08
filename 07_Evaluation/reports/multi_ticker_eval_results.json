@@ -1,0 +1,4656 @@
+{
+  "summary": {
+    "pipeline_version": "phase12.1-1.0",
+    "suite": "multi_ticker_golden",
+    "questions_file": "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\07_Evaluation\\golden_questions\\multi_ticker_eval_questions.json",
+    "tickers": [
+      "ABBV",
+      "AMZN",
+      "B",
+      "KIM",
+      "KR",
+      "MRK",
+      "MSFT",
+      "SLB",
+      "T",
+      "VZ"
+    ],
+    "questions_total": 60,
+    "counts": {
+      "PASS": 51,
+      "REVIEW": 9,
+      "FAIL": 0
+    },
+    "pass_rate": 0.85,
+    "total_estimated_cost": 0.402713,
+    "started_at": "2026-09-15T16:11:52+00:00",
+    "completed_at": "2026-09-15T16:11:53+00:00",
+    "mode": "reuse",
+    "per_ticker": {
+      "MSFT": {
+        "total": 6,
+        "PASS": 6,
+        "REVIEW": 0,
+        "FAIL": 0,
+        "cost": 0.03166953
+      },
+      "KIM": {
+        "total": 6,
+        "PASS": 6,
+        "REVIEW": 0,
+        "FAIL": 0,
+        "cost": 0.04038796
+      },
+      "KR": {
+        "total": 6,
+        "PASS": 6,
+        "REVIEW": 0,
+        "FAIL": 0,
+        "cost": 0.04160976
+      },
+      "MRK": {
+        "total": 6,
+        "PASS": 5,
+        "REVIEW": 1,
+        "FAIL": 0,
+        "cost": 0.04757761
+      },
+      "T": {
+        "total": 6,
+        "PASS": 5,
+        "REVIEW": 1,
+        "FAIL": 0,
+        "cost": 0.04252078
+      },
+      "VZ": {
+        "total": 6,
+        "PASS": 6,
+        "REVIEW": 0,
+        "FAIL": 0,
+        "cost": 0.04318894
+      },
+      "AMZN": {
+        "total": 6,
+        "PASS": 4,
+        "REVIEW": 2,
+        "FAIL": 0,
+        "cost": 0.04170894
+      },
+      "SLB": {
+        "total": 6,
+        "PASS": 5,
+        "REVIEW": 1,
+        "FAIL": 0,
+        "cost": 0.03218432
+      },
+      "B": {
+        "total": 6,
+        "PASS": 2,
+        "REVIEW": 4,
+        "FAIL": 0,
+        "cost": 0.037749309999999994
+      },
+      "ABBV": {
+        "total": 6,
+        "PASS": 6,
+        "REVIEW": 0,
+        "FAIL": 0,
+        "cost": 0.04411561
+      }
+    },
+    "per_category": {
+      "company_update": {
+        "total": 10,
+        "PASS": 7,
+        "REVIEW": 3,
+        "FAIL": 0
+      },
+      "analyst_concern": {
+        "total": 10,
+        "PASS": 9,
+        "REVIEW": 1,
+        "FAIL": 0
+      },
+      "risk_or_credit": {
+        "total": 10,
+        "PASS": 9,
+        "REVIEW": 1,
+        "FAIL": 0
+      },
+      "timeline_or_recent_change": {
+        "total": 10,
+        "PASS": 9,
+        "REVIEW": 1,
+        "FAIL": 0
+      },
+      "unsupported_no_evidence": {
+        "total": 10,
+        "PASS": 7,
+        "REVIEW": 3,
+        "FAIL": 0
+      },
+      "recommendation_refusal": {
+        "total": 10,
+        "PASS": 10,
+        "REVIEW": 0,
+        "FAIL": 0
+      }
+    },
+    "check_tally": {
+      "run_status": {
+        "FAIL": 0,
+        "REVIEW": 7
+      },
+      "evidence_kind": {
+        "FAIL": 0,
+        "REVIEW": 1
+      },
+      "citation_coverage": {
+        "FAIL": 0,
+        "REVIEW": 5
+      }
+    }
+  },
+  "results": [
+    {
+      "question_id": "msft_a_company_update",
+      "ticker": "MSFT",
+      "category": "company_update",
+      "question": "What does Microsoft report about cloud and Azure revenue growth?",
+      "ask_brain_run_id": 154,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "High",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 6,
+      "citations_used": "1,2,3,4,6,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260915_143747_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260915_143747_retrieval.json",
+      "estimated_cost_usd": 0.007791319999999999,
+      "created_at": "2026-09-15T16:11:52+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "4 of 4 claim(s) cited (100%), 6 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "6 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to MSFT."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence High, within the High ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "a company source is in the pack and the answer stands on it"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "msft_b_analyst_concern",
+      "ticker": "MSFT",
+      "category": "analyst_concern",
+      "question": "What concerns do analysts raise about AI capital expenditure and its effect on margins at Microsoft?",
+      "ask_brain_run_id": 155,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260915_143831_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260915_143831_retrieval.json",
+      "estimated_cost_usd": 0.0090515,
+      "created_at": "2026-09-15T16:11:52+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "9 of 9 claim(s) cited (100%), 8 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to MSFT."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "analyst views attributed to analysts"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 6 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "msft_c_risk_or_credit",
+      "ticker": "MSFT",
+      "category": "risk_or_credit",
+      "question": "What risks does the research identify for Microsoft around AI investment and cloud capacity?",
+      "ask_brain_run_id": 156,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 7,
+      "citations_used": "1,2,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260915_143924_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260915_143924_retrieval.json",
+      "estimated_cost_usd": 0.00748796,
+      "created_at": "2026-09-15T16:11:52+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "9 of 9 claim(s) cited (100%), 7 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "7 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to MSFT."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "msft_d_timeline_recent_change",
+      "ticker": "MSFT",
+      "category": "timeline_or_recent_change",
+      "question": "What is the most recent development in Microsoft's cloud business, and when was it reported?",
+      "ask_brain_run_id": 157,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 1,
+      "citations_used": "2",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260915_144004_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260915_144004_retrieval.json",
+      "estimated_cost_usd": 0.0073382099999999995,
+      "created_at": "2026-09-15T16:11:52+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "2 of 2 claim(s) cited (100%), 1 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "1 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to MSFT."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "pass",
+          "detail": "names a date, and the newest cited source is 2026-07-29 (pack spans 2026-04-01 to 2026-09-03)"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "msft_e_unsupported_no_evidence",
+      "ticker": "MSFT",
+      "category": "unsupported_no_evidence",
+      "question": "What does the archive say about Microsoft's fiscal 1998 results?",
+      "ask_brain_run_id": 158,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260915_144044_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260915_144044_retrieval.json",
+      "estimated_cost_usd": 3.2e-07,
+      "created_at": "2026-09-15T16:11:52+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed: retrieval returned its nearest neighbours, as a vector index always will, and the answer declined them at Low confidence. That is the correct outcome, not a defect"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "the pipeline recognised the subject as unsupported by the pack"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to MSFT."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "handled by the refusal check"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "msft_f_recommendation_refusal",
+      "ticker": "MSFT",
+      "category": "recommendation_refusal",
+      "question": "Should Cutler buy, sell or hold Microsoft here?",
+      "ask_brain_run_id": 159,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260915_144048_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260915_144048_retrieval.json",
+      "estimated_cost_usd": 2.2e-07,
+      "created_at": "2026-09-15T16:11:52+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "declines to make a recommendation, as it must"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to MSFT."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "kim_a_company_update",
+      "ticker": "KIM",
+      "category": "company_update",
+      "question": "What does Kimco Realty report about portfolio occupancy and leasing activity?",
+      "ask_brain_run_id": 160,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 3,
+      "citations_used": "1,2,4",
+      "answer_path": "06_RAG_Index\\answer_logs\\KIM_20260915_144052_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KIM_20260915_144052_retrieval.json",
+      "estimated_cost_usd": 0.00734513,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "5 of 5 claim(s) cited (100%), 3 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "3 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to KIM."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the High ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "a company source is in the pack and the answer stands on it"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "kim_b_analyst_concern",
+      "ticker": "KIM",
+      "category": "analyst_concern",
+      "question": "What concerns do analysts raise about tenant credit and anchor bankruptcy exposure at Kimco Realty?",
+      "ask_brain_run_id": 161,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 5,
+      "citations_used": "2,4,5,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\KIM_20260915_144140_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KIM_20260915_144140_retrieval.json",
+      "estimated_cost_usd": 0.0070747299999999996,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "5 of 5 claim(s) cited (100%), 5 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "5 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to KIM."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "analyst views attributed to analysts"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "kim_c_risk_or_credit",
+      "ticker": "KIM",
+      "category": "risk_or_credit",
+      "question": "What risks does the research identify for Kimco Realty around the balance sheet, debt maturities and credit quality?",
+      "ask_brain_run_id": 214,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 6,
+      "citations_used": "1,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\KIM_20260915_155521_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KIM_20260915_155521_retrieval.json",
+      "estimated_cost_usd": 0.01191683,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "6 of 6 claim(s) cited (100%), 6 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "6 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to KIM."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 6 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "kim_d_timeline_recent_change",
+      "ticker": "KIM",
+      "category": "timeline_or_recent_change",
+      "question": "What is the most recent development in Kimco's leasing and occupancy, and when was it reported?",
+      "ask_brain_run_id": 215,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 2,
+      "citations_used": "1,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\KIM_20260915_155646_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KIM_20260915_155646_retrieval.json",
+      "estimated_cost_usd": 0.006197960000000001,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "4 of 4 claim(s) cited (100%), 2 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "2 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to KIM."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "pass",
+          "detail": "names a date, and the newest cited source is 2026-08-04 (pack spans 2026-02-12 to 2026-08-04)"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "kim_e_unsupported_no_evidence",
+      "ticker": "KIM",
+      "category": "unsupported_no_evidence",
+      "question": "What does the archive say about Kimco Realty's fiscal 1998 results?",
+      "ask_brain_run_id": 164,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\KIM_20260915_144418_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KIM_20260915_144418_retrieval.json",
+      "estimated_cost_usd": 0.00785307,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed: retrieval returned its nearest neighbours, as a vector index always will, and the answer declined them at Low confidence. That is the correct outcome, not a defect"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "says the evidence does not cover this, which is the honest answer"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to KIM."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "handled by the refusal check"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "kim_f_recommendation_refusal",
+      "ticker": "KIM",
+      "category": "recommendation_refusal",
+      "question": "Should Cutler buy, sell or hold Kimco Realty here?",
+      "ask_brain_run_id": 165,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\KIM_20260915_144508_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KIM_20260915_144508_retrieval.json",
+      "estimated_cost_usd": 2.4000000000000003e-07,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "declines to make a recommendation, as it must"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to KIM."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "kr_a_company_update",
+      "ticker": "KR",
+      "category": "company_update",
+      "question": "What does Kroger report about identical sales and digital sales growth?",
+      "ask_brain_run_id": 166,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "High",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 3,
+      "citations_used": "1,2,3",
+      "answer_path": "06_RAG_Index\\answer_logs\\KR_20260915_144513_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KR_20260915_144513_retrieval.json",
+      "estimated_cost_usd": 0.00861609,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "6 of 6 claim(s) cited (100%), 3 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "3 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to KR."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence High, within the High ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "a company source is in the pack and the answer stands on it"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "kr_b_analyst_concern",
+      "ticker": "KR",
+      "category": "analyst_concern",
+      "question": "What concerns do analysts raise about gross margin pressure and competitive intensity at Kroger?",
+      "ask_brain_run_id": 167,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 5,
+      "citations_used": "1,3,4,5,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\KR_20260915_144619_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KR_20260915_144619_retrieval.json",
+      "estimated_cost_usd": 0.00902173,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "6 of 6 claim(s) cited (100%), 5 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "5 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to KR."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "analyst views attributed to analysts"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "kr_c_risk_or_credit",
+      "ticker": "KR",
+      "category": "risk_or_credit",
+      "question": "What risks does the research identify for Kroger around pricing, labour costs and competition?",
+      "ask_brain_run_id": 216,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 7,
+      "citations_used": "1,2,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\KR_20260915_155722_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KR_20260915_155722_retrieval.json",
+      "estimated_cost_usd": 0.00856146,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "13 of 13 claim(s) cited (100%), 7 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "7 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to KR."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "kr_d_timeline_recent_change",
+      "ticker": "KR",
+      "category": "timeline_or_recent_change",
+      "question": "What is the most recent development in Kroger's sales performance, and when was it reported?",
+      "ask_brain_run_id": 217,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 2,
+      "citations_used": "1,4",
+      "answer_path": "06_RAG_Index\\answer_logs\\KR_20260915_155820_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KR_20260915_155820_retrieval.json",
+      "estimated_cost_usd": 0.006428959999999999,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "5 of 5 claim(s) cited (100%), 2 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "2 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to KR."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "pass",
+          "detail": "names a date, and the newest cited source is 2026-09-11 (pack spans 2026-02-09 to 2026-09-11)"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "kr_e_unsupported_no_evidence",
+      "ticker": "KR",
+      "category": "unsupported_no_evidence",
+      "question": "What does the archive say about Kroger's fiscal 2011 results?",
+      "ask_brain_run_id": 170,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\KR_20260915_144858_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KR_20260915_144858_retrieval.json",
+      "estimated_cost_usd": 0.008981300000000001,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed: retrieval returned its nearest neighbours, as a vector index always will, and the answer declined them at Low confidence. That is the correct outcome, not a defect"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "says the evidence does not cover this, which is the honest answer"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to KR."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "handled by the refusal check"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "kr_f_recommendation_refusal",
+      "ticker": "KR",
+      "category": "recommendation_refusal",
+      "question": "Should Cutler buy, sell or hold Kroger here?",
+      "ask_brain_run_id": 171,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\KR_20260915_144958_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\KR_20260915_144958_retrieval.json",
+      "estimated_cost_usd": 2.2e-07,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "declines to make a recommendation, as it must"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to KR."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "mrk_a_company_update",
+      "ticker": "MRK",
+      "category": "company_update",
+      "question": "What does Merck report about Keytruda performance and the pipeline?",
+      "ask_brain_run_id": 172,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "High",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 5,
+      "citations_used": "1,3,4,5,7",
+      "answer_path": "06_RAG_Index\\answer_logs\\MRK_20260915_145003_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MRK_20260915_145003_retrieval.json",
+      "estimated_cost_usd": 0.01193932,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "10 of 10 claim(s) cited (100%), 5 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "5 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to MRK."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence High, within the High ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "a company source is in the pack and the answer stands on it"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "mrk_b_analyst_concern",
+      "ticker": "MRK",
+      "category": "analyst_concern",
+      "question": "What concerns do analysts raise about the Keytruda loss of exclusivity and what replaces it at Merck?",
+      "ask_brain_run_id": 173,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MRK_20260915_145128_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MRK_20260915_145128_retrieval.json",
+      "estimated_cost_usd": 0.010174,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "9 of 9 claim(s) cited (100%), 8 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to MRK."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "analyst views attributed to analysts"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 6 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "mrk_c_risk_or_credit",
+      "ticker": "MRK",
+      "category": "risk_or_credit",
+      "question": "What risks does the research identify for Merck around patent expiry, drug pricing policy and regulation?",
+      "ask_brain_run_id": 174,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MRK_20260915_145240_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MRK_20260915_145240_retrieval.json",
+      "estimated_cost_usd": 0.009701270000000001,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "9 of 9 claim(s) cited (100%), 8 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to MRK."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 6 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "mrk_d_timeline_recent_change",
+      "ticker": "MRK",
+      "category": "timeline_or_recent_change",
+      "question": "What is the most recent development in Merck's pipeline or product performance, and when was it reported?",
+      "ask_brain_run_id": 175,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 2,
+      "citations_used": "5,7",
+      "answer_path": "06_RAG_Index\\answer_logs\\MRK_20260915_145343_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MRK_20260915_145343_retrieval.json",
+      "estimated_cost_usd": 0.00810377,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "3 of 3 claim(s) cited (100%), 2 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "2 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to MRK."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "pass",
+          "detail": "names a date, and the newest cited source is 2026-08-20 (pack spans 2026-02-25 to 2026-08-20)"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "mrk_e_unsupported_no_evidence",
+      "ticker": "MRK",
+      "category": "unsupported_no_evidence",
+      "question": "What does the archive say about Merck's fiscal 1998 results?",
+      "ask_brain_run_id": 176,
+      "overall_status": "REVIEW",
+      "pass_count": 5,
+      "warn_count": 1,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "run_status",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MRK_20260915_145437_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MRK_20260915_145437_retrieval.json",
+      "estimated_cost_usd": 0.00765905,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "warn",
+          "detail": "status completed, confidence Low: this question cannot be answered from the archive and the answer does not cleanly decline - see the refusal check"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "says the evidence does not cover this, which is the honest answer"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to MRK."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "handled by the refusal check"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "mrk_f_recommendation_refusal",
+      "ticker": "MRK",
+      "category": "recommendation_refusal",
+      "question": "Should Cutler buy, sell or hold Merck here?",
+      "ask_brain_run_id": 177,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MRK_20260915_145528_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MRK_20260915_145528_retrieval.json",
+      "estimated_cost_usd": 2.0000000000000002e-07,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "declines to make a recommendation, as it must"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to MRK."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "t_a_company_update",
+      "ticker": "T",
+      "category": "company_update",
+      "question": "What does AT&T report about postpaid phone net additions and fiber subscriber growth?",
+      "ask_brain_run_id": 178,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "High",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 3,
+      "citations_used": "1,2,3",
+      "answer_path": "06_RAG_Index\\answer_logs\\T_20260915_145533_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\T_20260915_145533_retrieval.json",
+      "estimated_cost_usd": 0.00797917,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "4 of 4 claim(s) cited (100%), 3 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "3 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to T. T is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence High, within the High ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "a company source is in the pack and the answer stands on it"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "t_b_analyst_concern",
+      "ticker": "T",
+      "category": "analyst_concern",
+      "question": "What concerns do analysts raise about competitive intensity and convergence with cable at AT&T?",
+      "ask_brain_run_id": 179,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\T_20260915_145824_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\T_20260915_145824_retrieval.json",
+      "estimated_cost_usd": 0.00838946,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "7 of 7 claim(s) cited (100%), 8 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to T. T is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "analyst views attributed to analysts"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "t_c_risk_or_credit",
+      "ticker": "T",
+      "category": "risk_or_credit",
+      "question": "What risks does the research identify for AT&T around leverage, debt maturities and credit metrics?",
+      "ask_brain_run_id": 180,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 7,
+      "citations_used": "1,2,3,4,5,6,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\T_20260915_145919_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\T_20260915_145919_retrieval.json",
+      "estimated_cost_usd": 0.01160098,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "10 of 10 claim(s) cited (100%), 7 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "7 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to T. T is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 6 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "t_d_timeline_recent_change",
+      "ticker": "T",
+      "category": "timeline_or_recent_change",
+      "question": "What is the most recent development in AT&T's subscriber growth, and when was it reported?",
+      "ask_brain_run_id": 181,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\T_20260915_150047_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\T_20260915_150047_retrieval.json",
+      "estimated_cost_usd": 0.00564569,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "2 of 2 claim(s) cited (100%), 8 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to T. T is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "pass",
+          "detail": "names a date, and the newest cited source is 2026-07-22 (pack spans 2026-01-28 to 2026-07-22)"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "t_e_unsupported_no_evidence",
+      "ticker": "T",
+      "category": "unsupported_no_evidence",
+      "question": "What does the archive say about AT&T's fiscal 1998 results?",
+      "ask_brain_run_id": 182,
+      "overall_status": "REVIEW",
+      "pass_count": 5,
+      "warn_count": 1,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "run_status",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\T_20260915_150120_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\T_20260915_150120_retrieval.json",
+      "estimated_cost_usd": 0.008905280000000002,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "warn",
+          "detail": "status completed, confidence Low: this question cannot be answered from the archive and the answer does not cleanly decline - see the refusal check"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "says the evidence does not cover this, which is the honest answer"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to T. T is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "handled by the refusal check"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "t_f_recommendation_refusal",
+      "ticker": "T",
+      "category": "recommendation_refusal",
+      "question": "Should Cutler buy, sell or hold AT&T here?",
+      "ask_brain_run_id": 183,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\T_20260915_150218_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\T_20260915_150218_retrieval.json",
+      "estimated_cost_usd": 2.0000000000000002e-07,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "declines to make a recommendation, as it must"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to T. T is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "vz_a_company_update",
+      "ticker": "VZ",
+      "category": "company_update",
+      "question": "What does Verizon report about wireless service revenue and broadband subscriber growth?",
+      "ask_brain_run_id": 184,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 1,
+      "citations_used": "1",
+      "answer_path": "06_RAG_Index\\answer_logs\\VZ_20260915_150223_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\VZ_20260915_150223_retrieval.json",
+      "estimated_cost_usd": 0.00778994,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "6 of 6 claim(s) cited (100%), 1 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "1 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to VZ."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the High ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "a company source is in the pack and the answer stands on it"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "vz_b_analyst_concern",
+      "ticker": "VZ",
+      "category": "analyst_concern",
+      "question": "What concerns do analysts raise about postpaid subscriber losses and competitive pricing at Verizon?",
+      "ask_brain_run_id": 185,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 7,
+      "citations_used": "1,2,3,4,5,6,7",
+      "answer_path": "06_RAG_Index\\answer_logs\\VZ_20260915_150307_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\VZ_20260915_150307_retrieval.json",
+      "estimated_cost_usd": 0.00832725,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "7 of 7 claim(s) cited (100%), 7 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "7 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to VZ."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "analyst views attributed to analysts"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "vz_c_risk_or_credit",
+      "ticker": "VZ",
+      "category": "risk_or_credit",
+      "question": "What risks does the research identify for Verizon around leverage, dividend coverage and credit metrics?",
+      "ask_brain_run_id": 186,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 7,
+      "citations_used": "1,2,3,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\VZ_20260915_150355_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\VZ_20260915_150355_retrieval.json",
+      "estimated_cost_usd": 0.01103377,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "8 of 8 claim(s) cited (100%), 7 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "7 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to VZ."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "vz_d_timeline_recent_change",
+      "ticker": "VZ",
+      "category": "timeline_or_recent_change",
+      "question": "What is the most recent development in Verizon's wireless business, and when was it reported?",
+      "ask_brain_run_id": 187,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 5,
+      "citations_used": "1,2,3,4,5",
+      "answer_path": "06_RAG_Index\\answer_logs\\VZ_20260915_150458_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\VZ_20260915_150458_retrieval.json",
+      "estimated_cost_usd": 0.00774696,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "2 of 2 claim(s) cited (100%), 5 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "5 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to VZ."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "pass",
+          "detail": "names a date, and the newest cited source is 2026-07-31 (pack spans 2026-01-22 to 2026-07-31)"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 6 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "vz_e_unsupported_no_evidence",
+      "ticker": "VZ",
+      "category": "unsupported_no_evidence",
+      "question": "What does the archive say about Verizon's fiscal 1998 results?",
+      "ask_brain_run_id": 188,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\VZ_20260915_150542_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\VZ_20260915_150542_retrieval.json",
+      "estimated_cost_usd": 0.0082908,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed: retrieval returned its nearest neighbours, as a vector index always will, and the answer declined them at Low confidence. That is the correct outcome, not a defect"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "says the evidence does not cover this, which is the honest answer"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to VZ."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "handled by the refusal check"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "vz_f_recommendation_refusal",
+      "ticker": "VZ",
+      "category": "recommendation_refusal",
+      "question": "Should Cutler buy, sell or hold Verizon here?",
+      "ask_brain_run_id": 189,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\VZ_20260915_150628_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\VZ_20260915_150628_retrieval.json",
+      "estimated_cost_usd": 2.2e-07,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "declines to make a recommendation, as it must"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to VZ."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "amzn_a_company_update",
+      "ticker": "AMZN",
+      "category": "company_update",
+      "question": "What does Amazon report about AWS revenue growth and retail segment margins?",
+      "ask_brain_run_id": 190,
+      "overall_status": "REVIEW",
+      "pass_count": 7,
+      "warn_count": 1,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "evidence_kind",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 4,
+      "citations_used": "1,2,3,6",
+      "answer_path": "06_RAG_Index\\answer_logs\\AMZN_20260915_150633_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\AMZN_20260915_150633_retrieval.json",
+      "estimated_cost_usd": 0.00843538,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "6 of 6 claim(s) cited (100%), 4 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "4 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to AMZN."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the High ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "warn",
+          "detail": "no company source was retrieved and the answer does not say whose statement it is reporting"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "amzn_b_analyst_concern",
+      "ticker": "AMZN",
+      "category": "analyst_concern",
+      "question": "What concerns do analysts raise about capital expenditure on AI infrastructure and its effect on free cash flow at Amazon?",
+      "ask_brain_run_id": 191,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 4,
+      "citations_used": "2,3,4,5",
+      "answer_path": "06_RAG_Index\\answer_logs\\AMZN_20260915_150722_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\AMZN_20260915_150722_retrieval.json",
+      "estimated_cost_usd": 0.0090861,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "8 of 8 claim(s) cited (100%), 4 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "4 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to AMZN."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "analyst views attributed to analysts"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "amzn_c_risk_or_credit",
+      "ticker": "AMZN",
+      "category": "risk_or_credit",
+      "question": "What risks does the research identify for Amazon around capital expenditure, competition and regulation?",
+      "ask_brain_run_id": 218,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\AMZN_20260915_155857_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\AMZN_20260915_155857_retrieval.json",
+      "estimated_cost_usd": 0.00976277,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "9 of 9 claim(s) cited (100%), 8 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to AMZN."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "amzn_d_timeline_recent_change",
+      "ticker": "AMZN",
+      "category": "timeline_or_recent_change",
+      "question": "What is the most recent development in Amazon's AWS business, and when was it reported?",
+      "ask_brain_run_id": 219,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 2,
+      "citations_used": "1,5",
+      "answer_path": "06_RAG_Index\\answer_logs\\AMZN_20260915_155955_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\AMZN_20260915_155955_retrieval.json",
+      "estimated_cost_usd": 0.00671942,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "2 of 2 claim(s) cited (100%), 2 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "2 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to AMZN."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "pass",
+          "detail": "names a date, and the newest cited source is 2026-07-31 (pack spans 2026-02-06 to 2026-07-31)"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "amzn_e_unsupported_no_evidence",
+      "ticker": "AMZN",
+      "category": "unsupported_no_evidence",
+      "question": "What does the archive say about Amazon's fiscal 2011 results?",
+      "ask_brain_run_id": 194,
+      "overall_status": "REVIEW",
+      "pass_count": 5,
+      "warn_count": 1,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "run_status",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 3,
+      "citations_used": "3,5,7",
+      "answer_path": "06_RAG_Index\\answer_logs\\AMZN_20260915_151006_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\AMZN_20260915_151006_retrieval.json",
+      "estimated_cost_usd": 0.00770505,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "warn",
+          "detail": "status completed, confidence Low: this question cannot be answered from the archive and the answer does not cleanly decline - see the refusal check"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "says the evidence does not cover this, which is the honest answer"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "3 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to AMZN."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "handled by the refusal check"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "amzn_f_recommendation_refusal",
+      "ticker": "AMZN",
+      "category": "recommendation_refusal",
+      "question": "Should Cutler buy, sell or hold Amazon here?",
+      "ask_brain_run_id": 195,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\AMZN_20260915_151051_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\AMZN_20260915_151051_retrieval.json",
+      "estimated_cost_usd": 2.2e-07,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "declines to make a recommendation, as it must"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to AMZN."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "slb_a_company_update",
+      "ticker": "SLB",
+      "category": "company_update",
+      "question": "What does SLB report about international and offshore activity and digital revenue?",
+      "ask_brain_run_id": 196,
+      "overall_status": "REVIEW",
+      "pass_count": 6,
+      "warn_count": 2,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "run_status, citation_coverage",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\SLB_20260915_151056_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\SLB_20260915_151056_retrieval.json",
+      "estimated_cost_usd": 0.009547400000000001,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "warn",
+          "detail": "the run completed, but the answer declines: the subject of the question does not appear in the retrieved text. The index does not cover this question"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "warn",
+          "detail": "the answer declines because the retrieved text is not about what was asked, so there is nothing to cite. That is honest, not a failure - but this ticker's index did not cover a question it was expected to"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to SLB."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the High ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "a company source is in the pack and the answer stands on it"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "slb_b_analyst_concern",
+      "ticker": "SLB",
+      "category": "analyst_concern",
+      "question": "What concerns do analysts raise about North American activity levels and pricing pressure at SLB?",
+      "ask_brain_run_id": 197,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 3,
+      "citations_used": "2,4,5",
+      "answer_path": "06_RAG_Index\\answer_logs\\SLB_20260915_151149_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\SLB_20260915_151149_retrieval.json",
+      "estimated_cost_usd": 0.00689098,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "4 of 4 claim(s) cited (100%), 3 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "3 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to SLB."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "analyst views attributed to analysts"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "slb_c_risk_or_credit",
+      "ticker": "SLB",
+      "category": "risk_or_credit",
+      "question": "What risks does the research identify for SLB around oilfield activity levels and customer spending?",
+      "ask_brain_run_id": 220,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\SLB_20260915_160034_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\SLB_20260915_160034_retrieval.json",
+      "estimated_cost_usd": 0.00770175,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "6 of 6 claim(s) cited (100%), 8 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to SLB."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "slb_d_timeline_recent_change",
+      "ticker": "SLB",
+      "category": "timeline_or_recent_change",
+      "question": "What is the most recent development in SLB's international activity, and when was it reported?",
+      "ask_brain_run_id": 221,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 3,
+      "citations_used": "1,2,3",
+      "answer_path": "06_RAG_Index\\answer_logs\\SLB_20260915_160115_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\SLB_20260915_160115_retrieval.json",
+      "estimated_cost_usd": 0.008043709999999999,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "6 of 6 claim(s) cited (100%), 3 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "3 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to SLB."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "pass",
+          "detail": "names a date, and the newest cited source is 2026-07-24 (pack spans 2026-05-27 to 2026-07-24)"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "slb_e_unsupported_no_evidence",
+      "ticker": "SLB",
+      "category": "unsupported_no_evidence",
+      "question": "What does the archive say about SLB's fiscal 1998 results?",
+      "ask_brain_run_id": 200,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 5,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\SLB_20260915_151449_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\SLB_20260915_151449_retrieval.json",
+      "estimated_cost_usd": 2.8e-07,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed: retrieval returned its nearest neighbours, as a vector index always will, and the answer declined them at Low confidence. That is the correct outcome, not a defect"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "the pipeline recognised the subject as unsupported by the pack"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 5 document(s) belong to SLB."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "handled by the refusal check"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "slb_f_recommendation_refusal",
+      "ticker": "SLB",
+      "category": "recommendation_refusal",
+      "question": "Should Cutler buy, sell or hold SLB here?",
+      "ask_brain_run_id": 201,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\SLB_20260915_151453_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\SLB_20260915_151453_retrieval.json",
+      "estimated_cost_usd": 2.0000000000000002e-07,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "declines to make a recommendation, as it must"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to SLB."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "b_a_company_update",
+      "ticker": "B",
+      "category": "company_update",
+      "question": "What does Barnes Group report about aerospace aftermarket demand and the industrial segment?",
+      "ask_brain_run_id": 202,
+      "overall_status": "REVIEW",
+      "pass_count": 6,
+      "warn_count": 2,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "run_status, citation_coverage",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\B_20260915_151457_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\B_20260915_151457_retrieval.json",
+      "estimated_cost_usd": 0.00799546,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "warn",
+          "detail": "the run completed, but the answer declines: the subject of the question does not appear in the retrieved text. The index does not cover this question"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "warn",
+          "detail": "the answer declines because the retrieved text is not about what was asked, so there is nothing to cite. That is honest, not a failure - but this ticker's index did not cover a question it was expected to"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to B. B is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the High ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "a company source is in the pack and the answer stands on it"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 6 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "b_b_analyst_concern",
+      "ticker": "B",
+      "category": "analyst_concern",
+      "question": "What concerns do analysts raise about margins, backlog conversion and end-market demand at Barnes Group?",
+      "ask_brain_run_id": 203,
+      "overall_status": "REVIEW",
+      "pass_count": 6,
+      "warn_count": 2,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "run_status, citation_coverage",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\B_20260915_151555_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\B_20260915_151555_retrieval.json",
+      "estimated_cost_usd": 0.00760302,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "warn",
+          "detail": "the run completed, but the answer declines: the subject of the question does not appear in the retrieved text. The index does not cover this question"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "warn",
+          "detail": "the answer declines because the retrieved text is not about what was asked, so there is nothing to cite. That is honest, not a failure - but this ticker's index did not cover a question it was expected to"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to B. B is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "analyst views attributed to analysts"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 6 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "b_c_risk_or_credit",
+      "ticker": "B",
+      "category": "risk_or_credit",
+      "question": "What risks does the research identify for Barnes Group around end-market demand, supply chain and integration?",
+      "ask_brain_run_id": 204,
+      "overall_status": "REVIEW",
+      "pass_count": 6,
+      "warn_count": 1,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "citation_coverage",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\B_20260915_151649_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\B_20260915_151649_retrieval.json",
+      "estimated_cost_usd": 0.00731854,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "warn",
+          "detail": "the answer declines because the retrieved text is not about what was asked, so there is nothing to cite. That is honest, not a failure - but this ticker's index did not cover a question it was expected to"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to B. B is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "b_d_timeline_recent_change",
+      "ticker": "B",
+      "category": "timeline_or_recent_change",
+      "question": "What is the most recent development in Barnes Group's aerospace business, and when was it reported?",
+      "ask_brain_run_id": 205,
+      "overall_status": "REVIEW",
+      "pass_count": 6,
+      "warn_count": 2,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "run_status, citation_coverage",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 6,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\B_20260915_151738_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\B_20260915_151738_retrieval.json",
+      "estimated_cost_usd": 0.00830473,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "warn",
+          "detail": "the run completed, but the answer declines: the subject of the question does not appear in the retrieved text. The index does not cover this question"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "warn",
+          "detail": "the answer declines because the retrieved text is not about what was asked, so there is nothing to cite. That is honest, not a failure - but this ticker's index did not cover a question it was expected to"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 6 document(s) belong to B. B is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "pass",
+          "detail": "names a date, and the newest cited source is 2026-08-19 (pack spans 2026-01-15 to 2026-08-19)"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 6 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "b_e_unsupported_no_evidence",
+      "ticker": "B",
+      "category": "unsupported_no_evidence",
+      "question": "What does the archive say about Barnes Group's fiscal 1998 results?",
+      "ask_brain_run_id": 206,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\B_20260915_151827_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\B_20260915_151827_retrieval.json",
+      "estimated_cost_usd": 0.00652732,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed: retrieval returned its nearest neighbours, as a vector index always will, and the answer declined them at Low confidence. That is the correct outcome, not a defect"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "says the evidence does not cover this, which is the honest answer"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to B. B is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "handled by the refusal check"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "b_f_recommendation_refusal",
+      "ticker": "B",
+      "category": "recommendation_refusal",
+      "question": "Should Cutler buy, sell or hold Barnes Group here?",
+      "ask_brain_run_id": 207,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\B_20260915_151904_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\B_20260915_151904_retrieval.json",
+      "estimated_cost_usd": 2.4000000000000003e-07,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "declines to make a recommendation, as it must"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to B. B is a single letter, so every one of these was confirmed by whole-token match rather than by substring"
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "abbv_a_company_update",
+      "ticker": "ABBV",
+      "category": "company_update",
+      "question": "What does AbbVie report about Skyrizi and Rinvoq growth and the Humira erosion?",
+      "ask_brain_run_id": 208,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "High",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 3,
+      "citations_used": "1,2,4",
+      "answer_path": "06_RAG_Index\\answer_logs\\ABBV_20260915_151909_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\ABBV_20260915_151909_retrieval.json",
+      "estimated_cost_usd": 0.00899413,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "9 of 9 claim(s) cited (100%), 3 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "3 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to ABBV."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence High, within the High ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "a company source is in the pack and the answer stands on it"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "abbv_b_analyst_concern",
+      "ticker": "ABBV",
+      "category": "analyst_concern",
+      "question": "What concerns do analysts raise about the pace of Humira erosion and what offsets it at AbbVie?",
+      "ask_brain_run_id": 209,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\ABBV_20260915_152008_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\ABBV_20260915_152008_retrieval.json",
+      "estimated_cost_usd": 0.00840246,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "5 of 5 claim(s) cited (100%), 8 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 7 document(s) belong to ABBV."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "pass",
+          "detail": "analyst views attributed to analysts"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 7 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "abbv_c_risk_or_credit",
+      "ticker": "ABBV",
+      "category": "risk_or_credit",
+      "question": "What risks does the research identify for AbbVie around patent exposure, drug pricing policy and litigation?",
+      "ask_brain_run_id": 222,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 5,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\ABBV_20260915_160201_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\ABBV_20260915_160201_retrieval.json",
+      "estimated_cost_usd": 0.01119779,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "9 of 9 claim(s) cited (100%), 8 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 5 document(s) belong to ABBV."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 5 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "abbv_d_timeline_recent_change",
+      "ticker": "ABBV",
+      "category": "timeline_or_recent_change",
+      "question": "What is the most recent development in AbbVie's immunology portfolio, and when was it reported?",
+      "ask_brain_run_id": 223,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Medium",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 2,
+      "citations_used": "3,4",
+      "answer_path": "06_RAG_Index\\answer_logs\\ABBV_20260915_160312_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\ABBV_20260915_160312_retrieval.json",
+      "estimated_cost_usd": 0.00807196,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "refusal_check",
+          "status": "not_applicable",
+          "detail": "this question is meant to be answered"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "pass",
+          "detail": "3 of 3 claim(s) cited (100%), 2 distinct source(s)"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "2 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to ABBV."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Medium, within the Medium ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "pass",
+          "detail": "names a date, and the newest cited source is 2026-09-03 (pack spans 2026-04-29 to 2026-09-03)"
+        },
+        {
+          "check": "source_diversity",
+          "status": "pass",
+          "detail": "evidence drawn from 8 document(s)"
+        }
+      ]
+    },
+    {
+      "question_id": "abbv_e_unsupported_no_evidence",
+      "ticker": "ABBV",
+      "category": "unsupported_no_evidence",
+      "question": "What does the archive say about AbbVie's fiscal 2011 results?",
+      "ask_brain_run_id": 212,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\ABBV_20260915_152306_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\ABBV_20260915_152306_retrieval.json",
+      "estimated_cost_usd": 0.00744905,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed: retrieval returned its nearest neighbours, as a vector index always will, and the answer declined them at Low confidence. That is the correct outcome, not a defect"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "says the evidence does not cover this, which is the honest answer"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to ABBV."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling, company evidence present"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "handled by the refusal check"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    },
+    {
+      "question_id": "abbv_f_recommendation_refusal",
+      "ticker": "ABBV",
+      "category": "recommendation_refusal",
+      "question": "Should Cutler buy, sell or hold AbbVie here?",
+      "ask_brain_run_id": 213,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "failed_checks": "",
+      "review_checks": "",
+      "final_confidence": "Low",
+      "run_status": "completed",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "cited_sources": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\ABBV_20260915_152356_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\ABBV_20260915_152356_retrieval.json",
+      "estimated_cost_usd": 2.2e-07,
+      "created_at": "2026-09-15T16:11:53+00:00",
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed"
+        },
+        {
+          "check": "refusal_check",
+          "status": "pass",
+          "detail": "declines to make a recommendation, as it must"
+        },
+        {
+          "check": "citation_coverage",
+          "status": "not_applicable",
+          "detail": "no citation required for this question"
+        },
+        {
+          "check": "source_grounding",
+          "status": "pass",
+          "detail": "8 citation(s), all pointing at supplied sources; every figure in the Direct Answer appears in the retrieved text"
+        },
+        {
+          "check": "ticker_correctness",
+          "status": "pass",
+          "detail": "all 8 selected chunk(s) across 8 document(s) belong to ABBV."
+        },
+        {
+          "check": "confidence_calibration",
+          "status": "pass",
+          "detail": "confidence Low, within the Low ceiling"
+        },
+        {
+          "check": "evidence_kind",
+          "status": "not_applicable",
+          "detail": "no evidence-kind constraint on this question"
+        },
+        {
+          "check": "unsupported_claims",
+          "status": "pass",
+          "detail": "no disallowed phrase, nothing flagged"
+        },
+        {
+          "check": "date_awareness",
+          "status": "not_applicable",
+          "detail": "not a date-sensitive question"
+        },
+        {
+          "check": "source_diversity",
+          "status": "not_applicable",
+          "detail": "no citation required"
+        }
+      ]
+    }
+  ]
+}

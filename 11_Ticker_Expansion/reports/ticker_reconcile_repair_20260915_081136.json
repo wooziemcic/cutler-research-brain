@@ -1,0 +1,126 @@
+{
+  "pipeline_version": "phase11.2-1.0",
+  "completed_at": "2026-09-15T08:11:36.101929",
+  "tickers": [
+    "T",
+    "AMZN",
+    "ABBV"
+  ],
+  "estimated_total_cost_usd": 0.049794,
+  "max_total_cost": 1.0,
+  "results": [
+    {
+      "ticker": "T",
+      "documents_to_repair": 59,
+      "estimated_cost_usd": 0.030399,
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "T",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "T"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "documents_to_repair": 30,
+      "estimated_cost_usd": 0.010385,
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "AMZN",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "AMZN"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "ABBV",
+      "documents_to_repair": 17,
+      "estimated_cost_usd": 0.00901,
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "ABBV",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "ABBV"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    }
+  ],
+  "still_missing": 8,
+  "still_repairable": 8
+}

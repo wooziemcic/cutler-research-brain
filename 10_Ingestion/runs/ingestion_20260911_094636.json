@@ -1,0 +1,240 @@
+{
+  "run_id": 5,
+  "started_at": "2026-09-11T09:46:36",
+  "completed_at": "2026-09-11T09:48:44",
+  "source_root": "V:\\Companies\\A Current Month\\2026",
+  "ticker": "MSFT",
+  "dry_run": false,
+  "force_full": false,
+  "status": "completed",
+  "counts": {
+    "files_seen": 12161,
+    "new_files": 4,
+    "changed_files": 0,
+    "unchanged_files": 12157,
+    "missing_files": 2,
+    "skipped_files": 276,
+    "metadata_added": 4,
+    "metadata_updated": 0
+  },
+  "stages": {
+    "extract": {
+      "extracted": 4,
+      "failed": 0,
+      "skipped_non_pdf": 0
+    },
+    "cards": {
+      "created": 4,
+      "failed": 0
+    },
+    "obsidian": {
+      "notes_after": 12444,
+      "notes_before": 12440,
+      "updated": 4,
+      "failed": false
+    },
+    "chunk": {
+      "documents_considered": 4,
+      "documents_chunked": 0,
+      "chunks_created": 0,
+      "chunks_superseded": 0,
+      "skipped_not_eligible": 4,
+      "vectors_removed": 0,
+      "stale_cleared": 0,
+      "held_missing": 0,
+      "held_not_ready": 0,
+      "not_eligible_with_chunks": 0,
+      "resolved": {
+        "cleared": [],
+        "held_missing": [],
+        "held_not_ready": [],
+        "not_eligible_with_chunks": []
+      },
+      "buckets": {
+        "eligible": [],
+        "not_eligible": [
+          {
+            "document_id": "doc_3ac0be1505e26a42",
+            "relative_path": "SEPT 2026\\9.11.26\\Research\\TSN Barclays 9.10.26.pdf",
+            "reason": "no longer tagged MSFT",
+            "stale": false
+          },
+          {
+            "document_id": "doc_96c7b96bf1e7cf0b",
+            "relative_path": "SEPT 2026\\9.11.26\\Companies\\CNH Barclays 9.11.26 Industry.pdf",
+            "reason": "no longer tagged MSFT",
+            "stale": false
+          },
+          {
+            "document_id": "doc_b2ca78b577aeec2e",
+            "relative_path": "SEPT 2026\\9.11.26\\Research\\PPL Barclays 9.10.26 Industry.pdf",
+            "reason": "no longer tagged MSFT",
+            "stale": false
+          },
+          {
+            "document_id": "doc_c06fcd8760a2cd51",
+            "relative_path": "SEPT 2026\\9.11.26\\Research\\JHX Barclays 9.11.26 Industry.pdf",
+            "reason": "no longer tagged MSFT",
+            "stale": false
+          }
+        ],
+        "missing_source": [],
+        "not_ready": []
+      }
+    },
+    "embed": {
+      "chunks_embedded": 0,
+      "chunks_failed": 0,
+      "batches": 0,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0,
+      "added_to_chroma": 0
+    },
+    "keyword": {
+      "updated": true,
+      "message": "rebuilt"
+    },
+    "smoke": {
+      "status": "PASS",
+      "results": [
+        {
+          "question_id": "msft_azure_growth_sec",
+          "outcome": "PASS",
+          "returncode": 0
+        },
+        {
+          "question_id": "msft_no_evidence_test",
+          "outcome": "PASS",
+          "returncode": 0
+        },
+        {
+          "question_id": "msft_safety_test",
+          "outcome": "PASS",
+          "returncode": 0
+        }
+      ],
+      "questions": [
+        "msft_azure_growth_sec",
+        "msft_no_evidence_test",
+        "msft_safety_test"
+      ]
+    }
+  },
+  "warnings": [],
+  "error_message": "",
+  "stale_counts": {
+    "extraction": 0,
+    "card": 0,
+    "rag": 10
+  },
+  "repair_mode": false,
+  "failure_log_rel": "",
+  "failure_count": 0,
+  "next_actions": [
+    "2 indexed file(s) were not found. Confirm the share was fully available before treating any of them as deleted.",
+    "10 document(s) are marked stale_rag_index and this run did not classify them. Run `--ticker MSFT --clear-noneligible-stale-rag` to find out why each one is flagged; it chunks nothing and costs nothing.",
+    "Nothing else is outstanding. Re-running the same command would find nothing to do."
+  ],
+  "manifest_rel": "10_Ingestion\\manifests\\ingestion_20260911_094636_file_changes.csv",
+  "json_rel": "10_Ingestion\\runs\\ingestion_20260911_094636.json",
+  "report_rel": "10_Ingestion\\reports\\latest_ingestion_summary.md",
+  "pipeline_version": "phase9.2-1.0",
+  "events": [
+    {
+      "document_id": "doc_c06fcd8760a2cd51",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Research\\JHX Barclays 9.11.26 Industry.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Research\\JHX Barclays 9.11.26 Industry.pdf",
+      "extension": ".pdf",
+      "file_size": 270716,
+      "modified_time": "2026-09-11T09:31:28",
+      "old_hash": "",
+      "new_hash": "b70feac3c7dd5d66fce59da09a2438cddc506b1a7a2df09ae12958041f7d61a7",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "JHX",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_b2ca78b577aeec2e",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Research\\PPL Barclays 9.10.26 Industry.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Research\\PPL Barclays 9.10.26 Industry.pdf",
+      "extension": ".pdf",
+      "file_size": 366388,
+      "modified_time": "2026-09-11T09:33:15",
+      "old_hash": "",
+      "new_hash": "af9d8cc992c3a08fee943aecb09b9e468bc0712018b44c321c8dfc138a9b2910",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "PPL",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_3ac0be1505e26a42",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Research\\TSN Barclays 9.10.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Research\\TSN Barclays 9.10.26.pdf",
+      "extension": ".pdf",
+      "file_size": 284602,
+      "modified_time": "2026-09-11T09:34:17",
+      "old_hash": "",
+      "new_hash": "bfc768eec2dbe8ead6c34f8db5325df4a9ac36cd6c87745f6237a33959983bdf",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "TSN",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_96c7b96bf1e7cf0b",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Companies\\CNH Barclays 9.11.26 Industry.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Companies\\CNH Barclays 9.11.26 Industry.pdf",
+      "extension": ".pdf",
+      "file_size": 1195095,
+      "modified_time": "2026-09-11T09:30:15",
+      "old_hash": "",
+      "new_hash": "63ddcae05701bdfbda9321b2bee692faf7f85c4160ba0369753f612aa5b2ce91",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "CNH",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_e03c949e42afeec5",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Companies\\BANC Form 144 9.10.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Companies\\BANC Form 144 9.10.26.pdf",
+      "extension": ".pdf",
+      "file_size": 102030,
+      "modified_time": "2026-09-11T08:24:02",
+      "old_hash": "ffbec32b08fd322bddded7662a84fabb621ef25619face0ad26ff8c2c37937c9",
+      "new_hash": "ffbec32b08fd322bddded7662a84fabb621ef25619face0ad26ff8c2c37937c9",
+      "change_status": "missing_file",
+      "action_taken": "reported only; nothing deleted",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "",
+      "note": "in the index, not on the drive"
+    },
+    {
+      "document_id": "doc_8c0b561644cf9a8a",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Companies\\SFL Arctic 9.11.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Companies\\SFL Arctic 9.11.26.pdf",
+      "extension": ".pdf",
+      "file_size": 325179,
+      "modified_time": "2026-09-11T08:44:57",
+      "old_hash": "f12f146beb767e0455b7485284ef8157c8d7c69404c9ed05238ab73d17541bc4",
+      "new_hash": "f12f146beb767e0455b7485284ef8157c8d7c69404c9ed05238ab73d17541bc4",
+      "change_status": "missing_file",
+      "action_taken": "reported only; nothing deleted",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "",
+      "note": "in the index, not on the drive"
+    }
+  ]
+}

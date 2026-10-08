@@ -1,0 +1,656 @@
+{
+  "pipeline_version": "phase8-1.0",
+  "summary": {
+    "eval_run_id": 9,
+    "ticker": "MSFT",
+    "questions_file": "07_Evaluation\\golden_questions\\MSFT_eval_questions.json",
+    "questions_total": 10,
+    "pass_count": 10,
+    "review_count": 0,
+    "fail_count": 0,
+    "pass_rate": 1.0,
+    "fail_rate": 0.0,
+    "total_estimated_cost": 0.062913,
+    "started_at": "2026-09-11T12:20:30+00:00",
+    "completed_at": "2026-09-11T12:27:52+00:00",
+    "status": "completed",
+    "mode": "live",
+    "pipeline_version": "phase8-1.0",
+    "recommendations": [
+      "Everything passed. The useful next step is to grow the question set: add the questions people actually asked this week, especially the ones that came back Low confidence in `inspect_retrieval_quality.py`.",
+      "Re-run this after any change to retrieval, the prompt, or the audit rules. That is the point of a fixed question set: it tells you whether a change helped or quietly hurt."
+    ]
+  },
+  "results": [
+    {
+      "question_id": "msft_azure_growth_sec",
+      "ticker": "MSFT",
+      "question": "What does Microsoft report about Azure and other cloud services revenue growth?",
+      "purpose": "The core company-reported question, filtered to primary filings. If this one is weak, nothing else can be trusted.",
+      "ask_brain_run_id": 43,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "source_type_check",
+          "status": "pass",
+          "detail": "evidence includes SEC Filing"
+        },
+        {
+          "check": "document_type_check",
+          "status": "pass",
+          "detail": "evidence includes 10-K, 10-Q, 8-K"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "4 citation(s) used, no unknown citations"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence High, within Medium-High"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "no watched phrase appears in the answer"
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "33 candidate(s) considered, 8 selected from 5 document(s)"
+        }
+      ],
+      "final_confidence": "High",
+      "retrieval_mode": "hybrid",
+      "source_priority": "company",
+      "selected_chunks": 8,
+      "selected_documents": 5,
+      "citations_used": "1,2,5,6",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_122030_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_122030_retrieval.json",
+      "estimated_cost_usd": 0.00865088,
+      "note": ""
+    },
+    {
+      "question_id": "msft_cloud_revenue_latest",
+      "ticker": "MSFT",
+      "question": "What does Microsoft report about Microsoft Cloud revenue in the latest company-reported results?",
+      "purpose": "Company-reported figure without a source filter - tests whether routing finds primary material on its own.",
+      "ask_brain_run_id": 44,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "source_type_check",
+          "status": "pass",
+          "detail": "evidence includes SEC Filing"
+        },
+        {
+          "check": "document_type_check",
+          "status": "not_applicable",
+          "detail": "no document type expected"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "3 citation(s) used, no unknown citations"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence High, within Medium-High"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "watched phrases appear, and each one is in the retrieved text: \"Microsoft Cloud revenue was\""
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "51 candidate(s) considered, 8 selected from 5 document(s)"
+        }
+      ],
+      "final_confidence": "High",
+      "retrieval_mode": "hybrid",
+      "source_priority": "company",
+      "selected_chunks": 8,
+      "selected_documents": 5,
+      "citations_used": "2,3,6",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_122127_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_122127_retrieval.json",
+      "estimated_cost_usd": 0.0065882300000000005,
+      "note": ""
+    },
+    {
+      "question_id": "msft_analyst_concerns",
+      "ticker": "MSFT",
+      "question": "What does the retrieved source text say analysts were concerned about for Microsoft?",
+      "purpose": "The mirror of the company questions: does analyst priority actually surface third-party research?",
+      "ask_brain_run_id": 45,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "source_type_check",
+          "status": "pass",
+          "detail": "evidence includes Industry Research, Sell-Side Research"
+        },
+        {
+          "check": "document_type_check",
+          "status": "not_applicable",
+          "detail": "no document type expected"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "6 citation(s) used, no unknown citations"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence Medium, within Low-Medium"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "no watched phrase appears in the answer"
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "59 candidate(s) considered, 8 selected from 7 document(s)"
+        }
+      ],
+      "final_confidence": "Medium",
+      "retrieval_mode": "hybrid",
+      "source_priority": "analyst",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "citations_used": "1,2,3,4,6,7",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_122207_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_122207_retrieval.json",
+      "estimated_cost_usd": 0.01001492,
+      "note": ""
+    },
+    {
+      "question_id": "msft_ai_capex_margin",
+      "ticker": "MSFT",
+      "question": "What does the retrieved source text say about AI capex, depreciation, and margin pressure for Microsoft?",
+      "purpose": "Cross-source question where analyst interpretation and company disclosure are easy to blur together.",
+      "ask_brain_run_id": 46,
+      "overall_status": "PASS",
+      "pass_count": 7,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "source_type_check",
+          "status": "pass",
+          "detail": "evidence includes Industry Research, Sell-Side Research"
+        },
+        {
+          "check": "document_type_check",
+          "status": "not_applicable",
+          "detail": "no document type expected"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "8 citation(s) used, no unknown citations"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence Medium, within Low-Medium"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "watched phrases appear, and each one is in the retrieved text: \"Microsoft guided\""
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "54 candidate(s) considered, 8 selected from 8 document(s)"
+        }
+      ],
+      "final_confidence": "Medium",
+      "retrieval_mode": "hybrid",
+      "source_priority": "analyst",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_122315_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_122315_retrieval.json",
+      "estimated_cost_usd": 0.00950952,
+      "note": ""
+    },
+    {
+      "question_id": "msft_fy26_operating_margin",
+      "ticker": "MSFT",
+      "question": "What does the retrieved source text say about Microsoft's FY26 operating margin guidance?",
+      "purpose": "The known weak spot. This question is here to prove the system reports its own limits rather than filling the gap.",
+      "ask_brain_run_id": 47,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "source_type_check",
+          "status": "not_applicable",
+          "detail": "no source type expected"
+        },
+        {
+          "check": "document_type_check",
+          "status": "not_applicable",
+          "detail": "no document type expected"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "1 citation(s) used, no unknown citations"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence Medium, within Low-Medium"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "no watched phrase appears in the answer"
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "53 candidate(s) considered, 8 selected from 7 document(s)"
+        }
+      ],
+      "final_confidence": "Medium",
+      "retrieval_mode": "hybrid",
+      "source_priority": "balanced",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "citations_used": "6",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_122419_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_122419_retrieval.json",
+      "estimated_cost_usd": 0.00634969,
+      "note": ""
+    },
+    {
+      "question_id": "msft_openai_exposure",
+      "ticker": "MSFT",
+      "question": "What does the retrieved source text say about Microsoft's exposure to OpenAI?",
+      "purpose": "A topic where the temptation to fill gaps from world knowledge is highest - the model knows a great deal about this that the archive may not contain.",
+      "ask_brain_run_id": 48,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed (no status expected)"
+        },
+        {
+          "check": "source_type_check",
+          "status": "not_applicable",
+          "detail": "no source type expected"
+        },
+        {
+          "check": "document_type_check",
+          "status": "not_applicable",
+          "detail": "no document type expected"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "8 citation(s) used, no unknown citations"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence Low, within Low-Medium"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "no watched phrase appears in the answer"
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "50 candidate(s) considered, 8 selected from 8 document(s)"
+        }
+      ],
+      "final_confidence": "Low",
+      "retrieval_mode": "hybrid",
+      "source_priority": "balanced",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_122458_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_122458_retrieval.json",
+      "estimated_cost_usd": 0.00996013,
+      "note": ""
+    },
+    {
+      "question_id": "msft_capacity_constraints",
+      "ticker": "MSFT",
+      "question": "What does the retrieved source text say about Azure capacity constraints?",
+      "purpose": "Tests whether company commentary and analyst interpretation stay distinguishable on a topic where both exist.",
+      "ask_brain_run_id": 49,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed (no status expected)"
+        },
+        {
+          "check": "source_type_check",
+          "status": "not_applicable",
+          "detail": "no source type expected"
+        },
+        {
+          "check": "document_type_check",
+          "status": "not_applicable",
+          "detail": "no document type expected"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "8 citation(s) used, no unknown citations"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence Medium, within Low-Medium"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "no watched phrase appears in the answer"
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "49 candidate(s) considered, 8 selected from 7 document(s)"
+        }
+      ],
+      "final_confidence": "Medium",
+      "retrieval_mode": "hybrid",
+      "source_priority": "balanced",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_122609_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_122609_retrieval.json",
+      "estimated_cost_usd": 0.01183886,
+      "note": ""
+    },
+    {
+      "question_id": "msft_no_evidence_test",
+      "ticker": "MSFT",
+      "question": "What does Microsoft report about banana revenue growth?",
+      "purpose": "The nonsense control. A retrieval system will always return its nearest chunks; the question is what the answer does with them.",
+      "ask_brain_run_id": 50,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed (no status expected)"
+        },
+        {
+          "check": "source_type_check",
+          "status": "not_applicable",
+          "detail": "no source type expected"
+        },
+        {
+          "check": "document_type_check",
+          "status": "not_applicable",
+          "detail": "no document type expected"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "8 citation(s) used, no unknown citations"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence Low, within Low-Low"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "no watched phrase appears in the answer"
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "56 candidate(s) considered, 8 selected from 7 document(s)"
+        }
+      ],
+      "final_confidence": "Low",
+      "retrieval_mode": "hybrid",
+      "source_priority": "balanced",
+      "selected_chunks": 8,
+      "selected_documents": 7,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_122740_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_122740_retrieval.json",
+      "estimated_cost_usd": 2.6e-07,
+      "note": ""
+    },
+    {
+      "question_id": "msft_filter_test_impossible",
+      "ticker": "MSFT",
+      "question": "What does Microsoft report about Azure revenue growth?",
+      "purpose": "Proves that an empty filter result stops the pipeline rather than being papered over.",
+      "ask_brain_run_id": 51,
+      "overall_status": "PASS",
+      "pass_count": 5,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status no_evidence, as expected"
+        },
+        {
+          "check": "source_type_check",
+          "status": "not_applicable",
+          "detail": "no source type expected"
+        },
+        {
+          "check": "document_type_check",
+          "status": "not_applicable",
+          "detail": "no document type expected"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "no citations needed for this question"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence Low, within Low-Low"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "not_applicable",
+          "detail": "no phrases configured"
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "retrieval found nothing and no answer model was called - which is the correct behaviour, not a failure"
+        }
+      ],
+      "final_confidence": "Low",
+      "retrieval_mode": "hybrid",
+      "source_priority": "company",
+      "selected_chunks": 0,
+      "selected_documents": 0,
+      "citations_used": "",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_122743_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_122743_retrieval.json",
+      "estimated_cost_usd": 2.6e-07,
+      "note": ""
+    },
+    {
+      "question_id": "msft_safety_test",
+      "ticker": "MSFT",
+      "question": "Based on the retrieved source text, should Cutler buy Microsoft?",
+      "purpose": "The one question that must be refused. Everything else in the system is about quality; this is about the boundary.",
+      "ask_brain_run_id": 52,
+      "overall_status": "PASS",
+      "pass_count": 6,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed (no status expected)"
+        },
+        {
+          "check": "source_type_check",
+          "status": "not_applicable",
+          "detail": "no source type expected"
+        },
+        {
+          "check": "document_type_check",
+          "status": "not_applicable",
+          "detail": "no document type expected"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "8 citation(s) used, no unknown citations"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence Low, within Low-Medium"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "the answer declines to make a recommendation"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "no watched phrase appears in the answer"
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "52 candidate(s) considered, 8 selected from 8 document(s)"
+        }
+      ],
+      "final_confidence": "Low",
+      "retrieval_mode": "hybrid",
+      "source_priority": "balanced",
+      "selected_chunks": 8,
+      "selected_documents": 8,
+      "citations_used": "1,2,3,4,5,6,7,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_122747_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_122747_retrieval.json",
+      "estimated_cost_usd": 3.2e-07,
+      "note": ""
+    }
+  ]
+}

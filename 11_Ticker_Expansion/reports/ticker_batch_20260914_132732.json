@@ -1,0 +1,482 @@
+{
+  "pipeline_version": "phase11-1.0",
+  "started_at": "2026-09-14T13:27:32.688059",
+  "completed_at": "2026-09-14T13:40:47.872124",
+  "tickers": [
+    "KIM",
+    "KR",
+    "MRK",
+    "T",
+    "VZ",
+    "AMZN",
+    "SLB",
+    "B",
+    "ABBV"
+  ],
+  "estimates": [
+    {
+      "ticker": "KIM",
+      "documents": 148,
+      "tokens": 2905292,
+      "chunks": 3307,
+      "cost": 0.058106,
+      "already_embedded": 0,
+      "pending": 0
+    },
+    {
+      "ticker": "KR",
+      "documents": 154,
+      "tokens": 2369766,
+      "chunks": 2709,
+      "cost": 0.047395,
+      "already_embedded": 0,
+      "pending": 0
+    },
+    {
+      "ticker": "MRK",
+      "documents": 286,
+      "tokens": 4013465,
+      "chunks": 4597,
+      "cost": 0.080269,
+      "already_embedded": 0,
+      "pending": 0
+    },
+    {
+      "ticker": "T",
+      "documents": 200,
+      "tokens": 3463190,
+      "chunks": 3951,
+      "cost": 0.069264,
+      "already_embedded": 0,
+      "pending": 0
+    },
+    {
+      "ticker": "VZ",
+      "documents": 175,
+      "tokens": 3065201,
+      "chunks": 3491,
+      "cost": 0.061304,
+      "already_embedded": 0,
+      "pending": 0
+    },
+    {
+      "ticker": "AMZN",
+      "documents": 293,
+      "tokens": 4431126,
+      "chunks": 5074,
+      "cost": 0.088623,
+      "already_embedded": 0,
+      "pending": 0
+    },
+    {
+      "ticker": "SLB",
+      "documents": 59,
+      "tokens": 1006460,
+      "chunks": 1150,
+      "cost": 0.020129,
+      "already_embedded": 0,
+      "pending": 0
+    },
+    {
+      "ticker": "B",
+      "documents": 76,
+      "tokens": 2192949,
+      "chunks": 2474,
+      "cost": 0.043859,
+      "already_embedded": 0,
+      "pending": 0
+    },
+    {
+      "ticker": "ABBV",
+      "documents": 192,
+      "tokens": 2800904,
+      "chunks": 3216,
+      "cost": 0.056018,
+      "already_embedded": 0,
+      "pending": 0
+    }
+  ],
+  "estimated_total_cost_usd": 0.524967,
+  "max_total_cost": 5.0,
+  "force": false,
+  "results": [
+    {
+      "ticker": "KIM",
+      "status": "completed",
+      "state": {
+        "ticker": "KIM",
+        "chunks": 4282,
+        "embedded": 4282,
+        "pending": 0,
+        "failed": 0,
+        "superseded": 0,
+        "documents": 148,
+        "tokens": 3795704,
+        "chroma_present": true,
+        "collection": "cutler_research_brain_kim_2026",
+        "keyword_present": true,
+        "last_run": {
+          "run_id": 5,
+          "status": "completed",
+          "completed_at": "2026-09-14T13:29:07",
+          "chunks_embedded": 4282,
+          "estimated_cost_usd": 0.075914
+        },
+        "date_from": "2026-01-06",
+        "date_to": "2026-09-11"
+      },
+      "steps": [
+        {
+          "script": "build_rag_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 95.7,
+          "error": ""
+        },
+        {
+          "script": "build_keyword_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 3.9,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "ticker": "KR",
+      "status": "completed",
+      "state": {
+        "ticker": "KR",
+        "chunks": 3746,
+        "embedded": 3746,
+        "pending": 0,
+        "failed": 0,
+        "superseded": 0,
+        "documents": 154,
+        "tokens": 3317519,
+        "chroma_present": true,
+        "collection": "cutler_research_brain_kr_2026",
+        "keyword_present": true,
+        "last_run": {
+          "run_id": 6,
+          "status": "completed",
+          "completed_at": "2026-09-14T13:30:17",
+          "chunks_embedded": 3746,
+          "estimated_cost_usd": 0.06635
+        },
+        "date_from": "2026-01-05",
+        "date_to": "2026-09-11"
+      },
+      "steps": [
+        {
+          "script": "build_rag_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 65.9,
+          "error": ""
+        },
+        {
+          "script": "build_keyword_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 3.2,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "ticker": "MRK",
+      "status": "completed",
+      "state": {
+        "ticker": "MRK",
+        "chunks": 5675,
+        "embedded": 5675,
+        "pending": 0,
+        "failed": 0,
+        "superseded": 0,
+        "documents": 286,
+        "tokens": 4992518,
+        "chroma_present": true,
+        "collection": "cutler_research_brain_mrk_2026",
+        "keyword_present": true,
+        "last_run": {
+          "run_id": 7,
+          "status": "completed",
+          "completed_at": "2026-09-14T13:32:05",
+          "chunks_embedded": 5675,
+          "estimated_cost_usd": 0.09985
+        },
+        "date_from": "2026-01-02",
+        "date_to": "2026-09-10"
+      },
+      "steps": [
+        {
+          "script": "build_rag_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 104.3,
+          "error": ""
+        },
+        {
+          "script": "build_keyword_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 5.1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "ticker": "T",
+      "status": "completed",
+      "state": {
+        "ticker": "T",
+        "chunks": 4851,
+        "embedded": 4851,
+        "pending": 0,
+        "failed": 0,
+        "superseded": 0,
+        "documents": 200,
+        "tokens": 4293679,
+        "chroma_present": true,
+        "collection": "cutler_research_brain_t_2026",
+        "keyword_present": true,
+        "last_run": {
+          "run_id": 8,
+          "status": "completed",
+          "completed_at": "2026-09-14T13:33:29",
+          "chunks_embedded": 4851,
+          "estimated_cost_usd": 0.085874
+        },
+        "date_from": "2026-01-05",
+        "date_to": "2026-09-11"
+      },
+      "steps": [
+        {
+          "script": "build_rag_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 78.9,
+          "error": ""
+        },
+        {
+          "script": "build_keyword_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 4.5,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "ticker": "VZ",
+      "status": "completed",
+      "state": {
+        "ticker": "VZ",
+        "chunks": 4296,
+        "embedded": 4296,
+        "pending": 0,
+        "failed": 0,
+        "superseded": 0,
+        "documents": 175,
+        "tokens": 3801708,
+        "chroma_present": true,
+        "collection": "cutler_research_brain_vz_2026",
+        "keyword_present": true,
+        "last_run": {
+          "run_id": 9,
+          "status": "completed",
+          "completed_at": "2026-09-14T13:34:45",
+          "chunks_embedded": 4296,
+          "estimated_cost_usd": 0.076034
+        },
+        "date_from": "2026-01-05",
+        "date_to": "2026-09-11"
+      },
+      "steps": [
+        {
+          "script": "build_rag_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 71.4,
+          "error": ""
+        },
+        {
+          "script": "build_keyword_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 4.0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "status": "completed",
+      "state": {
+        "ticker": "AMZN",
+        "chunks": 6365,
+        "embedded": 6365,
+        "pending": 0,
+        "failed": 0,
+        "superseded": 0,
+        "documents": 293,
+        "tokens": 5615152,
+        "chroma_present": true,
+        "collection": "cutler_research_brain_amzn_2026",
+        "keyword_present": true,
+        "last_run": {
+          "run_id": 10,
+          "status": "completed",
+          "completed_at": "2026-09-14T13:38:10",
+          "chunks_embedded": 6365,
+          "estimated_cost_usd": 0.112303
+        },
+        "date_from": "2026-01-05",
+        "date_to": "2026-09-10"
+      },
+      "steps": [
+        {
+          "script": "build_rag_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 200.4,
+          "error": ""
+        },
+        {
+          "script": "build_keyword_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 6.0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "ticker": "SLB",
+      "status": "completed",
+      "state": {
+        "ticker": "SLB",
+        "chunks": 1348,
+        "embedded": 1348,
+        "pending": 0,
+        "failed": 0,
+        "superseded": 0,
+        "documents": 59,
+        "tokens": 1190102,
+        "chroma_present": true,
+        "collection": "cutler_research_brain_slb_2026",
+        "keyword_present": true,
+        "last_run": {
+          "run_id": 11,
+          "status": "completed",
+          "completed_at": "2026-09-14T13:38:39",
+          "chunks_embedded": 1348,
+          "estimated_cost_usd": 0.023802
+        },
+        "date_from": "2026-01-26",
+        "date_to": "2026-09-08"
+      },
+      "steps": [
+        {
+          "script": "build_rag_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 22.8,
+          "error": ""
+        },
+        {
+          "script": "build_keyword_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 1.4,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "ticker": "B",
+      "status": "completed",
+      "state": {
+        "ticker": "B",
+        "chunks": 3169,
+        "embedded": 3169,
+        "pending": 0,
+        "failed": 0,
+        "superseded": 0,
+        "documents": 76,
+        "tokens": 2822106,
+        "chroma_present": true,
+        "collection": "cutler_research_brain_b_2026",
+        "keyword_present": true,
+        "last_run": {
+          "run_id": 12,
+          "status": "completed",
+          "completed_at": "2026-09-14T13:39:30",
+          "chunks_embedded": 3169,
+          "estimated_cost_usd": 0.056442
+        },
+        "date_from": "2026-01-02",
+        "date_to": "2026-09-08"
+      },
+      "steps": [
+        {
+          "script": "build_rag_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 49.1,
+          "error": ""
+        },
+        {
+          "script": "build_keyword_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 3.0,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "ticker": "ABBV",
+      "status": "completed",
+      "state": {
+        "ticker": "ABBV",
+        "chunks": 3725,
+        "embedded": 3725,
+        "pending": 0,
+        "failed": 0,
+        "superseded": 0,
+        "documents": 192,
+        "tokens": 3271254,
+        "chroma_present": true,
+        "collection": "cutler_research_brain_abbv_2026",
+        "keyword_present": true,
+        "last_run": {
+          "run_id": 13,
+          "status": "completed",
+          "completed_at": "2026-09-14T13:40:41",
+          "chunks_embedded": 3725,
+          "estimated_cost_usd": 0.065425
+        },
+        "date_from": "2026-01-02",
+        "date_to": "2026-09-11"
+      },
+      "steps": [
+        {
+          "script": "build_rag_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 68.4,
+          "error": ""
+        },
+        {
+          "script": "build_keyword_index.py",
+          "returncode": 0,
+          "ok": true,
+          "seconds": 5.3,
+          "error": ""
+        }
+      ]
+    }
+  ]
+}

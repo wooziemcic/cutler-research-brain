@@ -1,0 +1,89 @@
+{
+  "pipeline_version": "phase8-1.0",
+  "summary": {
+    "eval_run_id": 1,
+    "ticker": "MSFT",
+    "questions_file": "07_Evaluation\\golden_questions\\MSFT_eval_questions.json",
+    "questions_total": 1,
+    "pass_count": 0,
+    "review_count": 1,
+    "fail_count": 0,
+    "pass_rate": 0.0,
+    "fail_rate": 0.0,
+    "total_estimated_cost": 0.007623,
+    "started_at": "2026-09-10T18:01:46+00:00",
+    "completed_at": "2026-09-10T18:02:22+00:00",
+    "status": "completed",
+    "mode": "live",
+    "pipeline_version": "phase8-1.0",
+    "recommendations": [
+      "No failures. The REVIEW questions (`msft_azure_growth_sec`) are the honest weak spots - each is either thin coverage in the archive or a question worth rewording closer to how a document would put it.",
+      "Re-run this after any change to retrieval, the prompt, or the audit rules. That is the point of a fixed question set: it tells you whether a change helped or quietly hurt."
+    ]
+  },
+  "results": [
+    {
+      "question_id": "msft_azure_growth_sec",
+      "ticker": "MSFT",
+      "question": "What does Microsoft report about Azure and other cloud services revenue growth?",
+      "purpose": "The core company-reported question, filtered to primary filings. If this one is weak, nothing else can be trusted.",
+      "ask_brain_run_id": 17,
+      "overall_status": "REVIEW",
+      "pass_count": 7,
+      "warn_count": 1,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "source_type_check",
+          "status": "pass",
+          "detail": "evidence includes SEC Filing"
+        },
+        {
+          "check": "document_type_check",
+          "status": "pass",
+          "detail": "evidence includes 10-K, 10-Q, 8-K"
+        },
+        {
+          "check": "citation_check",
+          "status": "warn",
+          "detail": "a sentence in the Direct Answer carries no citation"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence High, within Medium-High"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "no watched phrase appears in the answer"
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "33 candidate(s) considered, 8 selected from 5 document(s)"
+        }
+      ],
+      "final_confidence": "High",
+      "retrieval_mode": "hybrid",
+      "source_priority": "company",
+      "selected_chunks": 8,
+      "selected_documents": 5,
+      "citations_used": "1,2,3,5,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260910_180146_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260910_180146_retrieval.json",
+      "estimated_cost_usd": 0.00762338,
+      "note": ""
+    }
+  ]
+}

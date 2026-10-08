@@ -1,0 +1,89 @@
+{
+  "pipeline_version": "phase8-1.0",
+  "summary": {
+    "eval_run_id": 16,
+    "ticker": "MSFT",
+    "questions_file": "07_Evaluation\\golden_questions\\MSFT_eval_questions.json",
+    "questions_total": 1,
+    "pass_count": 1,
+    "review_count": 0,
+    "fail_count": 0,
+    "pass_rate": 1.0,
+    "fail_rate": 0.0,
+    "total_estimated_cost": 0.008055,
+    "started_at": "2026-09-11T14:05:40+00:00",
+    "completed_at": "2026-09-11T14:06:38+00:00",
+    "status": "completed",
+    "mode": "live",
+    "pipeline_version": "phase8-1.0",
+    "recommendations": [
+      "Everything passed. The useful next step is to grow the question set: add the questions people actually asked this week, especially the ones that came back Low confidence in `inspect_retrieval_quality.py`.",
+      "Re-run this after any change to retrieval, the prompt, or the audit rules. That is the point of a fixed question set: it tells you whether a change helped or quietly hurt."
+    ]
+  },
+  "results": [
+    {
+      "question_id": "msft_azure_growth_sec",
+      "ticker": "MSFT",
+      "question": "What does Microsoft report about Azure and other cloud services revenue growth?",
+      "purpose": "The core company-reported question, filtered to primary filings. If this one is weak, nothing else can be trusted.",
+      "ask_brain_run_id": 59,
+      "overall_status": "PASS",
+      "pass_count": 8,
+      "warn_count": 0,
+      "fail_count": 0,
+      "checks": [
+        {
+          "check": "run_status",
+          "status": "pass",
+          "detail": "status completed, as expected"
+        },
+        {
+          "check": "source_type_check",
+          "status": "pass",
+          "detail": "evidence includes SEC Filing"
+        },
+        {
+          "check": "document_type_check",
+          "status": "pass",
+          "detail": "evidence includes 10-K, 10-Q, 8-K"
+        },
+        {
+          "check": "citation_check",
+          "status": "pass",
+          "detail": "6 citation(s) used, no unknown citations"
+        },
+        {
+          "check": "confidence_check",
+          "status": "pass",
+          "detail": "final confidence High, within Medium-High"
+        },
+        {
+          "check": "safety_check",
+          "status": "pass",
+          "detail": "no recommendation, rating or prediction language"
+        },
+        {
+          "check": "hallucination_guard_check",
+          "status": "pass",
+          "detail": "no watched phrase appears in the answer"
+        },
+        {
+          "check": "retrieval_check",
+          "status": "pass",
+          "detail": "33 candidate(s) considered, 8 selected from 5 document(s)"
+        }
+      ],
+      "final_confidence": "High",
+      "retrieval_mode": "hybrid",
+      "source_priority": "company",
+      "selected_chunks": 8,
+      "selected_documents": 5,
+      "citations_used": "1,2,3,5,6,8",
+      "answer_path": "06_RAG_Index\\answer_logs\\MSFT_20260911_140540_answer.md",
+      "retrieval_log_path": "06_RAG_Index\\retrieval_logs\\MSFT_20260911_140540_retrieval.json",
+      "estimated_cost_usd": 0.00805488,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "run_id": 4,
+  "started_at": "2026-09-11T09:27:44",
+  "completed_at": "2026-09-11T09:29:46",
+  "source_root": "V:\\Companies\\A Current Month\\2026",
+  "ticker": "MSFT",
+  "dry_run": false,
+  "force_full": false,
+  "status": "completed",
+  "counts": {
+    "files_seen": 12157,
+    "new_files": 9,
+    "changed_files": 1,
+    "unchanged_files": 12147,
+    "missing_files": 2,
+    "skipped_files": 276,
+    "metadata_added": 9,
+    "metadata_updated": 1
+  },
+  "stages": {
+    "extract": {
+      "extracted": 10,
+      "failed": 0,
+      "skipped_non_pdf": 0
+    },
+    "cards": {
+      "created": 10,
+      "failed": 0
+    },
+    "obsidian": {
+      "notes_after": 12440,
+      "notes_before": 12431,
+      "updated": 9,
+      "failed": false
+    },
+    "chunk": {
+      "documents_considered": 10,
+      "documents_chunked": 0,
+      "chunks_created": 0,
+      "chunks_superseded": 0,
+      "skipped_not_eligible": 10,
+      "vectors_removed": 0
+    },
+    "embed": {
+      "chunks_embedded": 0,
+      "chunks_failed": 0,
+      "batches": 0,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0,
+      "added_to_chroma": 0
+    },
+    "keyword": {
+      "updated": true,
+      "message": "rebuilt"
+    },
+    "smoke": {
+      "status": "PASS",
+      "results": [
+        {
+          "question_id": "msft_azure_growth_sec",
+          "outcome": "PASS",
+          "returncode": 0
+        },
+        {
+          "question_id": "msft_no_evidence_test",
+          "outcome": "PASS",
+          "returncode": 0
+        },
+        {
+          "question_id": "msft_safety_test",
+          "outcome": "PASS",
+          "returncode": 0
+        }
+      ],
+      "questions": [
+        "msft_azure_growth_sec",
+        "msft_no_evidence_test",
+        "msft_safety_test"
+      ]
+    }
+  },
+  "warnings": [],
+  "error_message": "",
+  "stale_counts": {
+    "extraction": 0,
+    "card": 0,
+    "rag": 10
+  },
+  "repair_mode": false,
+  "failure_log_rel": "",
+  "failure_count": 0,
+  "next_actions": [
+    "2 indexed file(s) were not found. Confirm the share was fully available before treating any of them as deleted.",
+    "10 document(s) are marked stale_rag_index. Re-run with `--ticker MSFT --chunk-new --embed-new --update-keyword` to bring the MSFT index up to date."
+  ],
+  "manifest_rel": "10_Ingestion\\manifests\\ingestion_20260911_092744_file_changes.csv",
+  "json_rel": "10_Ingestion\\runs\\ingestion_20260911_092744.json",
+  "report_rel": "10_Ingestion\\reports\\latest_ingestion_summary.md",
+  "pipeline_version": "phase9.1-1.0",
+  "events": [
+    {
+      "document_id": "doc_500e583de636fb5e",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Research\\ACI JPM 9.10.26 Industry.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Research\\ACI JPM 9.10.26 Industry.pdf",
+      "extension": ".pdf",
+      "file_size": 458127,
+      "modified_time": "2026-09-11T09:11:20",
+      "old_hash": "",
+      "new_hash": "c48a1c766780d174a9e08222328e37e77d2f30e1f859db917077148b10ec1b3a",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "ACI",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_ff75e05c72160cce",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Research\\SFL Arctic 9.11.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Research\\SFL Arctic 9.11.26.pdf",
+      "extension": ".pdf",
+      "file_size": 325179,
+      "modified_time": "2026-09-11T08:44:57",
+      "old_hash": "",
+      "new_hash": "f12f146beb767e0455b7485284ef8157c8d7c69404c9ed05238ab73d17541bc4",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "SFL",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_426cc1705a98a8be",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Research\\SIRI GS 9.11.26 Industry.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Research\\SIRI GS 9.11.26 Industry.pdf",
+      "extension": ".pdf",
+      "file_size": 766031,
+      "modified_time": "2026-09-11T08:55:20",
+      "old_hash": "",
+      "new_hash": "8bc94fc1c8d3b47eeccda5e14f1b714b42a57e3af7aa06a53f46651e06179386",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "SIRI",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_c25f0da787ce76de",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Research\\T VZ GS 9.10.26 Industry.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Research\\T VZ GS 9.10.26 Industry.pdf",
+      "extension": ".pdf",
+      "file_size": 666094,
+      "modified_time": "2026-09-11T08:56:55",
+      "old_hash": "",
+      "new_hash": "5a239278c012974100dcc3d60837b236f2c0f7c005fdc5fcadf87354161e9cb8",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "T,VZ",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_61ff1fc96c74f2fa",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Research\\VICI JPM 9.10.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Research\\VICI JPM 9.10.26.pdf",
+      "extension": ".pdf",
+      "file_size": 496909,
+      "modified_time": "2026-09-11T09:17:44",
+      "old_hash": "",
+      "new_hash": "d2797ab6976de10363876a5af2eaf780a612fada8f0bcd08eab895e2e485cc69",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "VICI",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_04134510a11760b5",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Research\\VTRS JPM 9.10.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Research\\VTRS JPM 9.10.26.pdf",
+      "extension": ".pdf",
+      "file_size": 521839,
+      "modified_time": "2026-09-11T09:21:36",
+      "old_hash": "",
+      "new_hash": "6cfd6ac47f786b45f08e10c02881caa9f1206a66d9bfeb8c5bcea5ee8f12fec5",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "VTRS",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_9d26409649d632f1",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Companies\\KR Evercore 9.11.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Companies\\KR Evercore 9.11.26.pdf",
+      "extension": ".pdf",
+      "file_size": 249766,
+      "modified_time": "2026-09-11T09:01:45",
+      "old_hash": "",
+      "new_hash": "9e52c5f37eab7c93a64ea61f3e9609e6b77db272ac85c7d53ac28844390e4c4b",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "KR",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_4cd22beb40204cac",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Companies\\KR JPM 9.11.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Companies\\KR JPM 9.11.26.pdf",
+      "extension": ".pdf",
+      "file_size": 781515,
+      "modified_time": "2026-09-11T09:14:42",
+      "old_hash": "",
+      "new_hash": "758fdb5da247eda982a47176a2057cbdfe8fbc1fd74c8e8e245bdbebd0c418a2",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "KR",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_37dc9236f5c816a8",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Banks\\BANC Form 144 9.10.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Banks\\BANC Form 144 9.10.26.pdf",
+      "extension": ".pdf",
+      "file_size": 102030,
+      "modified_time": "2026-09-11T08:24:02",
+      "old_hash": "",
+      "new_hash": "ffbec32b08fd322bddded7662a84fabb621ef25619face0ad26ff8c2c37937c9",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "BANC",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_37734c1b7acf1aec",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Companies\\SFL  Charter Extension for 6 x 15,400 TEU vessels adding $750 Million Backlog 9.11.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Companies\\SFL  Charter Extension for 6 x 15,400 TEU vessels adding $750 Million Backlog 9.11.26.pdf",
+      "extension": ".pdf",
+      "file_size": 161392,
+      "modified_time": "2026-09-11T09:17:27",
+      "old_hash": "b28835a4a9bd450a391e1185c040772802a95b5a38cde74b5bee0ab6e67eaed5",
+      "new_hash": "abbde6f1f53289e78cc7e0b7d6f907895350bf4c8023b551621a52eacadc650a",
+      "change_status": "changed_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "SFL,TEU",
+      "note": "content hash differs"
+    },
+    {
+      "document_id": "doc_e03c949e42afeec5",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Companies\\BANC Form 144 9.10.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Companies\\BANC Form 144 9.10.26.pdf",
+      "extension": ".pdf",
+      "file_size": 102030,
+      "modified_time": "2026-09-11T08:24:02",
+      "old_hash": "ffbec32b08fd322bddded7662a84fabb621ef25619face0ad26ff8c2c37937c9",
+      "new_hash": "ffbec32b08fd322bddded7662a84fabb621ef25619face0ad26ff8c2c37937c9",
+      "change_status": "missing_file",
+      "action_taken": "reported only; nothing deleted",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "",
+      "note": "in the index, not on the drive"
+    },
+    {
+      "document_id": "doc_8c0b561644cf9a8a",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Companies\\SFL Arctic 9.11.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Companies\\SFL Arctic 9.11.26.pdf",
+      "extension": ".pdf",
+      "file_size": 325179,
+      "modified_time": "2026-09-11T08:44:57",
+      "old_hash": "f12f146beb767e0455b7485284ef8157c8d7c69404c9ed05238ab73d17541bc4",
+      "new_hash": "f12f146beb767e0455b7485284ef8157c8d7c69404c9ed05238ab73d17541bc4",
+      "change_status": "missing_file",
+      "action_taken": "reported only; nothing deleted",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "",
+      "note": "in the index, not on the drive"
+    }
+  ]
+}

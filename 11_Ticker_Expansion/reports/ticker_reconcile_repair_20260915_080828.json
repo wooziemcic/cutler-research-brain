@@ -1,0 +1,202 @@
+{
+  "pipeline_version": "phase11.2-1.0",
+  "completed_at": "2026-09-15T08:08:28.903405",
+  "tickers": [
+    "MSFT",
+    "KR",
+    "MRK",
+    "T",
+    "VZ"
+  ],
+  "estimated_total_cost_usd": 0.050218,
+  "max_total_cost": 1.0,
+  "results": [
+    {
+      "ticker": "MSFT",
+      "documents_to_repair": 11,
+      "estimated_cost_usd": 0.001954,
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "MSFT",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "MSFT"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "KR",
+      "documents_to_repair": 14,
+      "estimated_cost_usd": 0.005354,
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "KR",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "KR"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "MRK",
+      "documents_to_repair": 16,
+      "estimated_cost_usd": 0.008267,
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "MRK",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "MRK"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "T",
+      "documents_to_repair": 62,
+      "estimated_cost_usd": 0.031352,
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "T",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "T"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "VZ",
+      "documents_to_repair": 5,
+      "estimated_cost_usd": 0.003291,
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "VZ",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "VZ"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    }
+  ],
+  "still_missing": 59,
+  "still_repairable": 59
+}

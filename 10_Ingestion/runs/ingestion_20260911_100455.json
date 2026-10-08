@@ -1,0 +1,294 @@
+{
+  "run_id": 6,
+  "started_at": "2026-09-11T10:04:55",
+  "completed_at": "2026-09-11T10:06:46",
+  "source_root": "V:\\Companies\\A Current Month\\2026",
+  "ticker": "MSFT",
+  "dry_run": false,
+  "force_full": false,
+  "status": "completed",
+  "counts": {
+    "files_seen": 12165,
+    "new_files": 4,
+    "changed_files": 0,
+    "unchanged_files": 12161,
+    "missing_files": 2,
+    "skipped_files": 276,
+    "metadata_added": 4,
+    "metadata_updated": 0
+  },
+  "stages": {
+    "extract": {
+      "extracted": 4,
+      "failed": 0,
+      "skipped_non_pdf": 0
+    },
+    "cards": {
+      "created": 4,
+      "failed": 0
+    },
+    "obsidian": {
+      "notes_after": 12448,
+      "notes_before": 12444,
+      "updated": 4,
+      "failed": false
+    },
+    "chunk": {
+      "documents_considered": 4,
+      "documents_chunked": 0,
+      "chunks_created": 0,
+      "chunks_superseded": 0,
+      "skipped_not_eligible": 4,
+      "vectors_removed": 0,
+      "stale_cleared": 0,
+      "held_missing": 0,
+      "held_not_ready": 0,
+      "not_eligible_with_chunks": 0,
+      "resolved": {
+        "cleared": [],
+        "held_missing": [],
+        "held_not_ready": [],
+        "not_eligible_with_chunks": []
+      },
+      "buckets": {
+        "eligible": [],
+        "not_eligible": [
+          {
+            "document_id": "doc_0bbc72476c579860",
+            "relative_path": "SEPT 2026\\9.11.26\\Green Street\\LXP Green Street 9.10.26.pdf",
+            "reason": "no longer tagged MSFT",
+            "stale": false
+          },
+          {
+            "document_id": "doc_19c973fd2b434ec0",
+            "relative_path": "SEPT 2026\\9.11.26\\CNN Fear & Greed Index 9.11.26.pdf",
+            "reason": "its document card says it is not usable for RAG; card exclusion reason: scanned_pdf_no_text; extraction quality Empty; no longer tagged MSFT",
+            "stale": false
+          },
+          {
+            "document_id": "doc_6f3d4635cbc4f917",
+            "relative_path": "SEPT 2026\\9.11.26\\Green Street\\STWD Green Street 9.10.26.pdf",
+            "reason": "no longer tagged MSFT",
+            "stale": false
+          },
+          {
+            "document_id": "doc_e49f4d88011b9aa4",
+            "relative_path": "SEPT 2026\\9.11.26\\Insider Trading 9.11.26.pdf",
+            "reason": "its document card says it is not usable for RAG; card exclusion reason: scanned_pdf_no_text; extraction quality Empty; no longer tagged MSFT",
+            "stale": false
+          }
+        ],
+        "missing_source": [],
+        "not_ready": []
+      },
+      "other_ticker_cleared": [
+        {
+          "document_id": "doc_4d5386ed77fe5148",
+          "relative_path": "SEPT 2026\\9.8.26\\Research\\GWRE Morningstar 9.4.26.pdf",
+          "reason": "tagged GWRE; not indexed in this phase"
+        },
+        {
+          "document_id": "doc_34551f13aea59562",
+          "relative_path": "SEPT 2026\\9.4.26\\Research\\GWRE Citizens 9.4.26.pdf",
+          "reason": "tagged GWRE; not indexed in this phase"
+        },
+        {
+          "document_id": "doc_b345086081f6c356",
+          "relative_path": "SEPT 2026\\9.4.26\\Research\\GWRE Guggenheim 9.4.26.pdf",
+          "reason": "tagged GWRE; not indexed in this phase"
+        },
+        {
+          "document_id": "doc_0890eaeb689cae12",
+          "relative_path": "SEPT 2026\\9.4.26\\Research\\GWRE JPM 9.3.26.pdf",
+          "reason": "tagged GWRE; not indexed in this phase"
+        },
+        {
+          "document_id": "doc_598c0998c39240ba",
+          "relative_path": "SEPT 2026\\9.4.26\\Research\\GWRE Morningstar 9.2.26.pdf",
+          "reason": "tagged GWRE; not indexed in this phase"
+        },
+        {
+          "document_id": "doc_d7c06f6d6563bc45",
+          "relative_path": "SEPT 2026\\9.4.26\\Research\\GWRE RBC 9.4.26-1.pdf",
+          "reason": "tagged GWRE; not indexed in this phase"
+        },
+        {
+          "document_id": "doc_94d2107a0c3d677d",
+          "relative_path": "SEPT 2026\\9.4.26\\Research\\GWRE RBC 9.4.26-2.pdf",
+          "reason": "tagged GWRE; not indexed in this phase"
+        },
+        {
+          "document_id": "doc_fc5f5af3c66f375e",
+          "relative_path": "SEPT 2026\\9.4.26\\Research\\GWRE WF 9.3.26.pdf",
+          "reason": "tagged GWRE; not indexed in this phase"
+        },
+        {
+          "document_id": "doc_fb2c364084a15072",
+          "relative_path": "SEPT 2026\\9.3.26\\Companies\\VICI Properties Inc. Increases Regular Quarterly Dividend 9.3.26.pdf",
+          "reason": "tagged VICI; not indexed in this phase"
+        },
+        {
+          "document_id": "doc_37734c1b7acf1aec",
+          "relative_path": "SEPT 2026\\9.11.26\\Companies\\SFL  Charter Extension for 6 x 15,400 TEU vessels adding $750 Million Backlog 9.11.26.pdf",
+          "reason": "tagged SFL,TEU; not indexed in this phase"
+        }
+      ],
+      "carried_over": 0
+    },
+    "embed": {
+      "chunks_embedded": 0,
+      "chunks_failed": 0,
+      "batches": 0,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0,
+      "added_to_chroma": 0
+    },
+    "keyword": {
+      "updated": true,
+      "message": "rebuilt"
+    },
+    "smoke": {
+      "status": "PASS",
+      "results": [
+        {
+          "question_id": "msft_azure_growth_sec",
+          "outcome": "PASS",
+          "returncode": 0
+        },
+        {
+          "question_id": "msft_no_evidence_test",
+          "outcome": "PASS",
+          "returncode": 0
+        },
+        {
+          "question_id": "msft_safety_test",
+          "outcome": "PASS",
+          "returncode": 0
+        }
+      ],
+      "questions": [
+        "msft_azure_growth_sec",
+        "msft_no_evidence_test",
+        "msft_safety_test"
+      ]
+    }
+  },
+  "warnings": [],
+  "error_message": "",
+  "stale_counts": {
+    "extraction": 0,
+    "card": 0,
+    "rag": 0
+  },
+  "repair_mode": false,
+  "classified_all": true,
+  "failure_log_rel": "",
+  "failure_count": 0,
+  "next_actions": [
+    "2 indexed file(s) were not found. Confirm the share was fully available before treating any of them as deleted.",
+    "10 stale flag(s) belonged to documents of other tickers, which nothing indexes yet. There is no index for them to be behind, so the flags were cleared with that recorded - they are not lost work.",
+    "Nothing else is outstanding. Re-running the same command would find nothing to do."
+  ],
+  "manifest_rel": "10_Ingestion\\manifests\\ingestion_20260911_100455_file_changes.csv",
+  "json_rel": "10_Ingestion\\runs\\ingestion_20260911_100455.json",
+  "report_rel": "10_Ingestion\\reports\\latest_ingestion_summary.md",
+  "pipeline_version": "phase9.3-1.0",
+  "events": [
+    {
+      "document_id": "doc_19c973fd2b434ec0",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\CNN Fear & Greed Index 9.11.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\CNN Fear & Greed Index 9.11.26.pdf",
+      "extension": ".pdf",
+      "file_size": 1669732,
+      "modified_time": "2026-09-11T09:51:49",
+      "old_hash": "",
+      "new_hash": "6fcd28a86ab4dac410cb9e4692ca1e2ca7af1641a05dfb65a7e846822491d80b",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_e49f4d88011b9aa4",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Insider Trading 9.11.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Insider Trading 9.11.26.pdf",
+      "extension": ".pdf",
+      "file_size": 310025,
+      "modified_time": "2026-09-11T09:54:33",
+      "old_hash": "",
+      "new_hash": "e31ee3854f55bdfcb07b39e763a9e56281771fdc3ba499e620e4b00c7f4d0b11",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_0bbc72476c579860",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Green Street\\LXP Green Street 9.10.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Green Street\\LXP Green Street 9.10.26.pdf",
+      "extension": ".pdf",
+      "file_size": 958893,
+      "modified_time": "2026-09-11T09:57:49",
+      "old_hash": "",
+      "new_hash": "55e2846361c7b5b7803992b51190472e1b5ebfec7a4cabcc7ad915422d8db45c",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "LXP",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_6f3d4635cbc4f917",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Green Street\\STWD Green Street 9.10.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Green Street\\STWD Green Street 9.10.26.pdf",
+      "extension": ".pdf",
+      "file_size": 768266,
+      "modified_time": "2026-09-11T09:57:49",
+      "old_hash": "",
+      "new_hash": "d03a7ba9f91735cc3ada5027cb06c902d2314910dfdffeb1fb7420ae7c09fb48",
+      "change_status": "new_file",
+      "action_taken": "text extracted; card created; chunked",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "STWD",
+      "note": "not in the metadata index"
+    },
+    {
+      "document_id": "doc_e03c949e42afeec5",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Companies\\BANC Form 144 9.10.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Companies\\BANC Form 144 9.10.26.pdf",
+      "extension": ".pdf",
+      "file_size": 102030,
+      "modified_time": "2026-09-11T08:24:02",
+      "old_hash": "ffbec32b08fd322bddded7662a84fabb621ef25619face0ad26ff8c2c37937c9",
+      "new_hash": "ffbec32b08fd322bddded7662a84fabb621ef25619face0ad26ff8c2c37937c9",
+      "change_status": "missing_file",
+      "action_taken": "reported only; nothing deleted",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "",
+      "note": "in the index, not on the drive"
+    },
+    {
+      "document_id": "doc_8c0b561644cf9a8a",
+      "file_path": "V:\\Companies\\A Current Month\\2026\\SEPT 2026\\9.11.26\\Companies\\SFL Arctic 9.11.26.pdf",
+      "relative_path": "SEPT 2026\\9.11.26\\Companies\\SFL Arctic 9.11.26.pdf",
+      "extension": ".pdf",
+      "file_size": 325179,
+      "modified_time": "2026-09-11T08:44:57",
+      "old_hash": "f12f146beb767e0455b7485284ef8157c8d7c69404c9ed05238ab73d17541bc4",
+      "new_hash": "f12f146beb767e0455b7485284ef8157c8d7c69404c9ed05238ab73d17541bc4",
+      "change_status": "missing_file",
+      "action_taken": "reported only; nothing deleted",
+      "status": "ok",
+      "error_message": "",
+      "ticker_candidates": "",
+      "note": "in the index, not on the drive"
+    }
+  ]
+}

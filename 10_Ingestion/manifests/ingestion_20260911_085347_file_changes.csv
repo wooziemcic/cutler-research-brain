@@ -1,0 +1,74 @@
+change_status,document_id,relative_path,file_name,extension,file_size,modified_time,old_hash,new_hash,action_taken,status,error_message,ticker_candidates,note
+new_file,,KIM GS 9.10.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,SFL Arctic 9.11.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,SFL Fearnley 9.11.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,SFL Arctic 9.11.26 Credit (2).pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,SFL Arctic 9.11.26 Credit.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,ABBV Declares Quarterly Dividend 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,BANC Form 144 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,ET Form 8-K 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,KR Form 8-K 9.11.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,KR GS 9.11.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,KR Q2 2026 Earnings Press Release 9.11.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,LCII Form 8-K 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,LCII Form 8-K 9.10.26.pdf (2).pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,MMM Form 8-K 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,"SFL  Charter Extension for 6 x 15,400 TEU vessels adding $750 Million Backlog 9.11.26.pdf",,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,SFL Arctic 9.11.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,SHEL Signs US Power Plan Transactions 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,CNN Fear & Greed 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,Insider Trading 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,ABBV MRK BI 9.10.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,ABBV WF 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,ACI WF 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,AIG Morningstar 9.10.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,ALB Jefferies 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,ALB UBS 9.4.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,AMZN BI 9.9.26 Credit.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,AMZN ETSY NI 9.9.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,CPKF Zacks Research 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,CVX Barclays 9.8.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,GLPI JPM 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,IBM GS 9.10.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,KHC Barclays 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,MRK WF 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,MSFT AMZN GOOG BI 9.9.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,MSFT BI 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,MSFT RBC 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,SHEL GS 9.10.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,SIRI GS 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,VZ BI 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,XOM Barclays 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,XRN Huntington 9.9.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,XRN Huntington 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,AI Debt-Hypersclaers Green Street 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,Data Centres Green Street 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,Data Centres Green Street 9.10.26.xlsx,,.xlsx,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,KIM Green Street 9.9.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,KIM Green Street 9.9.26 Industry.xlsx,,.xlsx,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,LXP KIM STWD Green Street 9.9.26 Industry-DC Region.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,ACI Appoints Meg Whitman as Executive Chair 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,AEM ANNOUNCES DISPOSITION OF DELTA AND HELM BAY PROJECTS AND INVESTMENT IN VIZSLA COPPER 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,AGI Corporate PPT 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,AMZN Free Writing Prospectus 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,J and AECOM joint venture appointed program delivery partner for MetroLink 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,J to enhance wastewater system performance for Oklahoma City 9.10.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,JCI  Announces Quarterly Dividend 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,SHEL and FAW TRUCKS advance Immersion Cooling Battery Technology for Commercial Vehicles 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,VICI Releases 2025-2026 Corporate Responsibility Report 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,"VSH XClampR® Bidirectional Flat Clamping TVS in DO-218AC Package Deliver Low Clamping Voltage, High Power Density 9.10.26.pdf",,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,VZ declares quarterly dividend 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,"WGO Barletta Boats unveils model year 2027 lineup with design refinements, new tech & Innovative features 9.10.26.pdf",,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,FCCO 8K-Regulation FD Disclosure & Financials Exhibit 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,FISI 8K-Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Officers 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,FLG Jefferies 9.9.26 Industry.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+new_file,,FMBM 8K-Regulation FD Disclosure & Presentation 9.9.26.pdf,,.pdf,0,,,,none (dry run),ok,,,not in the metadata index
+changed_file,doc_4d5386ed77fe5148,SEPT 2026\9.8.26\Research\GWRE Morningstar 9.4.26.pdf,,.pdf,453890,2026-09-08T09:06:41,4e39a7a6bee85121e2f8b43f3d3abf50f0b26f55b5b9aff6c29cc017a563bee2,0e18b09fd46b19fae9a40e45728e1f244e27b53e0ae7f2851ed04dbb879db3ff,none (dry run),ok,,,content hash differs
+changed_file,doc_34551f13aea59562,SEPT 2026\9.4.26\Research\GWRE Citizens 9.4.26.pdf,,.pdf,882579,2026-09-04T11:26:56,af3bc2d3665c271ac6f48bf113e4232d42fcfe1b8cff89fd91d4ac22c5bad594,f5fbe898ca6b453cb8d202bddab6d61556bc991ae2a23c5f8934e5ec1e68d0cc,none (dry run),ok,,,content hash differs
+changed_file,doc_b345086081f6c356,SEPT 2026\9.4.26\Research\GWRE Guggenheim 9.4.26.pdf,,.pdf,769976,2026-09-04T11:26:56,36622060273e644b63bf04865cb9ea2edb2f141d5ef5952dedaaed701437de8e,eaa597bd706e70a61d3576a923c944d4c7e7c0f075938257838a929292308d88,none (dry run),ok,,,content hash differs
+changed_file,doc_0890eaeb689cae12,SEPT 2026\9.4.26\Research\GWRE JPM 9.3.26.pdf,,.pdf,750327,2026-09-04T08:55:57,e406f6715ce44db1647bfa71afbaa6b864b096aa13ed3abc4d059db742e14396,67ef81cc8537a34ac8ef4523efa88dd0c9dc4dd6448f482d4ba372d4f8cb0aa9,none (dry run),ok,,,content hash differs
+changed_file,doc_598c0998c39240ba,SEPT 2026\9.4.26\Research\GWRE Morningstar 9.2.26.pdf,,.pdf,678602,2026-09-04T11:26:56,eb9d6840e6975e6e632f32e4884c378cf3082261893cc19c09ad5297d0c9cb07,e64e52d14b1d2d2524fceb2ff31f410d088a8e4980315627b736ab7841cea1a2,none (dry run),ok,,,content hash differs
+changed_file,doc_d7c06f6d6563bc45,SEPT 2026\9.4.26\Research\GWRE RBC 9.4.26-1.pdf,,.pdf,178266,2026-09-04T08:53:11,f4fbe7f2b086ecce5af2acca9dccab214cd525468c5fb6c6832dc7b3a418743d,037f7eee87708091e393d74f33e0b371c72d22c71457f2738f8757893bc9b4d9,none (dry run),ok,,,content hash differs
+changed_file,doc_94d2107a0c3d677d,SEPT 2026\9.4.26\Research\GWRE RBC 9.4.26-2.pdf,,.pdf,617623,2026-09-04T08:52:33,e7b2156e988354f0b0178c9f09679e991284d5c8dc3e9a3d20ce349f4aaffa9f,977651cc94dcfa246d5f51677b0effde1601150869ff03bba3c0a3aaede62d28,none (dry run),ok,,,content hash differs
+changed_file,doc_fc5f5af3c66f375e,SEPT 2026\9.4.26\Research\GWRE WF 9.3.26.pdf,,.pdf,1322075,2026-09-04T11:26:56,1855e0b93ee0d61da84ebea122356dc824579657b797f1c02d1ce16ee982cf03,779bbb13baf447f4ce7d1d36308dce06374b4a3f7be276ea56ef10243a20d717,none (dry run),ok,,,content hash differs
+changed_file,doc_fb2c364084a15072,SEPT 2026\9.3.26\Companies\VICI Properties Inc. Increases Regular Quarterly Dividend 9.3.26.pdf,,.pdf,109295,2026-09-03T16:57:17,185b1a3ff4fcb849d61b169e85aee27e3a46d1208d2400f6f1d21303912bc1e3,84428719e9c49e3ff35b2a55e831004b7635e3df7faf48d6c5aa67fb33f7c62d,none (dry run),ok,,,content hash differs

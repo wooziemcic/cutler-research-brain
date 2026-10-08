@@ -1,0 +1,174 @@
+================================================================================================
+TICKER INDEX RECONCILIATION  phase11.3-1.0   mode: EXPLAIN REPAIR PLAN (dry run)
+================================================================================================
+5 ticker(s). "Missing" means eligible now with zero embedded chunks -
+a set difference over document_id, not the gap between two totals.
+
+------------------------------------------------------------------------------------------------
+MSFT
+  eligible now                   : 128
+  with any chunk                 : 119
+  with embedded chunks           : 119
+  MISSING from the index         : 9   (0 repairable, 9 not fixable by embedding)
+  indexed but no longer eligible : 0   (chunks intact - nothing to fix)
+  estimated repair cost          : $0.0000 (0 token(s), ~0 new chunk(s) plus 0 existing un-embedded chunk(s))
+
+      9 x claimed_by_another_ticker: its chunks exist and are embedded, but under another ticker - chunk_id does not name a ticker, so the last ticker built owns them
+
+  document_id               date        chunks       chars  reason / file
+  doc_414d473f8baf959b      2026-06-30  none             0  claimed_by_another_ticker  [owned by AMZN]
+                                                            MSFT AMZN GOOG Proactive Investors 6.29.26.pdf
+  doc_8339f9681f490947      2026-07-10  none             0  claimed_by_another_ticker  [owned by ABBV]
+                                                            GOOGL MSFT ABBV GWRE CVX Morningstar 7.9.26 Industry.pdf
+  ... and 7 more. The full list is in the report and the CSV.
+
+------------------------------------------------------------------------------------------------
+KR
+  eligible now                   : 154
+  with any chunk                 : 140
+  with embedded chunks           : 140
+  MISSING from the index         : 14   (0 repairable, 14 not fixable by embedding)
+  indexed but no longer eligible : 0   (chunks intact - nothing to fix)
+  estimated repair cost          : $0.0000 (0 token(s), ~0 new chunk(s) plus 0 existing un-embedded chunk(s))
+
+     14 x claimed_by_another_ticker: its chunks exist and are embedded, but under another ticker - chunk_id does not name a ticker, so the last ticker built owns them
+
+  document_id               date        chunks       chars  reason / file
+  doc_347dfae8c8b0d3af      2026-01-05  none             0  claimed_by_another_ticker  [owned by AMZN]
+                                                            AMZN ACI KR Evercore 1.5.26 Industry.pdf
+  doc_45f835ef01c00834      2026-01-06  none             0  claimed_by_another_ticker  [owned by AMZN]
+                                                            AMZN ACI KR 1.6.26 Evercore Industry.pdf
+  ... and 12 more. The full list is in the report and the CSV.
+
+------------------------------------------------------------------------------------------------
+MRK
+  eligible now                   : 286
+  with any chunk                 : 270
+  with embedded chunks           : 270
+  MISSING from the index         : 16   (0 repairable, 16 not fixable by embedding)
+  indexed but no longer eligible : 0   (chunks intact - nothing to fix)
+  estimated repair cost          : $0.0000 (0 token(s), ~0 new chunk(s) plus 0 existing un-embedded chunk(s))
+
+     16 x claimed_by_another_ticker: its chunks exist and are embedded, but under another ticker - chunk_id does not name a ticker, so the last ticker built owns them
+
+  document_id               date        chunks       chars  reason / file
+  doc_cdea34d2d50cf0cf      ?           none             0  claimed_by_another_ticker  [owned by ABBV]
+                                                            ABBV PFE JNJ MRK Barclays 1.26.26 Credit.pdf
+  doc_a8cb5e68c7741796      ?           none             0  claimed_by_another_ticker  [owned by ABBV]
+                                                            ABBV PFE MRK JNJ VTRS Goldman 12.18.25 Industry.pdf
+  ... and 14 more. The full list is in the report and the CSV.
+
+------------------------------------------------------------------------------------------------
+T
+  eligible now                   : 200
+  with any chunk                 : 192
+  with embedded chunks           : 192
+  MISSING from the index         : 8   (0 repairable, 8 not fixable by embedding)
+  indexed but no longer eligible : 0   (chunks intact - nothing to fix)
+  estimated repair cost          : $0.0000 (0 token(s), ~0 new chunk(s) plus 0 existing un-embedded chunk(s))
+
+      8 x claimed_by_another_ticker: its chunks exist and are embedded, but under another ticker - chunk_id does not name a ticker, so the last ticker built owns them
+
+  document_id               date        chunks       chars  reason / file
+  doc_de5f3dd804f86fba      ?           none             0  claimed_by_another_ticker  [owned by AMZN]
+                                                            AMZN CRM IBM T VZ JPM 12.8.25 Industry.pdf
+  doc_e72d502daa09f03b      2026-02-04  none             0  claimed_by_another_ticker  [owned by AMZN]
+                                                            AMZN Partnership with AT&T to modernize connectivity infrastructure 2.4.26.pdf
+  ... and 6 more. The full list is in the report and the CSV.
+
+------------------------------------------------------------------------------------------------
+VZ
+  eligible now                   : 175
+  with any chunk                 : 116
+  with embedded chunks           : 116
+  MISSING from the index         : 59   (0 repairable, 59 not fixable by embedding)
+  indexed but no longer eligible : 0   (chunks intact - nothing to fix)
+  estimated repair cost          : $0.0000 (0 token(s), ~0 new chunk(s) plus 0 existing un-embedded chunk(s))
+
+     59 x claimed_by_another_ticker: its chunks exist and are embedded, but under another ticker - chunk_id does not name a ticker, so the last ticker built owns them
+
+  document_id               date        chunks       chars  reason / file
+  doc_de5f3dd804f86fba      ?           none             0  claimed_by_another_ticker  [owned by AMZN]
+                                                            AMZN CRM IBM T VZ JPM 12.8.25 Industry.pdf
+  doc_a2e29ef49db67d62      ?           none             0  claimed_by_another_ticker  [owned by T]
+                                                            VZ T Goldman 12.18.25.pdf
+  ... and 57 more. The full list is in the report and the CSV.
+
+------------------------------------------------------------------------------------------------
+106 document(s) missing across 5 ticker(s); 0 repairable by embedding.
+106 of them are already embedded UNDER ANOTHER TICKER and are not repairable
+by embedding - see the chunk-key note below.
+Estimated repair cost: $0.0000 (estimate, not a bill).
+
+================================================================================================
+REPAIR PLAN (dry run) - what a repair WOULD do, document by document
+================================================================================================
+chunk key names a ticker: NO
+  rag_chunks is keyed by chunk_id alone, and chunk_id does not contain the
+  ticker. Two tickers cannot hold the same chunk at once, so a document
+  eligible for both belongs to whichever ticker was built LAST. Repairing
+  such a document moves rows instead of adding them, and the next ticker's
+  run moves them back. Those documents are listed as BLOCKED below and are
+  excluded from any repair until the key is migrated.
+
+------------------------------------------------------------------------------------------------
+MSFT   + 0 to add   ! 9 blocked (owned by another ticker)   x 0 unfixable (no text)   - 0 removals
+    ! doc_414d473f8baf959b  owned by AMZN          MSFT AMZN GOOG Proactive Investors 6.29.
+    ! doc_8339f9681f490947  owned by ABBV          GOOGL MSFT ABBV GWRE CVX Morningstar 7.9
+    ! ... and 7 more
+------------------------------------------------------------------------------------------------
+KR   + 0 to add   ! 14 blocked (owned by another ticker)   x 0 unfixable (no text)   - 0 removals
+    ! doc_347dfae8c8b0d3af  owned by AMZN          AMZN ACI KR Evercore 1.5.26 Industry.pdf
+    ! doc_45f835ef01c00834  owned by AMZN          AMZN ACI KR 1.6.26 Evercore Industry.pdf
+    ! ... and 12 more
+------------------------------------------------------------------------------------------------
+MRK   + 0 to add   ! 16 blocked (owned by another ticker)   x 0 unfixable (no text)   - 0 removals
+    ! doc_cdea34d2d50cf0cf  owned by ABBV          ABBV PFE JNJ MRK Barclays 1.26.26 Credit
+    ! doc_a8cb5e68c7741796  owned by ABBV          ABBV PFE MRK JNJ VTRS Goldman 12.18.25 I
+    ! ... and 14 more
+------------------------------------------------------------------------------------------------
+T   + 0 to add   ! 8 blocked (owned by another ticker)   x 0 unfixable (no text)   - 0 removals
+    ! doc_de5f3dd804f86fba  owned by AMZN          AMZN CRM IBM T VZ JPM 12.8.25 Industry.p
+    ! doc_e72d502daa09f03b  owned by AMZN          AMZN Partnership with AT&T to modernize 
+    ! ... and 6 more
+------------------------------------------------------------------------------------------------
+VZ   + 0 to add   ! 59 blocked (owned by another ticker)   x 0 unfixable (no text)   - 0 removals
+    ! doc_de5f3dd804f86fba  owned by AMZN          AMZN CRM IBM T VZ JPM 12.8.25 Industry.p
+    ! doc_a2e29ef49db67d62  owned by T             VZ T Goldman 12.18.25.pdf
+    ! ... and 57 more
+------------------------------------------------------------------------------------------------
+TOTAL: 0 document(s) would be ADDED, 106 BLOCKED, 0 unfixable, and 0 REMOVED.
+A repair never removes a document from an index. This plan lists removals so
+that statement is checked on real data rather than taken on trust; if a repair
+ever does reduce a ticker's embedded documents, it stops and exits 4.
+
+================================================================================================
+THE CHUNK KEY DOES NOT NAME A TICKER
+================================================================================================
+  build_rag_index.py builds chunk ids as
+
+      chunk_id = f"{document_id}_c{chunk_index:04d}"
+
+  and rag_chunks declares `chunk_id TEXT PRIMARY KEY`, while chunks are written
+  with INSERT OR REPLACE. The ticker is a COLUMN, not part of the key. So a
+  document tagged with two tickers has ONE set of chunk rows, and building the
+  second ticker REPLACES the first ticker's rows in place - same ids, same text,
+  a new value in the `ticker` column.
+
+  Nothing is deleted and the row count never drops, which is why this does not
+  look like data loss. The chunks change owner, and the ticker that lost them
+  reports them as missing on the next run. Repairing that ticker takes them
+  back, and the next ticker's run takes them again.
+
+  106 document(s) in this run are in exactly that state.
+
+  This is NOT fixable by embedding. It is fixed by making the key name a ticker:
+
+      py -3.11 scripts\migrate_rag_chunk_key.py --project-root "/home/claude/CutlerResearchBrain" --db "/tmp/claude-0/-home-claude/a9bffcda-c739-58a7-b47b-503dd7991d44/scratchpad/live/db.sqlite"
+
+  which is a dry run by default and reports exactly what it would do.
+
+Report: /home/claude/CutlerResearchBrain/11_Ticker_Expansion/reports/ticker_reconciliation.md
+
+Dry run. Nothing was embedded, no chunk row was written, no Chroma collection was
+opened, and the V drive was not touched.

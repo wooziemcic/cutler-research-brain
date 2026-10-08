@@ -1,0 +1,435 @@
+{
+ "summary": {
+  "before": {
+   "answers": 2,
+   "mean_words_total": 893.0,
+   "mean_words_direct": 367.5,
+   "mean_words_apparatus": 507.5,
+   "mean_claims": 8.5,
+   "mean_repetition": 0.0,
+   "boilerplate_openings": 0,
+   "with_synthesis": 0,
+   "synthesis_cited": 0,
+   "synthesis_uncited": 0,
+   "with_what_changed": 1,
+   "uncited_claims_total": 0,
+   "substantive_answers": 2,
+   "substantive_in_quick_band": 0,
+   "named_a_publisher": 1,
+   "generation_incomplete": 0,
+   "direct_over_220": 2,
+   "unsupported_over_80": 0,
+   "mean_words_unsupported": 0
+  },
+  "after": {
+   "answers": 2,
+   "mean_words_total": 383.0,
+   "mean_words_direct": 155.5,
+   "mean_words_apparatus": 209.5,
+   "mean_claims": 2.5,
+   "mean_repetition": 0.0,
+   "boilerplate_openings": 0,
+   "with_synthesis": 0,
+   "synthesis_cited": 0,
+   "synthesis_uncited": 0,
+   "with_what_changed": 1,
+   "uncited_claims_total": 0,
+   "substantive_answers": 2,
+   "substantive_in_quick_band": 2,
+   "named_a_publisher": 1,
+   "generation_incomplete": 0,
+   "direct_over_220": 0,
+   "unsupported_over_80": 0,
+   "mean_words_unsupported": 0
+  },
+  "source_sets_identical": 2,
+  "questions": 2,
+  "verdicts": {
+   "IMPROVED": 2,
+   "REGRESSED": 0,
+   "CHANGED": 2
+  }
+ },
+ "rows": [
+  {
+   "ticker": "MSFT",
+   "category": "risk_or_credit",
+   "question": "What risks does the research identify for Microsoft around AI investment and cloud capacity?",
+   "after_generation_incomplete": false,
+   "after_generation_reasons": [],
+   "after_generation_status": "completed",
+   "after_max_output_tokens": "6000",
+   "after_retry_used": false,
+   "after_answer_path": "06_RAG_Index\\answer_logs\\MSFT_20261008_161400_answer.md",
+   "before_generation_incomplete": false,
+   "before": {
+    "words_total": 897,
+    "words_direct": 377,
+    "words_apparatus": 502,
+    "sections_present": [
+     "Confidence",
+     "Direct Answer",
+     "Evidence Limitations",
+     "Evidence Used",
+     "Needs Human Review",
+     "Source Citations"
+    ],
+    "sections_missing": [],
+    "claims": 9,
+    "claims_cited": 9,
+    "claims_uncited": 0,
+    "citations_in_direct": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "citations_total": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "opening": "Analysts and customers flagged Azure capacity constraints, including reports that \u201cthere is no capacity in certain regions or it is 20% higher cost,\u201d and that capacity constraints \u201ccould skim off some",
+    "opens_with_boilerplate": false,
+    "opening_cited": true,
+    "repetition": 0.0,
+    "synthesis_lines": [],
+    "has_synthesis": false,
+    "synthesis_cited": 0,
+    "synthesis_uncited": 0,
+    "has_what_changed": false,
+    "is_refusal": false,
+    "vendors_named": [
+     "UBS"
+    ],
+    "confidence": "High"
+   },
+   "after": {
+    "words_total": 480,
+    "words_direct": 198,
+    "words_apparatus": 264,
+    "sections_present": [
+     "Confidence",
+     "Direct Answer",
+     "Evidence Limitations",
+     "Evidence Used",
+     "Needs Human Review",
+     "Source Citations"
+    ],
+    "sections_missing": [],
+    "claims": 3,
+    "claims_cited": 3,
+    "claims_uncited": 0,
+    "citations_in_direct": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "citations_total": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "opening": "The research identifies two main risk areas for Microsoft: (1) Azure capacity constraints that could limit Azure growth or force customers into higher\u2011cost or pay\u2011as\u2011you\u2011go arrangements [1][6][4][5], ",
+    "opens_with_boilerplate": false,
+    "opening_cited": true,
+    "repetition": 0.0,
+    "synthesis_lines": [],
+    "has_synthesis": false,
+    "synthesis_cited": 0,
+    "synthesis_uncited": 0,
+    "has_what_changed": false,
+    "is_refusal": false,
+    "vendors_named": [
+     "UBS"
+    ],
+    "confidence": "High"
+   },
+   "before_text": "# Ask Brain answer - MSFT\n\n**Question:** What risks does the research identify for Microsoft around AI investment and cloud capacity?\n\n- generated_by: `ask_brain.py` (phase8.2-1.0)\n- answer_model: `gpt-5-mini`\n- embedding_model: `text-embedding-3-small`\n- created_at: 2026-09-15T14:39:24+00:00\n- retrieval: `hybrid` mode, top_k 30, 57 candidate(s) -> 8 evidence chunk(s) from 8 document(s)\n- filters: none\n- source_priority: `balanced` (question intent: analyst_view, preference applied: analyst)\n- rule-based confidence: **Medium** (8 chunks at strength >= 0.45 across 8 documents, 2 of them direct company/SEC material; capped from High to Medium because only 2 of 8 selected chunks are direct company or SEC material - the answer rests mostly on third-party commentary)\n- model-stated confidence: **High**\n- **final confidence after audit: Medium**\n- answer written by: the answer model\n\n> This answer was drafted from retrieved text only. It is not verified, not a\n> conclusion, and not investment advice. **AI drafts. Humans verify. Cutler decides.**\n\n---\n\n## Automated checks flagged this answer\n\n- 1 supplied chunk(s) were never cited - the evidence pack was wider than the answer used\n\n_These are deterministic checks on the generated text. Nothing was rewritten - read the answer with these in mind._\n\n---\n\n## 1. Direct Answer\n- Analysts and customers flagged Azure capacity constraints, including reports that \u201cthere is no capacity in certain regions or it is 20% higher cost,\u201d and that capacity constraints \u201ccould skim off some of the Azure upside potential in 4Q/Jun\u201d [1].  \n- Multiple sell\u2011side notes state Azure \u201cremains capacity\u2011constrained,\u201d with analysts expecting constraints to continue through 2026/2027 and noting the constraint limits upside to Azure revenue [4][5][6].  \n- Research highlights a specific supply\u2011allocation risk: incremental capacity may be allocated toward Microsoft\u2019s first\u2011party (1P) applications and internal R&D rather than to external Azure customers, which \u201climits upside to Azure revenue\u201d and could delay revenue from Copilot and Microsoft AI Infrastructure (MAI) [6].  \n- UBS research observed uncertainty about the cause of the capacity reports\u2014whether Microsoft added less capacity than in prior quarters or \u201callocated more of its incremental capacity to internal needs\u201d\u2014and said that dynamic could reduce Azure growth potential in the near term [1].  \n- Analysts and research notes flag concentration/exposure risk tied to large AI partnerships, noting investor concern that Microsoft may be \u201ctoo tightly exposed to OpenAI\u201d and that large OpenAI commitments are being monitored as risky (Morningstar describes the ~$250 billion OpenAI commitment through 2032 as \u201csomewhat risky\u201d) [2][4][5].  \n- Researchers warn that heavy AI investment and rapid data\u2011center expansion raise a return risk: Morningstar notes \u201ccapex is growing significantly faster than Azure,\u201d which \u201csurfaces the concern that Microsoft may struggle to earn returns on its rapid data center expansion\u201d [5].  \n- Sell\u2011side research also identifies competitive risk for Microsoft\u2019s Copilot/application strategy, warning Microsoft \u201cwill face more competition in its application business and not be able to compete against AI natives with Copilot\u201d [6].  \n- Microsoft\u2019s 10\u2011K flags AI\u2011related operational, regulatory, legal, and reputational risks, including that AI models or training datasets \u201cmay be flawed,\u201d AI outputs \u201cmay be offensive, illegal, inaccurate, or otherwise harmful,\u201d and that ineffective AI practices or evolving regulation could cause \u201clegal liability, regulatory action, litigation, brand, reputational, or competitive harm\u201d [7][8].  \n- The 10\u2011K also identifies infrastructure risk more broadly: Microsoft states it \u201cmay be unable to develop and expand adequate infrastructure,\u201d and that its infrastructure capacity depends on the availability of (text truncated in the retrieved chunk) [7].  \n\n## 2. Evidence Used\n- [1] (UBS): customer quotes on capacity, UBS discussion that capacity constraints surfaced and could reduce Azure upside.  \n- [6] (Goldman Sachs): explicit \u201cConcern #1\u201d that supply is constrained and incremental capacity is being allocated to 1P/internal R&D; \u201cConcern #2\u201d on competitive risk to Copilot.  \n- [4] and [5] (Morningstar): statements that Azure \u201cremains capacity\u2011constrained\u201d through 2026/2027 and that capex is growing faster than Azure, raising return concerns; monitoring the OpenAI commitment as risky.  \n- [2] (Bernstein): investor concern that Microsoft may be \u201ctoo tightly exposed to OpenAI\u201d and related commentary on OpenAI capacity usage.  \n- [7] and [8] (Microsoft 10\u2011K excerpts): company\u2011filed disclosures of AI development/deployment risks, regulatory/legal/reputational risk, and the risk of failing to expand adequate infrastructure.\n\n## 3. Source Citations\n- [1] MSFT UBS 7.26.26.pdf, pages 4\u20135.  \n- [2] MSFT Bernstein 7.30.26.pdf, pages 5\u20136.  \n- [4] MSFT Morningstar 7.29.30.pdf, page 2.  \n- [5] MSFT Morningstar 1.28.26.pdf, page 2.  \n- [6] MSFT GS 2.4.26 Industry.pdf, pages 3\u20134.  \n- [7] MSFT 10K 7.29.26.pdf, pages 21\u201322.  \n- [8] MSFT Business & Risk 10K FY25 6.30.25.pdf, page 19.\n\n## 4. Evidence Limitations\n- UBS\u2019s note references a Figure about survey results but the excerpt does not include the figure or the quantitative survey detail beyond saying <10% flagged \u201cmaterial\u201d constraints, limiting precision on how widespread constraints are [1].  \n- The Microsoft 10\u2011K infrastructure sentence is truncated in the retrieved chunk, so the full description of the infrastructure\u2011dependency factors is not available here [7].  \n- The UBS token\u2011optimization discussion is cut off in the provided text, so any specific conclusions about \u201cToken Optimization and the Impact on Azure Growth\u201d cannot be cited from these chunks [1].  \n- Dollar amounts and commitment figures (e.g., the ~$250 billion OpenAI commitment) are mentioned in analyst notes but the underlying contract details and terms are not included in these excerpts [4][5][2].  \n- Some analyst statements reflect opinion and interpretation rather than primary company disclosures; the available excerpts mix anecdotal customer quotes, analyst concerns, and company filings without full context for each claim [1][6][4].\n\n## 5. Needs Human Review\n- Verify the full UBS report (including Figure 2 and the token\u2011optimization section) to confirm survey statistics and the complete UBS analysis [1].  \n- Review the complete Microsoft 10\u2011K text around infrastructure capacity to capture the full wording and any enumerated dependencies or mitigants that are truncated in the excerpt [7][8].  \n- Check the original Morningstar and Bernstein notes for full context on the cited OpenAI commitment figures and any caveats or qualifiers those firms provided [2][4][5].  \n- Confirm Goldman Sachs\u2019 full \u201cConcern #1\u201d and \u201cConcern #2\u201d analyses and any recommended timelines or scenarios they outline regarding capacity coming online [6].  \n- If using these points for decision\u2011making, inspect source dates and any subsequent company disclosures or capacity announcements that postdate these excerpts.\n\n## 6. Confidence\nHigh \u2014 multiple analyst research notes and Microsoft\u2019s own 10\u2011K in the retrieved evidence consistently identify capacity constraints, allocation of incremental capacity to first\u2011party/internal uses, large AI partnership concentration (OpenAI) exposure, competitive risks for Copilot, capex/return concerns, and AI\u2011specific legal/regulatory/reputational risks [1][6][4][5][2][7][8].\n\n---\n\n## Source table\n\n| # | file_name | date | source_type | document_type | pages | chunk_id | relative_path |\n|---|---|---|---|---|---|---|---|\n| [1] | MSFT UBS 7.26.26.pdf | 2026-08-03 | Sell-Side Research | Research Note | 4-5 | `doc_65e70f774ab619c9_c0004` | AUG 2026\\8.3.26\\Research\\MSFT UBS 7.26.26.pdf |\n| [2] | MSFT Bernstein 7.30.26.pdf | 2026-07-30 | Sell-Side Research | Research Note | 5-6 | `doc_7fd53a1598884152_c0006` | JULY 2026\\7.30.2026\\Research\\MSFT Bernstein 7.30.26.pdf |\n| [3] | MSFT BI 9.10.26.pdf | 2026-09-10 | Sell-Side Research | Research Note | 1-2 | `doc_b0663c4eb18b3383_c0000` | SEPT 2026\\9.10.26\\Research\\MSFT BI 9.10.26.pdf |\n| [4] | MSFT Morningstar 7.29.30.pdf | 2026-07-30 | Sell-Side Research | Research Note | 2 | `doc_2d81302f776ae3e9_c0002` | JULY 2026\\7.30.2026\\Research\\MSFT Morningstar 7.29.30.pdf |\n| [5] | MSFT Morningstar 1.28.26.pdf | 2026-04-01 | Sell-Side Research | Research Note | 2 | `doc_202912fc5dd978cf_c0002` | APR 2026\\4.1.2026\\MSFT Equity Research Package\\MSFT Morningstar 1.28.26.pdf |\n| [6] | MSFT GS 2.4.26 Industry.pdf | 2026-04-01 | Industry Research | Research Note | 3-4 | `doc_2d5992ed05b73eff_c0002` | APR 2026\\4.1.2026\\MSFT Equity Research Package\\MSFT GS 2.4.26 Industry.pdf |\n| [7] | MSFT 10K 7.29.26.pdf | 2026-07-29 | SEC Filing | 10-K | 21-22 | `doc_11e6d8722ec5c9ec_c0022` | JULY 2026\\7.29.2026\\Companies\\MSFT 10K 7.29.26.pdf |\n| [8] | MSFT Business & Risk 10K FY25 6.30.25.pdf | 2026-04-01 | SEC Filing | 10-K | 19 | `doc_741e434082042501_c0020` | APR 2026\\4.1.2026\\MSFT Equity Research Package\\MSFT Business & Risk 10K FY25 6.30.25.pdf |\n\n\n## Retrieval trace (all candidates, before selection)\n\n`vec` and `kw` are each retriever's normalised 0-1 score; a dash means that retriever never returned this chunk. `score` is the combined score selection actually ranked on.\n\n| rank | vec | kw | score | selected | document_type | file_name | chunk_id |\n|---|---|---|---|---|---|---|---|\n| 1 | 1.000 | 0.477 | 0.869 | yes | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0004` |\n| 2 | 0.752 | - | 0.589 | yes | Research Note | MSFT Bernstein 7.30.26.pdf | `doc_7fd53a1598884152_c0006` |\n| 3 | 0.678 | - | 0.541 | yes | Research Note | MSFT BI 9.10.26.pdf | `doc_b0663c4eb18b3383_c0000` |\n| 4 | 0.642 | - | 0.517 | yes | Research Note | MSFT Morningstar 7.29.30.pdf | `doc_2d81302f776ae3e9_c0002` |\n| 5 | 0.606 | - | 0.494 | yes | Research Note | MSFT Morningstar 1.28.26.pdf | `doc_202912fc5dd978cf_c0002` |\n| 6 | 0.522 | - | 0.439 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0003` |\n| 7 | 0.517 | - | 0.436 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0006` |\n| 8 | 0.499 | - | 0.424 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0005` |\n| 9 | 0.619 | - | 0.403 | yes | 10-K | MSFT 10K 7.29.26.pdf | `doc_11e6d8722ec5c9ec_c0022` |\n| 10 | 0.599 | - | 0.389 | yes | 10-K | MSFT Business & Risk 10K FY25 6.30.25.pdf | `doc_741e434082042501_c0020` |\n| 11 | 0.527 | - | 0.343 | no | 10-K | MSFT 10K FY25 6.30.25.pdf | `doc_fa5f6704635f52b7_c0022` |\n| 12 | 0.507 | 0.014 | 0.333 | no | 10-K | MSFT 10K 7.29.26.pdf | `doc_11e6d8722ec5c9ec_c0014` |\n| 13 | 0.260 | 0.246 | 0.331 | yes | Research Note | MSFT GS 2.4.26 Industry.pdf | `doc_2d5992ed05b73eff_c0002` |\n| 14 | - | 0.732 | 0.283 | no | Research Note | MSFT AMZN WF 7.21.26 Industry.pdf | `doc_6d9b8cce9f4113f3_c0004` |\n| 15 | 0.264 | - | 0.272 | no | Research Note | MSFT Bernstein 4.13.26.pdf | `doc_fba263565a327723_c0012` |\n| 16 | 0.239 | - | 0.255 | no | Research Note | MSFT UBS 3.29.26.pdf | `doc_37967fe5fbba5c34_c0007` |\n| 17 | - | 1.000 | 0.250 | no | 10-K | MSFT 10K FY25 6.30.25.pdf | `doc_fa5f6704635f52b7_c0035` |\n| 18 | 0.209 | - | 0.236 | no | Research Note | MSFT BI 9.3.26 (2) Industry.pdf | `doc_1bf556bb2a6b5083_c0005` |\n| 19 | 0.170 | - | 0.211 | no | Research Note | MSFT BI 8.19.26.pdf | `doc_2ecf754f0f4037a5_c0000` |\n| 20 | 0.166 | - | 0.208 | no | Research Note | MSFT Bernstein 4.13.26.pdf | `doc_fba263565a327723_c0000` |\n| 21 | - | 0.781 | 0.195 | no | 10-K | MSFT 10K 7.29.26.pdf | `doc_11e6d8722ec5c9ec_c0036` |\n| 22 | 0.146 | - | 0.195 | no | Research Note | MSFT 1-29 note 4.15.26 draft CCM.pdf | `doc_8abc5a3a272d1e11_c0002` |\n| 23 | 0.138 | - | 0.189 | no | Research Note | MSFT BI 9.3.26 (2) Industry.pdf | `doc_1bf556bb2a6b5083_c0009` |\n| 24 | - | 0.357 | 0.189 | no | Research Note | MSFT AMZN WF 7.21.26 Industry.pdf | `doc_6d9b8cce9f4113f3_c0005` |\n| 25 | 0.134 | - | 0.187 | no | Research Note | MSFT Bernstein 4.13.26.pdf | `doc_fba263565a327723_c0013` |\n| 26 | 0.109 | - | 0.171 | no | Research Note | MSFT BI 8.19.26.pdf | `doc_2ecf754f0f4037a5_c0001` |\n| 27 | - | 0.282 | 0.170 | no | Research Note | MSFT Financial AI 7.28.26.pdf | `doc_33a0b755d65ad213_c0002` |\n| 28 | - | 0.277 | 0.169 | no | Research Note | MSFT BI 7.16.26.pdf | `doc_dfd58fb2be078839_c0002` |\n| 29 | - | 0.258 | 0.164 | no | Research Note | MSFT Morningstar 7.31.25.pdf | `doc_433d4f5093447b3c_c0033` |\n| 30 | - | 0.256 | 0.164 | no | Research Note | MSFT Barclays 7.1.26 Industry.pdf | `doc_b2a22928b52fcd21_c0001` |\n| 31 | 0.092 | - | 0.160 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0011` |\n| 32 | 0.063 | - | 0.141 | no | Research Note | MSFT Bernstein 7.30.26.pdf | `doc_7fd53a1598884152_c0007` |\n| 33 | - | 0.129 | 0.132 | no | Research Note | MSFT Morningstar 7.31.25.pdf | `doc_433d4f5093447b3c_c0036` |\n| 34 | - | 0.111 | 0.128 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0013` |\n| 35 | - | 0.103 | 0.126 | no | Research Note | MSFT Evercore 1.29.26.pdf | `doc_dc506ba78bd1aa0e_c0000` |\n| 36 | - | 0.100 | 0.125 | no | Research Note | MSFT Stifel 2.4.26 Downgrade.pdf | `doc_3511364d88c698a1_c0002` |\n| 37 | - | 0.094 | 0.124 | no | Research Note | MSFT Phillip 2.2.26.pdf | `doc_87b7bf0585c83f61_c0001` |\n| 38 | 0.029 | - | 0.119 | no | Research Note | MSFT BI 7.9.26.pdf | `doc_c8fc06ca2f31dd5c_c0006` |\n| 39 | 0.014 | - | 0.109 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0002` |\n| 40 | - | 0.034 | 0.108 | no | Research Note | MSFT WF 7.30.26.pdf | `doc_700ec1d070313506_c0003` |\n| 41 | 0.010 | - | 0.107 | no | Research Note | MSFT BI 8.3.26.pdf | `doc_2b47f998ecfaf67e_c0000` |\n| 42 | - | 0.024 | 0.106 | no | Research Note | MSFT Morningstar 7.2.26.pdf | `doc_ba198e892d2d58b3_c0032` |\n| 43 | - | 0.023 | 0.106 | no | Research Note | MSFT GOOG Jefferies 7.21.26 Industry.pdf | `doc_57460e4a6f81598a_c0007` |\n| 44 | - | 0.021 | 0.105 | no | Research Note | MSFT Citizens 7.7.26.pdf | `doc_3fa959b0b1ea9928_c0016` |\n| 45 | - | 0.018 | 0.105 | no | Research Note | MSFT Barclays 1.29.26.pdf | `doc_c9e2156eb5375ded_c0000` |\n| 46 | - | 0.412 | 0.103 | no | 10-Q | MSFT 10Q Q2 FY26 1.28.26.pdf | `doc_8005b47f17f59892_c0049` |\n| 47 | - | 0.010 | 0.103 | no | Research Note | MSFT WF 3.31.26.pdf | `doc_5d14e2f150eca55b_c0004` |\n| 48 | 0.002 | - | 0.101 | no | Research Note | MSFT JPM 1.29.26.pdf | `doc_1f9c912296fa5851_c0004` |\n| 49 | - | 0.003 | 0.101 | no | Research Note | MSFT Financial AI 7.28.26.pdf | `doc_33a0b755d65ad213_c0001` |\n| 50 | 0.000 | - | 0.100 | no | Research Note | MSFT BI 7.21.26.pdf | `doc_cef07e306db96d1c_c0006` |\n| 51 | - | 0.000 | 0.100 | no | Research Note | MSFT Bernstein 4.13.26.pdf | `doc_fba263565a327723_c0011` |\n| 52 | 0.142 | - | 0.092 | no | 10-Q | MSFT 10Q Q2 FY26 1.28.26.pdf | `doc_8005b47f17f59892_c0048` |\n| 53 | - | 0.336 | 0.084 | no | 10-K | MSFT Business & Risk 10K FY25 6.30.25.pdf | `doc_741e434082042501_c0021` |\n| 54 | - | 0.266 | 0.067 | no | 10-Q | MSFT 10Q Q2 FY26 1.28.26.pdf | `doc_8005b47f17f59892_c0024` |\n| 55 | - | 0.188 | 0.047 | no | 10-Q | MSFT 10Q Q2 FY26 1.28.26.pdf | `doc_8005b47f17f59892_c0025` |\n| 56 | - | 0.143 | 0.036 | no | 10-K | MSFT 10K FY25 6.30.25.pdf | `doc_fa5f6704635f52b7_c0023` |\n| 57 | - | 0.124 | 0.031 | no | 10-K | MSFT 10K 7.29.26.pdf | `doc_11e6d8722ec5c9ec_c0023` |\n\n\n## Citation audit\n\n- confidence_ceiling_analyst_led_evidence: Medium\n- 1 supplied chunk(s) were never cited: [3]\n\n_Flags only. Nothing was rewritten, and none of these on its own means the answer is wrong - they mark the sentences to check first._\n\n\nRetrieval log: `06_RAG_Index\\retrieval_logs\\MSFT_20260915_143924_retrieval.json`\n",
+   "after_text": "# Ask Brain answer - MSFT\n\n**Question:** What risks does the research identify for Microsoft around AI investment and cloud capacity?\n\n- generated_by: `ask_brain.py` (phase14.3.5-1.0)\n- answer_model: `gpt-5-mini`\n- embedding_model: `text-embedding-3-small`\n- created_at: 2026-10-08T16:14:00+00:00\n- retrieval: `hybrid` mode, top_k 30, 57 candidate(s) -> 8 evidence chunk(s) from 8 document(s)\n- filters: none\n- source_priority: `balanced` (question intent: analyst_view, preference applied: analyst)\n- rule-based confidence: **Medium** (8 chunks at strength >= 0.45 across 8 documents, 2 of them direct company/SEC material; capped from High to Medium because the question asks which risks the material identifies, which is a synthesis across documents - a pack of company material does not make the synthesis a disclosure; the question asks what analysts think, and analyst opinion is evidence of the opinion, not of the fact - however many notes agree; only 2 of 8 selected chunks are direct company or SEC material - the answer rests mostly on third-party commentary)\n- model-stated confidence: **High**\n- **final confidence after audit: Medium**\n- answer style: `quick` (how it was written up; retrieval is identical for either)\n- answer written by: the answer model\n\n> This answer was drafted from retrieved text only. It is not verified, not a\n> conclusion, and not investment advice. **AI drafts. Humans verify. Cutler decides.**\n\n---\n\n## Automated checks flagged this answer\n\n- 1 supplied chunk(s) were never cited - the evidence pack was wider than the answer used\n\n_These are deterministic checks on the generated text. Nothing was rewritten - read the answer with these in mind._\n\n---\n\n## 1. Direct Answer\nThe research identifies two main risk areas for Microsoft: (1) Azure capacity constraints that could limit Azure growth or force customers into higher\u2011cost or pay\u2011as\u2011you\u2011go arrangements [1][6][4][5], and (2) large AI\u2011related investments and contractual exposures (including sizable OpenAI commitments, rising capex and lease/accounting issues) plus AI deployment risks that could create financial, operational, reputational, or regulatory liabilities [2][5][4][7][8].  \n- Capacity risk: UBS reports customers being told there is \u201cno capacity in certain regions or it is 20% higher cost\u201d and warns this dynamic \u201ccould skim off some of the Azure upside potential in 4Q/Jun\u201d [1], and Goldman Sachs highlights incremental capacity being allocated to 1P apps and internal R&D that \u201climits upside to Azure revenue\u201d [6][4].  \n- Investment and AI deployment risk: Bernstein and Morningstar flag large OpenAI/OpenAI\u2011related commitments as investor risks (noting >$280B and ~$250 billion figures reported by analysts) and capex/lease accounting changes that affect reported margins and capex optics [2][5][4], while Microsoft\u2019s 10\u2011K warns it \u201cmay be unable to develop and expand adequate infrastructure\u201d and that AI development/deployment \u201cmay result in reputational, competitive, or legal harm\u201d [7][8].\n\n## 2. Evidence Used\n- UBS note (customer checks) \u2014 cited for Azure capacity anecdotes and downside to Azure upside [1].  \n- Goldman Sachs industry note \u2014 cited for capacity allocation to 1P/R&D limiting Azure revenue [6].  \n- Morningstar research (Jul 29, 2026) \u2014 cited for capacity-constrained commentary and OpenAI commitment monitoring [4].  \n- Morningstar research (Jan 28, 2026) \u2014 cited for OpenAI commitment and capex/return concerns [5].  \n- Bernstein research \u2014 cited for the >$280B OpenAI/Azure revenue mention and investor concern context [2].  \n- Microsoft 10\u2011K (Item 1A / Operational risks) \u2014 cited for infrastructure/inability-to-expand and AI deployment legal/reputational risks [7].  \n- Microsoft Business & Risk 10\u2011K FY25 \u2014 cited for AI development/deployment and content/moderation risk language [8].\n\n## 3. Source Citations\n[1] MSFT UBS 7.26.26.pdf pp. 4-5  \n[2] MSFT Bernstein 7.30.26.pdf pp. 5-6  \n[4] MSFT Morningstar 7.29.30.pdf pp. 2-2  \n[5] MSFT Morningstar 1.28.26.pdf pp. 2-2  \n[6] MSFT GS 2.4.26 Industry.pdf pp. 3-4  \n[7] MSFT 10K 7.29.26.pdf pp. 21-22  \n[8] MSFT Business & Risk 10K FY25 6.30.25.pdf pp. 19-19\n\n## 4. Evidence Limitations\n- No supplied chunk quantifies the potential revenue or timing impact of capacity constraints on Azure (e.g., $ or quarters affected).  \n- The excerpts include analyst characterizations and selective company 10\u2011K passages but lack comprehensive, up\u2011to\u2011date management commentary tying capex cadence to specific capacity additions.\n\n## 5. Needs Human Review\n- Verify the exact context and current status of the cited OpenAI financial commitments and any subsequent amendments beyond these notes.  \n- Check full 10\u2011K/earnings disclosures and management commentary for updated capex guidance, capacity\u2011add cadence, and explicit causes of the reported constraints.\n\n## 6. Confidence\nHigh \u2014 multiple analyst research notes and Microsoft 10\u2011K excerpts in the pack directly document capacity constraints, large AI\u2011related investment/contract concerns, and AI deployment/regulatory risk, supporting the answer.\n\n---\n\n## Source table\n\n| # | file_name | date | source_type | document_type | pages | chunk_id | relative_path |\n|---|---|---|---|---|---|---|---|\n| [1] | MSFT UBS 7.26.26.pdf | 2026-08-03 | Sell-Side Research | Research Note | 4-5 | `doc_65e70f774ab619c9_c0004` | AUG 2026\\8.3.26\\Research\\MSFT UBS 7.26.26.pdf |\n| [2] | MSFT Bernstein 7.30.26.pdf | 2026-07-30 | Sell-Side Research | Research Note | 5-6 | `doc_7fd53a1598884152_c0006` | JULY 2026\\7.30.2026\\Research\\MSFT Bernstein 7.30.26.pdf |\n| [3] | MSFT BI 9.10.26.pdf | 2026-09-10 | Sell-Side Research | Research Note | 1-2 | `doc_b0663c4eb18b3383_c0000` | SEPT 2026\\9.10.26\\Research\\MSFT BI 9.10.26.pdf |\n| [4] | MSFT Morningstar 7.29.30.pdf | 2026-07-30 | Sell-Side Research | Research Note | 2 | `doc_2d81302f776ae3e9_c0002` | JULY 2026\\7.30.2026\\Research\\MSFT Morningstar 7.29.30.pdf |\n| [5] | MSFT Morningstar 1.28.26.pdf | 2026-04-01 | Sell-Side Research | Research Note | 2 | `doc_202912fc5dd978cf_c0002` | APR 2026\\4.1.2026\\MSFT Equity Research Package\\MSFT Morningstar 1.28.26.pdf |\n| [6] | MSFT GS 2.4.26 Industry.pdf | 2026-04-01 | Industry Research | Research Note | 3-4 | `doc_2d5992ed05b73eff_c0002` | APR 2026\\4.1.2026\\MSFT Equity Research Package\\MSFT GS 2.4.26 Industry.pdf |\n| [7] | MSFT 10K 7.29.26.pdf | 2026-07-29 | SEC Filing | 10-K | 21-22 | `doc_11e6d8722ec5c9ec_c0022` | JULY 2026\\7.29.2026\\Companies\\MSFT 10K 7.29.26.pdf |\n| [8] | MSFT Business & Risk 10K FY25 6.30.25.pdf | 2026-04-01 | SEC Filing | 10-K | 19 | `doc_741e434082042501_c0020` | APR 2026\\4.1.2026\\MSFT Equity Research Package\\MSFT Business & Risk 10K FY25 6.30.25.pdf |\n\n\n## Retrieval trace (all candidates, before selection)\n\n`vec` and `kw` are each retriever's normalised 0-1 score; a dash means that retriever never returned this chunk. `score` is the combined score selection actually ranked on.\n\n| rank | vec | kw | score | selected | document_type | file_name | chunk_id |\n|---|---|---|---|---|---|---|---|\n| 1 | 1.000 | 0.477 | 0.869 | yes | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0004` |\n| 2 | 0.752 | - | 0.589 | yes | Research Note | MSFT Bernstein 7.30.26.pdf | `doc_7fd53a1598884152_c0006` |\n| 3 | 0.677 | - | 0.540 | yes | Research Note | MSFT BI 9.10.26.pdf | `doc_b0663c4eb18b3383_c0000` |\n| 4 | 0.641 | - | 0.517 | yes | Research Note | MSFT Morningstar 7.29.30.pdf | `doc_2d81302f776ae3e9_c0002` |\n| 5 | 0.605 | - | 0.493 | yes | Research Note | MSFT Morningstar 1.28.26.pdf | `doc_202912fc5dd978cf_c0002` |\n| 6 | 0.521 | - | 0.439 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0003` |\n| 7 | 0.516 | - | 0.435 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0006` |\n| 8 | 0.498 | - | 0.424 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0005` |\n| 9 | 0.619 | - | 0.402 | yes | 10-K | MSFT 10K 7.29.26.pdf | `doc_11e6d8722ec5c9ec_c0022` |\n| 10 | 0.598 | - | 0.389 | yes | 10-K | MSFT Business & Risk 10K FY25 6.30.25.pdf | `doc_741e434082042501_c0020` |\n| 11 | 0.526 | - | 0.342 | no | 10-K | MSFT 10K FY25 6.30.25.pdf | `doc_fa5f6704635f52b7_c0022` |\n| 12 | 0.506 | 0.014 | 0.332 | no | 10-K | MSFT 10K 7.29.26.pdf | `doc_11e6d8722ec5c9ec_c0014` |\n| 13 | 0.259 | 0.246 | 0.330 | yes | Research Note | MSFT GS 2.4.26 Industry.pdf | `doc_2d5992ed05b73eff_c0002` |\n| 14 | - | 0.732 | 0.283 | no | Research Note | MSFT AMZN WF 7.21.26 Industry.pdf | `doc_6d9b8cce9f4113f3_c0004` |\n| 15 | 0.263 | - | 0.271 | no | Research Note | MSFT Bernstein 4.13.26.pdf | `doc_fba263565a327723_c0012` |\n| 16 | 0.237 | - | 0.254 | no | Research Note | MSFT UBS 3.29.26.pdf | `doc_37967fe5fbba5c34_c0007` |\n| 17 | - | 1.000 | 0.250 | no | 10-K | MSFT 10K FY25 6.30.25.pdf | `doc_fa5f6704635f52b7_c0035` |\n| 18 | 0.367 | - | 0.239 | no | 10-K | MSFT 10K 7.29.26.pdf | `doc_11e6d8722ec5c9ec_c0015` |\n| 19 | 0.207 | - | 0.235 | no | Research Note | MSFT BI 9.3.26 (2) Industry.pdf | `doc_1bf556bb2a6b5083_c0005` |\n| 20 | 0.169 | - | 0.210 | no | Research Note | MSFT BI 8.19.26.pdf | `doc_2ecf754f0f4037a5_c0000` |\n| 21 | 0.164 | - | 0.207 | no | Research Note | MSFT Bernstein 4.13.26.pdf | `doc_fba263565a327723_c0000` |\n| 22 | - | 0.781 | 0.195 | no | 10-K | MSFT 10K 7.29.26.pdf | `doc_11e6d8722ec5c9ec_c0036` |\n| 23 | 0.145 | - | 0.194 | no | Research Note | MSFT 1-29 note 4.15.26 draft CCM.pdf | `doc_8abc5a3a272d1e11_c0002` |\n| 24 | - | 0.357 | 0.189 | no | Research Note | MSFT AMZN WF 7.21.26 Industry.pdf | `doc_6d9b8cce9f4113f3_c0005` |\n| 25 | 0.136 | - | 0.188 | no | Research Note | MSFT BI 9.3.26 (2) Industry.pdf | `doc_1bf556bb2a6b5083_c0009` |\n| 26 | 0.132 | - | 0.186 | no | Research Note | MSFT Bernstein 4.13.26.pdf | `doc_fba263565a327723_c0013` |\n| 27 | - | 0.282 | 0.170 | no | Research Note | MSFT Financial AI 7.28.26.pdf | `doc_33a0b755d65ad213_c0002` |\n| 28 | 0.107 | - | 0.170 | no | Research Note | MSFT BI 8.19.26.pdf | `doc_2ecf754f0f4037a5_c0001` |\n| 29 | - | 0.277 | 0.169 | no | Research Note | MSFT BI 7.16.26.pdf | `doc_dfd58fb2be078839_c0002` |\n| 30 | - | 0.258 | 0.164 | no | Research Note | MSFT Morningstar 7.31.25.pdf | `doc_433d4f5093447b3c_c0033` |\n| 31 | - | 0.256 | 0.164 | no | Research Note | MSFT Barclays 7.1.26 Industry.pdf | `doc_b2a22928b52fcd21_c0001` |\n| 32 | 0.090 | - | 0.159 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0011` |\n| 33 | 0.061 | - | 0.140 | no | Research Note | MSFT Bernstein 7.30.26.pdf | `doc_7fd53a1598884152_c0007` |\n| 34 | - | 0.129 | 0.132 | no | Research Note | MSFT Morningstar 7.31.25.pdf | `doc_433d4f5093447b3c_c0036` |\n| 35 | - | 0.111 | 0.128 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0013` |\n| 36 | - | 0.103 | 0.126 | no | Research Note | MSFT Evercore 1.29.26.pdf | `doc_dc506ba78bd1aa0e_c0000` |\n| 37 | - | 0.100 | 0.125 | no | Research Note | MSFT Stifel 2.4.26 Downgrade.pdf | `doc_3511364d88c698a1_c0002` |\n| 38 | - | 0.094 | 0.124 | no | Research Note | MSFT Phillip 2.2.26.pdf | `doc_87b7bf0585c83f61_c0001` |\n| 39 | 0.027 | - | 0.118 | no | Research Note | MSFT BI 7.9.26.pdf | `doc_c8fc06ca2f31dd5c_c0006` |\n| 40 | - | 0.034 | 0.108 | no | Research Note | MSFT WF 7.30.26.pdf | `doc_700ec1d070313506_c0003` |\n| 41 | 0.012 | - | 0.108 | no | Research Note | MSFT UBS 7.26.26.pdf | `doc_65e70f774ab619c9_c0002` |\n| 42 | - | 0.024 | 0.106 | no | Research Note | MSFT Morningstar 7.2.26.pdf | `doc_ba198e892d2d58b3_c0032` |\n| 43 | - | 0.023 | 0.106 | no | Research Note | MSFT GOOG Jefferies 7.21.26 Industry.pdf | `doc_57460e4a6f81598a_c0007` |\n| 44 | 0.008 | - | 0.105 | no | Research Note | MSFT BI 8.3.26.pdf | `doc_2b47f998ecfaf67e_c0000` |\n| 45 | - | 0.021 | 0.105 | no | Research Note | MSFT Citizens 7.7.26.pdf | `doc_3fa959b0b1ea9928_c0016` |\n| 46 | - | 0.018 | 0.105 | no | Research Note | MSFT Barclays 1.29.26.pdf | `doc_c9e2156eb5375ded_c0000` |\n| 47 | - | 0.412 | 0.103 | no | 10-Q | MSFT 10Q Q2 FY26 1.28.26.pdf | `doc_8005b47f17f59892_c0049` |\n| 48 | - | 0.010 | 0.103 | no | Research Note | MSFT WF 3.31.26.pdf | `doc_5d14e2f150eca55b_c0004` |\n| 49 | - | 0.003 | 0.101 | no | Research Note | MSFT Financial AI 7.28.26.pdf | `doc_33a0b755d65ad213_c0001` |\n| 50 | 0.000 | - | 0.100 | no | Research Note | MSFT JPM 1.29.26.pdf | `doc_1f9c912296fa5851_c0004` |\n| 51 | - | 0.000 | 0.100 | no | Research Note | MSFT Bernstein 4.13.26.pdf | `doc_fba263565a327723_c0011` |\n| 52 | 0.141 | - | 0.091 | no | 10-Q | MSFT 10Q Q2 FY26 1.28.26.pdf | `doc_8005b47f17f59892_c0048` |\n| 53 | - | 0.336 | 0.084 | no | 10-K | MSFT Business & Risk 10K FY25 6.30.25.pdf | `doc_741e434082042501_c0021` |\n| 54 | - | 0.266 | 0.067 | no | 10-Q | MSFT 10Q Q2 FY26 1.28.26.pdf | `doc_8005b47f17f59892_c0024` |\n| 55 | - | 0.188 | 0.047 | no | 10-Q | MSFT 10Q Q2 FY26 1.28.26.pdf | `doc_8005b47f17f59892_c0025` |\n| 56 | - | 0.143 | 0.036 | no | 10-K | MSFT 10K FY25 6.30.25.pdf | `doc_fa5f6704635f52b7_c0023` |\n| 57 | - | 0.124 | 0.031 | no | 10-K | MSFT 10K 7.29.26.pdf | `doc_11e6d8722ec5c9ec_c0023` |\n\n\n## Citation audit\n\n- confidence_ceiling_risk_synthesis: Medium\n- confidence_ceiling_analyst_opinion: Medium\n- confidence_ceiling_analyst_led_evidence: Medium\n- 1 supplied chunk(s) were never cited: [3]\n\n_Flags only. Nothing was rewritten, and none of these on its own means the answer is wrong - they mark the sentences to check first._\n\n\nRetrieval log: `06_RAG_Index\\retrieval_logs\\MSFT_20261008_161400_retrieval.json`\n",
+   "before_citations": "1,2,4,5,6,7,8",
+   "after_citations": "1,2,4,5,6,7,8",
+   "before_confidence": "Medium",
+   "after_confidence": "Medium",
+   "before_sources": {
+    "documents": [
+     "doc_11e6d8722ec5c9ec",
+     "doc_202912fc5dd978cf",
+     "doc_2d5992ed05b73eff",
+     "doc_2d81302f776ae3e9",
+     "doc_65e70f774ab619c9",
+     "doc_741e434082042501",
+     "doc_7fd53a1598884152",
+     "doc_b0663c4eb18b3383"
+    ],
+    "chunks": [
+     "doc_11e6d8722ec5c9ec_c0022",
+     "doc_202912fc5dd978cf_c0002",
+     "doc_2d5992ed05b73eff_c0002",
+     "doc_2d81302f776ae3e9_c0002",
+     "doc_65e70f774ab619c9_c0004",
+     "doc_741e434082042501_c0020",
+     "doc_7fd53a1598884152_c0006",
+     "doc_b0663c4eb18b3383_c0000"
+    ],
+    "files": [
+     "MSFT 10K 7.29.26.pdf",
+     "MSFT BI 9.10.26.pdf",
+     "MSFT Bernstein 7.30.26.pdf",
+     "MSFT Business & Risk 10K FY25 6.30.25.pdf",
+     "MSFT GS 2.4.26 Industry.pdf",
+     "MSFT Morningstar 1.28.26.pdf",
+     "MSFT Morningstar 7.29.30.pdf",
+     "MSFT UBS 7.26.26.pdf"
+    ],
+    "vendors": [
+     "GS",
+     "UBS",
+     "BI"
+    ]
+   },
+   "after_sources": {
+    "documents": [
+     "doc_11e6d8722ec5c9ec",
+     "doc_202912fc5dd978cf",
+     "doc_2d5992ed05b73eff",
+     "doc_2d81302f776ae3e9",
+     "doc_65e70f774ab619c9",
+     "doc_741e434082042501",
+     "doc_7fd53a1598884152",
+     "doc_b0663c4eb18b3383"
+    ],
+    "chunks": [
+     "doc_11e6d8722ec5c9ec_c0022",
+     "doc_202912fc5dd978cf_c0002",
+     "doc_2d5992ed05b73eff_c0002",
+     "doc_2d81302f776ae3e9_c0002",
+     "doc_65e70f774ab619c9_c0004",
+     "doc_741e434082042501_c0020",
+     "doc_7fd53a1598884152_c0006",
+     "doc_b0663c4eb18b3383_c0000"
+    ],
+    "files": [
+     "MSFT 10K 7.29.26.pdf",
+     "MSFT BI 9.10.26.pdf",
+     "MSFT Bernstein 7.30.26.pdf",
+     "MSFT Business & Risk 10K FY25 6.30.25.pdf",
+     "MSFT GS 2.4.26 Industry.pdf",
+     "MSFT Morningstar 1.28.26.pdf",
+     "MSFT Morningstar 7.29.30.pdf",
+     "MSFT UBS 7.26.26.pdf"
+    ],
+    "vendors": [
+     "GS",
+     "UBS",
+     "BI"
+    ]
+   },
+   "same_sources": true,
+   "after_run_id": 420,
+   "notes": [
+    [
+     "CHANGED",
+     "shorter by 179 words, but points fell from 9 to 3 - shorter is not better if evidence went with it"
+    ],
+    [
+     "IMPROVED",
+     "moved into the 100-220 word band"
+    ]
+   ]
+  },
+  {
+   "ticker": "AMZN",
+   "category": "analyst_concern",
+   "question": "What concerns do analysts raise about capital expenditure on AI infrastructure and its effect on free cash flow at Amazon?",
+   "after_generation_incomplete": false,
+   "after_generation_reasons": [],
+   "after_generation_status": "completed",
+   "after_max_output_tokens": "6000",
+   "after_retry_used": false,
+   "after_answer_path": "06_RAG_Index\\answer_logs\\AMZN_20261008_161434_answer.md",
+   "before_generation_incomplete": false,
+   "before": {
+    "words_total": 889,
+    "words_direct": 358,
+    "words_apparatus": 513,
+    "sections_present": [
+     "Confidence",
+     "Direct Answer",
+     "Evidence Limitations",
+     "Evidence Used",
+     "Needs Human Review",
+     "Source Citations"
+    ],
+    "sections_missing": [],
+    "claims": 8,
+    "claims_cited": 8,
+    "claims_uncited": 0,
+    "citations_in_direct": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "citations_total": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "opening": "Analysts flag very large AI-related capital spending \u2014 including a $200 billion 2026 capex guidance and a cumulative path that \u201ccould cumulatively exceed $1 trillion by 2030\u201d \u2014 as the driver of the ra",
+    "opens_with_boilerplate": false,
+    "opening_cited": true,
+    "repetition": 0.0,
+    "synthesis_lines": [],
+    "has_synthesis": false,
+    "synthesis_cited": 0,
+    "synthesis_uncited": 0,
+    "has_what_changed": true,
+    "is_refusal": false,
+    "vendors_named": [],
+    "confidence": "Medium"
+   },
+   "after": {
+    "words_total": 286,
+    "words_direct": 113,
+    "words_apparatus": 155,
+    "sections_present": [
+     "Confidence",
+     "Direct Answer",
+     "Evidence Limitations",
+     "Evidence Used",
+     "Needs Human Review",
+     "Source Citations"
+    ],
+    "sections_missing": [],
+    "claims": 2,
+    "claims_cited": 2,
+    "claims_uncited": 0,
+    "citations_in_direct": [
+     2,
+     5
+    ],
+    "citations_total": [
+     2,
+     5
+    ],
+    "opening": "Gimme Credit and other sell\u2011side analysts warn that Amazon\u2019s large AI-related capital expenditures have materially depressed near\u2011term free cash flow, with one note saying free cash flow \u201cplummeted to",
+    "opens_with_boilerplate": false,
+    "opening_cited": true,
+    "repetition": 0.0,
+    "synthesis_lines": [],
+    "has_synthesis": false,
+    "synthesis_cited": 0,
+    "synthesis_uncited": 0,
+    "has_what_changed": true,
+    "is_refusal": false,
+    "vendors_named": [],
+    "confidence": "Medium"
+   },
+   "before_text": "# Ask Brain answer - AMZN\n\n**Question:** What concerns do analysts raise about capital expenditure on AI infrastructure and its effect on free cash flow at Amazon?\n\n- generated_by: `ask_brain.py` (phase8.2-1.0)\n- answer_model: `gpt-5-mini`\n- embedding_model: `text-embedding-3-small`\n- created_at: 2026-09-15T15:07:22+00:00\n- retrieval: `hybrid` mode, top_k 30, 54 candidate(s) -> 8 evidence chunk(s) from 8 document(s)\n- filters: none\n- source_priority: `analyst` (question intent: mixed, preference applied: analyst)\n- rule-based confidence: **Medium** (8 chunks at strength >= 0.45 across 8 documents, 0 of them direct company/SEC material; capped from High to Medium because no selected chunk is direct company, SEC or company-material text, so however closely the wording matched, nothing here is the company's own disclosure; this question asks for investor concern, which is a reading of the facts rather than a disclosed fact, and the company's own material does not carry the answer (0 strong direct chunk(s) on this subject, of 8 selected))\n- model-stated confidence: **Medium**\n- **final confidence after audit: Medium**\n- answer written by: the answer model\n\n> This answer was drafted from retrieved text only. It is not verified, not a\n> conclusion, and not investment advice. **AI drafts. Humans verify. Cutler decides.**\n\n---\n\n## Automated checks flagged this answer\n\n- 4 supplied chunk(s) were never cited - the evidence pack was wider than the answer used\n\n_These are deterministic checks on the generated text. Nothing was rewritten - read the answer with these in mind._\n\n---\n\n## 1. Direct Answer\n- Analysts flag very large AI-related capital spending \u2014 including a $200 billion 2026 capex guidance and a cumulative path that \u201ccould cumulatively exceed $1 trillion by 2030\u201d \u2014 as the driver of the raise in Amazon\u2019s capital intensity [4].  \n- Credit analysts note AWS capital intensity has surged: a capex/sales proxy for AWS was \u201c75% last year and now is over 100%,\u201d with capital spending more than doubling in the first quarter, highlighting how AI infrastructure is consuming an outsized share of revenue [2].  \n- Analysts report AWS margin pressure associated with the spending: AWS operating margin \u201cshrank by 180 basis points to 37.7%\u201d in the quarter cited, reflecting deleveraging of technology and infrastructure expense rates [2].  \n- Several analysts warn the ramp in capex has materially depressed free cash flow: one note says supercharged capital spending \u201csent free cash flow plummeting to a use of $18 billion\u201d in the quarter reported [2].  \n- Another analyst note states full-year free cash flow fell sharply\u2014\u201cwas only $8 billion, down from $33 billion in 2024\u201d\u2014and attributes that decline \u201centirely\u201d to higher capital spending [5].  \n- Analysts express skepticism about the timing and reliability of future revenue tied to capex commitments, noting management\u2019s statement that customer commitments justify spending but that such revenue \u201cwon\u2019t materialize until 2027-2028\u201d and that the analytics team is \u201ctrifle skeptical, given the fragile financial condition of these AI startups\u201d [2].  \n- Concerns about funding the spending include use of cash and new borrowing: one note records a $15 billion preliminary OpenAI investment and states management said it \u201cwould fund this with cash on hand,\u201d while also noting $53 billion of borrowing in the quarter, and an analyst scenario that projects a combined free-cash-flow shortfall plus OpenAI investments could imply \u201c$90 billion in additional debt\u201d under conservative assumptions [2].  \n- At the same time, some sell\u2011side/credit research argues the spending may be manageable for Amazon given its liquidity and projected cash generation, citing a large cash balance and forecasts that free cash flow could recover to exceed $100 billion annually within several years; these views temper but do not eliminate the near\u2011term free\u2011cash\u2011flow concerns [3][4][5].\n\n## 2. Evidence Used\n- [2] (AMZN Gimme Credit 5.1.26): provided details on AWS capex/sales ratio, AWS margin contraction, Q1 capex doubling, OpenAI investment, borrowing, and a projected FCF shortfall/use of cash of $18 billion.  \n- [5] (AMZN GimmeCredit 2.6.26): provided the $200 billion 2026 capex note and the full\u2011year free cash flow declining to $8 billion from $33 billion and analysts\u2019 questions about whether investments will \u201cconsume all of the company\u2019s cash flow every year into perpetuity.\u201d  \n- [4] (AMZN BI 2.19.26): provided Bloomberg Intelligence\u2019s $200 billion 2026 capex guidance, the $1 trillion-by-2030 cumulative statement, and context about cash and Ebitda supporting spending.  \n- [3] (AMZN BI 7.31.26 Credit): provided sell\u2011side/credit commentary that free cash flow was expected to exceed $100 billion annually within five years and noted market reactions (bond spreads) in the context of rising capex.\n\n## 3. Source Citations\n- [2] AMZN Gimme Credit 5.1.26 (2).pdf, page 1.  \n- [5] AMZN GimmeCredit 2.6.26 Credit.pdf, page 1.  \n- [4] AMZN BI 2.19.26.pdf, pages 1-2.  \n- [3] AMZN BI 7.31.26 Credit.pdf, pages 14-15.\n\n## 4. Evidence Limitations\n- The Bloomberg Intelligence chunk labeled \u201c4. $200 Billion Capex Only a Modest Dent to Cash\u201d is truncated in the provided extract and does not include the full supporting text for that assertion [4].  \n- Projections and scenarios differ across the analyst notes (some emphasize near\u2011term FCF declines and debt scenarios [2][5]; others project FCF recovery above $100 billion within years [3][4]), but the evidence set does not include the underlying models or full assumptions behind those divergent forecasts.  \n- The documents provide limited contractual detail on the \u201ccustomer commitments\u201d cited (e.g., OpenAI/OpenAI\u2011related commitments): the evidence notes management statements and analyst skepticism but does not reproduce contract terms, timing specifics beyond \u201c2027-2028,\u201d or probabilities of revenue realization [2].  \n- The pack lacks contemporaneous company financial filings or the full earnings\u2011call transcripts that would clarify management\u2019s funding plans and exact timing of cash flows referenced by analysts.\n\n## 5. Needs Human Review\n- Verify the full Bloomberg Intelligence text around the \u201cmodest dent to cash\u201d statement to confirm context and assumptions (the provided excerpt is truncated) [4].  \n- Review the underlying models or spreadsheets used by the analysts to reconcile divergent FCF and leverage projections and to validate the $90 billion additional\u2011debt scenario [2][5].  \n- Check the full terms, timing, and enforceability of the cited customer commitments and OpenAI/Anthropic investments in primary source documents (contracts, filings) to assess the revenue timing assertions [2].  \n- Confirm the most recent company cash balances, capex guidance, and 10\u2011Q/10\u2011K disclosures not included in these extracts to ensure numbers (cash, borrowing) are up to date [2][5].  \n- Obtain the complete earnings\u2011call transcript and management commentary to verify what management said about funding strategy and capital\u2011allocation priorities beyond the snippets in these notes [2][4][5].\n\n## 6. Confidence\nMedium. Multiple analyst and credit\u2011research excerpts in the evidence set consistently raise near\u2011term concerns that AI infrastructure capex has materially depressed free cash flow and increased financing questions, but the set contains divergent forecasts (some expect eventual strong FCF recovery) and lacks full underlying models and complete source documents to make a higher\u2011confidence synthesis [2][3][4][5].\n\n---\n\n## Source table\n\n| # | file_name | date | source_type | document_type | pages | chunk_id | relative_path |\n|---|---|---|---|---|---|---|---|\n| [1] | AMZN CRM IBM T VZ JPM 12.8.25 Industry.pdf | (no date) | Industry Research | Unknown | 36-37 | `doc_de5f3dd804f86fba_c0054` | Outlooks\\Outlooks (copied from Dec 25 folder)\\AMZN CRM IBM T VZ JPM 12.8.25 Industry.pdf |\n| [2] | AMZN Gimme Credit 5.1.26 (2).pdf | 2026-05-01 | Credit Research | Credit Note | 1 | `doc_acc30c62a406e909_c0000` | MAY 2026\\5.1.2026\\Credit\\AMZN Gimme Credit 5.1.26 (2).pdf |\n| [3] | AMZN BI 7.31.26 Credit.pdf | 2026-08-03 | Credit Research | Credit Note | 14-15 | `doc_d8d292033a71dee6_c0008` | AUG 2026\\8.3.26\\Credit\\AMZN BI 7.31.26 Credit.pdf |\n| [4] | AMZN BI 2.19.26.pdf | 2026-02-19 | Sell-Side Research | Research Note | 1-2 | `doc_2e208dcd0ee9ddf3_c0000` | FEB 2026\\2.19.2026\\Research\\AMZN BI 2.19.26.pdf |\n| [5] | AMZN GimmeCredit 2.6.26 Credit.pdf | 2026-02-06 | Credit Research | Credit Note | 1 | `doc_875bcfc4259829db_c0000` | FEB 2026\\2.6.2026\\Credit\\AMZN GimmeCredit 2.6.26 Credit.pdf |\n| [6] | AMZN BI 7.31.26 Credit.pdf | 2026-07-31 | Sell-Side Research | Research Note | 13-15 | `doc_7f70660508cbc69e_c0008` | JULY 2026\\7.31.2026\\Research\\AMZN BI 7.31.26 Credit.pdf |\n| [7] | AMZN BI 7.7.26.pdf | 2026-07-07 | Sell-Side Research | Research Note | 14-15 | `doc_4724d4da44eebc0a_c0008` | JULY 2026\\7.7.2026\\Research\\AMZN BI 7.7.26.pdf |\n| [8] | AMZN BI 9.8.26.pdf | 2026-09-08 | Sell-Side Research | Research Note | 14-15 | `doc_b3f1307f30489504_c0008` | SEPT 2026\\9.8.26\\Research\\AMZN BI 9.8.26.pdf |\n\n\n## Retrieval trace (all candidates, before selection)\n\n`vec` and `kw` are each retriever's normalised 0-1 score; a dash means that retriever never returned this chunk. `score` is the combined score selection actually ranked on.\n\n| rank | vec | kw | score | selected | document_type | file_name | chunk_id |\n|---|---|---|---|---|---|---|---|\n| 1 | 1.000 | - | 0.750 | yes | Unknown | AMZN CRM IBM T VZ JPM 12.8.25 Industry.pdf | `doc_de5f3dd804f86fba_c0054` |\n| 2 | 0.884 | 0.252 | 0.737 | yes | Credit Note | AMZN Gimme Credit 5.1.26 (2).pdf | `doc_acc30c62a406e909_c0000` |\n| 3 | 0.609 | - | 0.496 | yes | Credit Note | AMZN BI 7.31.26 Credit.pdf | `doc_d8d292033a71dee6_c0008` |\n| 4 | 0.388 | 0.568 | 0.494 | yes | Credit Note | AMZN GimmeCredit 2.6.26 Credit.pdf | `doc_875bcfc4259829db_c0000` |\n| 5 | 0.487 | 0.099 | 0.441 | yes | Research Note | AMZN BI 2.19.26.pdf | `doc_2e208dcd0ee9ddf3_c0000` |\n| 6 | 0.513 | - | 0.433 | yes | Research Note | AMZN BI 7.31.26 Credit.pdf | `doc_7f70660508cbc69e_c0008` |\n| 7 | 0.491 | - | 0.419 | yes | Research Note | AMZN BI 7.7.26.pdf | `doc_4724d4da44eebc0a_c0008` |\n| 8 | 0.458 | - | 0.397 | yes | Research Note | AMZN BI 9.8.26.pdf | `doc_b3f1307f30489504_c0008` |\n| 9 | 0.202 | 0.595 | 0.380 | no | Research Note | AMZN Insider Trades 8.2.26.pdf | `doc_2b5c37c475cb237a_c0000` |\n| 10 | 0.409 | - | 0.366 | no | Research Note | AMZN BI 9.9.26 Credit.pdf | `doc_c1d1c42bdefdbb9b_c0008` |\n| 11 | - | 1.000 | 0.350 | no | Research Note | AMZN Ameriprise 2.6.26.pdf | `doc_59dff921eff43bfa_c0000` |\n| 12 | 0.382 | - | 0.348 | no | Research Note | AMZN BI 9.8.26.pdf | `doc_b3f1307f30489504_c0004` |\n| 13 | 0.079 | 0.772 | 0.344 | no | Credit Note | AMZN BI 7.31.26 Credit.pdf | `doc_d8d292033a71dee6_c0000` |\n| 14 | 0.372 | - | 0.342 | no | Research Note | AMZN Needham 4.9.26.pdf | `doc_43d9d446fa453fe0_c0003` |\n| 15 | 0.335 | - | 0.318 | no | Research Note | AMZN Evercore 3.18.26.pdf | `doc_bf33d48121f6f142_c0001` |\n| 16 | 0.271 | - | 0.276 | no | Research Note | AMZN BI 7.31.26 Credit.pdf | `doc_7f70660508cbc69e_c0004` |\n| 17 | 0.265 | - | 0.272 | no | Research Note | AMZN BI 9.9.26 Credit.pdf | `doc_c1d1c42bdefdbb9b_c0004` |\n| 18 | - | 0.630 | 0.257 | no | Research Note | AMZN BI 9.8.26.pdf | `doc_b3f1307f30489504_c0000` |\n| 19 | - | 0.591 | 0.248 | no | Research Note | AMZN BI 9.9.26 Credit.pdf | `doc_c1d1c42bdefdbb9b_c0000` |\n| 20 | - | 0.587 | 0.247 | no | Research Note | AMZN MSFT GOOGL BI 8.24.26 Industry.pdf | `doc_1a57ceba35c34a24_c0002` |\n| 21 | - | 0.546 | 0.237 | no | Research Note | AMZN MSFT GOOGL BI 8.24.26 Industry.pdf | `doc_1a57ceba35c34a24_c0001` |\n| 22 | 0.192 | - | 0.225 | no | Research Note | AMZN Deutsche 7.31.26.pdf | `doc_df66f48315d313f7_c0002` |\n| 23 | 0.184 | - | 0.220 | no | Credit Note | AMZN BI 7.31.26 Credit.pdf | `doc_d8d292033a71dee6_c0004` |\n| 24 | 0.168 | - | 0.209 | no | Research Note | AMZN BI 2.6.26 Credit.pdf | `doc_63d59bbebfa7550d_c0000` |\n| 25 | 0.161 | - | 0.204 | no | Research Note | AMZN BI 7.7.26.pdf | `doc_4724d4da44eebc0a_c0004` |\n| 26 | - | 0.407 | 0.202 | no | Research Note | AMZN IBM BI 1.12.26 Industry.pdf | `doc_208c88fbd1cd43ce_c0005` |\n| 27 | 0.141 | - | 0.191 | no | Research Note | AMZN Ameriprise 2.6.26.pdf | `doc_59dff921eff43bfa_c0001` |\n| 28 | 0.128 | - | 0.183 | no | Research Note | AMZN BI 7.7.26 Credit.pdf | `doc_a0d8f9352b5619b6_c0004` |\n| 29 | 0.122 | - | 0.179 | no | Research Note | AMZN BI 7.7.26 Credit.pdf | `doc_a0d8f9352b5619b6_c0008` |\n| 30 | - | 0.309 | 0.177 | no | Research Note | AMZN MSFT GOOGL BI 8.24.26 Industry.pdf | `doc_1a57ceba35c34a24_c0007` |\n| 31 | - | 0.296 | 0.174 | no | Research Note | AMZN IBM BI 1.12.26 Industry.pdf | `doc_208c88fbd1cd43ce_c0006` |\n| 32 | 0.111 | - | 0.172 | no | Research Note | AMZN Jefferies 3.22.26.pdf | `doc_90e4faebfe58f1fc_c0009` |\n| 33 | - | 0.279 | 0.170 | no | Research Note | AMZN MSFT GOOGL BI 8.24.26 Industry.pdf | `doc_1a57ceba35c34a24_c0003` |\n| 34 | 0.030 | 0.122 | 0.150 | no | Credit Note | AMZN Gimme Credit 8.18.26 (2).pdf | `doc_264f1319c5ff1db9_c0000` |\n| 35 | - | 0.187 | 0.147 | no | Research Note | AMZN IBM BI 1.12.26 Industry.pdf | `doc_208c88fbd1cd43ce_c0004` |\n| 36 | - | 0.174 | 0.143 | no | Research Note | AMZN BI 7.7.26 Credit.pdf | `doc_a0d8f9352b5619b6_c0001` |\n| 37 | - | 0.174 | 0.143 | no | Research Note | AMZN BI 9.8.26.pdf | `doc_b3f1307f30489504_c0001` |\n| 38 | - | 0.174 | 0.143 | no | Research Note | AMZN BI 9.9.26 Credit.pdf | `doc_c1d1c42bdefdbb9b_c0001` |\n| 39 | - | 0.173 | 0.143 | no | Research Note | AMZN Morningstar 4.30.26.pdf | `doc_a6a6fa48251f39dc_c0005` |\n| 40 | - | 0.171 | 0.143 | no | Research Note | AMZN BI 7.7.26.pdf | `doc_4724d4da44eebc0a_c0001` |\n| 41 | - | 0.171 | 0.143 | no | Research Note | AMZN BI 7.31.26 Credit.pdf | `doc_7f70660508cbc69e_c0001` |\n| 42 | - | 0.169 | 0.142 | no | Research Note | AMZN Ameriprise_Advisor 8.3.26.pdf | `doc_2583d2b14bac40d5_c0001` |\n| 43 | - | 0.168 | 0.142 | no | Credit Note | AMZN BI 7.31.26 Credit.pdf | `doc_d8d292033a71dee6_c0001` |\n| 44 | - | 0.168 | 0.142 | no | Research Note | AMZN Morningstar 2.6.26 Report.pdf | `doc_e96701ce74619756_c0005` |\n| 45 | - | 0.166 | 0.141 | no | Research Note | AMZN Morningstar 7.31.26 (2).pdf | `doc_f0e70b48bb74e07e_c0005` |\n| 46 | 0.059 | - | 0.138 | no | Research Note | AMZN Pivotal Research Group 2.6.26.pdf | `doc_ef0be0e67ccb083f_c0000` |\n| 47 | - | 0.095 | 0.124 | no | Research Note | AMZN IBM BI 1.12.26 Industry.pdf | `doc_208c88fbd1cd43ce_c0007` |\n| 48 | 0.182 | - | 0.118 | no | Earnings / Financial Results | AMZN Q1 26 TRANSCRIPT  Earnings Call 2026429 RT000000003104401127.pdf | `doc_2c0d5d3e21b31d4a_c0007` |\n| 49 | 0.017 | - | 0.111 | no | Research Note | AMZN Barclays 3.23.26.pdf | `doc_68e41f693073b13b_c0003` |\n| 50 | - | 0.037 | 0.109 | no | Credit Note | AMZN BI 2.26.26.pdf | `doc_6dca2e9ddab0e271_c0001` |\n| 51 | - | 0.037 | 0.109 | no | Credit Note | AMZN BI 2.27.26.pdf | `doc_b8391fec6ddf3fc1_c0001` |\n| 52 | 0.010 | - | 0.107 | no | Research Note | AMZN Needham 3.17.26.pdf | `doc_aa57fa0b39efeee9_c0001` |\n| 53 | - | 0.000 | 0.100 | no | Research Note | AMZN BI 7.7.26 Credit.pdf | `doc_a0d8f9352b5619b6_c0005` |\n| 54 | 0.000 | - | 0.100 | no | Research Note | AMZN BI 1.22.26.pdf | `doc_adc7990bef248ae1_c0008` |\n\n\n## Citation audit\n\n- confidence_ceiling_no_direct_company_evidence: Medium\n- confidence_ceiling_interpretive_topic: Medium\n- 4 supplied chunk(s) were never cited: [1], [6], [7], [8]\n\n_Flags only. Nothing was rewritten, and none of these on its own means the answer is wrong - they mark the sentences to check first._\n\n\nRetrieval log: `06_RAG_Index\\retrieval_logs\\AMZN_20260915_150722_retrieval.json`\n",
+   "after_text": "# Ask Brain answer - AMZN\n\n**Question:** What concerns do analysts raise about capital expenditure on AI infrastructure and its effect on free cash flow at Amazon?\n\n- generated_by: `ask_brain.py` (phase14.3.5-1.0)\n- answer_model: `gpt-5-mini`\n- embedding_model: `text-embedding-3-small`\n- created_at: 2026-10-08T16:14:34+00:00\n- retrieval: `hybrid` mode, top_k 30, 54 candidate(s) -> 8 evidence chunk(s) from 8 document(s)\n- filters: none\n- source_priority: `analyst` (question intent: mixed, preference applied: analyst)\n- rule-based confidence: **Medium** (8 chunks at strength >= 0.45 across 8 documents, 0 of them direct company/SEC material; capped from High to Medium because the question asks what analysts think, and analyst opinion is evidence of the opinion, not of the fact - however many notes agree; no selected chunk is direct company, SEC or company-material text, so however closely the wording matched, nothing here is the company's own disclosure; this question asks for investor concern, which is a reading of the facts rather than a disclosed fact, and the company's own material does not carry the answer (0 strong direct chunk(s) on this subject, of 8 selected))\n- model-stated confidence: **Medium**\n- **final confidence after audit: Medium**\n- answer style: `quick` (how it was written up; retrieval is identical for either)\n- answer written by: the answer model\n\n> This answer was drafted from retrieved text only. It is not verified, not a\n> conclusion, and not investment advice. **AI drafts. Humans verify. Cutler decides.**\n\n---\n\n## Automated checks flagged this answer\n\n- 6 supplied chunk(s) were never cited - the evidence pack was wider than the answer used\n\n_These are deterministic checks on the generated text. Nothing was rewritten - read the answer with these in mind._\n\n---\n\n## 1. Direct Answer\nGimme Credit and other sell\u2011side analysts warn that Amazon\u2019s large AI-related capital expenditures have materially depressed near\u2011term free cash flow, with one note saying free cash flow \u201cplummeted to a use of $18 billion\u201d and another saying FCF was \u201conly $8 billion, down from $33 billion, entirely attributable to the higher capital spending\u201d [2][5]. Analysts also flag timing and funding risk: they note AWS capex is supported by customer commitments whose revenue \u201cwon\u2019t materialize until 2027-2028,\u201d that some commitments are to financially fragile AI startups, and that analyst scenarios assume tapping cash or borrowing (one hypothetical adds ~$90 billion of debt), raising near\u2011term leverage/financing concerns [2][5].\n\n## 2. Evidence Used\n- [2] Gimme Credit 5.1.26 \u2014 cited for FCF impact, customer\u2011commitment timing, and hypothetical debt modeling.  \n- [5] Gimme Credit 2.6.26 \u2014 cited for year\u2011over\u2011year FCF decline attribution and analysts\u2019 investor questions about payoff sustainability.\n\n## 3. Source Citations\n- [2] AMZN Gimme Credit 5.1.26 (2).pdf p.1  \n- [5] AMZN GimmeCredit 2.6.26 Credit.pdf p.1\n\n## 4. Evidence Limitations\n- All cited material is analyst research (no company\u2011direct filings or management guidance are present in the supplied chunks).  \n- The pack lacks a detailed capex phasing schedule and definitive management funding plan for the AI investments.\n\n## 5. Needs Human Review\n- Verify the cited FCF and capex figures and the timing of customer commitments against Amazon\u2019s SEC filings and management disclosures.  \n- Confirm the plausibility and sensitivity of the analyst debt\u2011assumption scenarios vs. the company\u2019s actual cash/debt position.\n\n## 6. Confidence\nMedium \u2014 multiple analyst notes in the pack directly report the concerns cited, but the evidence set is limited to third\u2011party commentary and lacks company disclosures or a full capex/cash\u2011flow schedule.\n\n---\n\n## Source table\n\n| # | file_name | date | source_type | document_type | pages | chunk_id | relative_path |\n|---|---|---|---|---|---|---|---|\n| [1] | AMZN CRM IBM T VZ JPM 12.8.25 Industry.pdf | (no date) | Industry Research | Unknown | 36-37 | `doc_de5f3dd804f86fba_c0054` | Outlooks\\Outlooks (copied from Dec 25 folder)\\AMZN CRM IBM T VZ JPM 12.8.25 Industry.pdf |\n| [2] | AMZN Gimme Credit 5.1.26 (2).pdf | 2026-05-01 | Credit Research | Credit Note | 1 | `doc_acc30c62a406e909_c0000` | MAY 2026\\5.1.2026\\Credit\\AMZN Gimme Credit 5.1.26 (2).pdf |\n| [3] | AMZN BI 7.31.26 Credit.pdf | 2026-08-03 | Credit Research | Credit Note | 14-15 | `doc_d8d292033a71dee6_c0008` | AUG 2026\\8.3.26\\Credit\\AMZN BI 7.31.26 Credit.pdf |\n| [4] | AMZN BI 2.19.26.pdf | 2026-02-19 | Sell-Side Research | Research Note | 1-2 | `doc_2e208dcd0ee9ddf3_c0000` | FEB 2026\\2.19.2026\\Research\\AMZN BI 2.19.26.pdf |\n| [5] | AMZN GimmeCredit 2.6.26 Credit.pdf | 2026-02-06 | Credit Research | Credit Note | 1 | `doc_875bcfc4259829db_c0000` | FEB 2026\\2.6.2026\\Credit\\AMZN GimmeCredit 2.6.26 Credit.pdf |\n| [6] | AMZN BI 7.31.26 Credit.pdf | 2026-07-31 | Sell-Side Research | Research Note | 13-15 | `doc_7f70660508cbc69e_c0008` | JULY 2026\\7.31.2026\\Research\\AMZN BI 7.31.26 Credit.pdf |\n| [7] | AMZN BI 7.7.26.pdf | 2026-07-07 | Sell-Side Research | Research Note | 14-15 | `doc_4724d4da44eebc0a_c0008` | JULY 2026\\7.7.2026\\Research\\AMZN BI 7.7.26.pdf |\n| [8] | AMZN BI 9.8.26.pdf | 2026-09-08 | Sell-Side Research | Research Note | 14-15 | `doc_b3f1307f30489504_c0008` | SEPT 2026\\9.8.26\\Research\\AMZN BI 9.8.26.pdf |\n\n\n## Retrieval trace (all candidates, before selection)\n\n`vec` and `kw` are each retriever's normalised 0-1 score; a dash means that retriever never returned this chunk. `score` is the combined score selection actually ranked on.\n\n| rank | vec | kw | score | selected | document_type | file_name | chunk_id |\n|---|---|---|---|---|---|---|---|\n| 1 | 1.000 | - | 0.750 | yes | Unknown | AMZN CRM IBM T VZ JPM 12.8.25 Industry.pdf | `doc_de5f3dd804f86fba_c0054` |\n| 2 | 0.883 | 0.252 | 0.737 | yes | Credit Note | AMZN Gimme Credit 5.1.26 (2).pdf | `doc_acc30c62a406e909_c0000` |\n| 3 | 0.609 | - | 0.496 | yes | Credit Note | AMZN BI 7.31.26 Credit.pdf | `doc_d8d292033a71dee6_c0008` |\n| 4 | 0.388 | 0.568 | 0.494 | yes | Credit Note | AMZN GimmeCredit 2.6.26 Credit.pdf | `doc_875bcfc4259829db_c0000` |\n| 5 | 0.486 | 0.099 | 0.441 | yes | Research Note | AMZN BI 2.19.26.pdf | `doc_2e208dcd0ee9ddf3_c0000` |\n| 6 | 0.513 | - | 0.433 | yes | Research Note | AMZN BI 7.31.26 Credit.pdf | `doc_7f70660508cbc69e_c0008` |\n| 7 | 0.491 | - | 0.419 | yes | Research Note | AMZN BI 7.7.26.pdf | `doc_4724d4da44eebc0a_c0008` |\n| 8 | 0.457 | - | 0.397 | yes | Research Note | AMZN BI 9.8.26.pdf | `doc_b3f1307f30489504_c0008` |\n| 9 | 0.202 | 0.595 | 0.380 | no | Research Note | AMZN Insider Trades 8.2.26.pdf | `doc_2b5c37c475cb237a_c0000` |\n| 10 | 0.409 | - | 0.366 | no | Research Note | AMZN BI 9.9.26 Credit.pdf | `doc_c1d1c42bdefdbb9b_c0008` |\n| 11 | - | 1.000 | 0.350 | no | Research Note | AMZN Ameriprise 2.6.26.pdf | `doc_59dff921eff43bfa_c0000` |\n| 12 | 0.382 | - | 0.348 | no | Research Note | AMZN BI 9.8.26.pdf | `doc_b3f1307f30489504_c0004` |\n| 13 | 0.079 | 0.772 | 0.344 | no | Credit Note | AMZN BI 7.31.26 Credit.pdf | `doc_d8d292033a71dee6_c0000` |\n| 14 | 0.372 | - | 0.342 | no | Research Note | AMZN Needham 4.9.26.pdf | `doc_43d9d446fa453fe0_c0003` |\n| 15 | 0.335 | - | 0.318 | no | Research Note | AMZN Evercore 3.18.26.pdf | `doc_bf33d48121f6f142_c0001` |\n| 16 | 0.270 | - | 0.276 | no | Research Note | AMZN BI 7.31.26 Credit.pdf | `doc_7f70660508cbc69e_c0004` |\n| 17 | 0.265 | - | 0.272 | no | Research Note | AMZN BI 9.9.26 Credit.pdf | `doc_c1d1c42bdefdbb9b_c0004` |\n| 18 | - | 0.630 | 0.257 | no | Research Note | AMZN BI 9.8.26.pdf | `doc_b3f1307f30489504_c0000` |\n| 19 | - | 0.591 | 0.248 | no | Research Note | AMZN BI 9.9.26 Credit.pdf | `doc_c1d1c42bdefdbb9b_c0000` |\n| 20 | - | 0.587 | 0.247 | no | Research Note | AMZN MSFT GOOGL BI 8.24.26 Industry.pdf | `doc_1a57ceba35c34a24_c0002` |\n| 21 | - | 0.546 | 0.237 | no | Research Note | AMZN MSFT GOOGL BI 8.24.26 Industry.pdf | `doc_1a57ceba35c34a24_c0001` |\n| 22 | 0.192 | - | 0.225 | no | Research Note | AMZN Deutsche 7.31.26.pdf | `doc_df66f48315d313f7_c0002` |\n| 23 | 0.184 | - | 0.219 | no | Credit Note | AMZN BI 7.31.26 Credit.pdf | `doc_d8d292033a71dee6_c0004` |\n| 24 | 0.167 | - | 0.209 | no | Research Note | AMZN BI 2.6.26 Credit.pdf | `doc_63d59bbebfa7550d_c0000` |\n| 25 | 0.160 | - | 0.204 | no | Research Note | AMZN BI 7.7.26.pdf | `doc_4724d4da44eebc0a_c0004` |\n| 26 | - | 0.407 | 0.202 | no | Research Note | AMZN IBM BI 1.12.26 Industry.pdf | `doc_208c88fbd1cd43ce_c0005` |\n| 27 | 0.140 | - | 0.191 | no | Research Note | AMZN Ameriprise 2.6.26.pdf | `doc_59dff921eff43bfa_c0001` |\n| 28 | 0.127 | - | 0.183 | no | Research Note | AMZN BI 7.7.26 Credit.pdf | `doc_a0d8f9352b5619b6_c0004` |\n| 29 | 0.122 | - | 0.179 | no | Research Note | AMZN BI 7.7.26 Credit.pdf | `doc_a0d8f9352b5619b6_c0008` |\n| 30 | - | 0.309 | 0.177 | no | Research Note | AMZN MSFT GOOGL BI 8.24.26 Industry.pdf | `doc_1a57ceba35c34a24_c0007` |\n| 31 | - | 0.296 | 0.174 | no | Research Note | AMZN IBM BI 1.12.26 Industry.pdf | `doc_208c88fbd1cd43ce_c0006` |\n| 32 | 0.110 | - | 0.172 | no | Research Note | AMZN Jefferies 3.22.26.pdf | `doc_90e4faebfe58f1fc_c0009` |\n| 33 | - | 0.279 | 0.170 | no | Research Note | AMZN MSFT GOOGL BI 8.24.26 Industry.pdf | `doc_1a57ceba35c34a24_c0003` |\n| 34 | 0.029 | 0.122 | 0.149 | no | Credit Note | AMZN Gimme Credit 8.18.26 (2).pdf | `doc_264f1319c5ff1db9_c0000` |\n| 35 | - | 0.187 | 0.147 | no | Research Note | AMZN IBM BI 1.12.26 Industry.pdf | `doc_208c88fbd1cd43ce_c0004` |\n| 36 | - | 0.174 | 0.143 | no | Research Note | AMZN BI 7.7.26 Credit.pdf | `doc_a0d8f9352b5619b6_c0001` |\n| 37 | - | 0.174 | 0.143 | no | Research Note | AMZN BI 9.8.26.pdf | `doc_b3f1307f30489504_c0001` |\n| 38 | - | 0.174 | 0.143 | no | Research Note | AMZN BI 9.9.26 Credit.pdf | `doc_c1d1c42bdefdbb9b_c0001` |\n| 39 | - | 0.173 | 0.143 | no | Research Note | AMZN Morningstar 4.30.26.pdf | `doc_a6a6fa48251f39dc_c0005` |\n| 40 | - | 0.171 | 0.143 | no | Research Note | AMZN BI 7.7.26.pdf | `doc_4724d4da44eebc0a_c0001` |\n| 41 | - | 0.171 | 0.143 | no | Research Note | AMZN BI 7.31.26 Credit.pdf | `doc_7f70660508cbc69e_c0001` |\n| 42 | - | 0.169 | 0.142 | no | Research Note | AMZN Ameriprise_Advisor 8.3.26.pdf | `doc_2583d2b14bac40d5_c0001` |\n| 43 | - | 0.168 | 0.142 | no | Credit Note | AMZN BI 7.31.26 Credit.pdf | `doc_d8d292033a71dee6_c0001` |\n| 44 | - | 0.168 | 0.142 | no | Research Note | AMZN Morningstar 2.6.26 Report.pdf | `doc_e96701ce74619756_c0005` |\n| 45 | - | 0.166 | 0.141 | no | Research Note | AMZN Morningstar 7.31.26 (2).pdf | `doc_f0e70b48bb74e07e_c0005` |\n| 46 | 0.059 | - | 0.138 | no | Research Note | AMZN Pivotal Research Group 2.6.26.pdf | `doc_ef0be0e67ccb083f_c0000` |\n| 47 | - | 0.095 | 0.124 | no | Research Note | AMZN IBM BI 1.12.26 Industry.pdf | `doc_208c88fbd1cd43ce_c0007` |\n| 48 | 0.182 | - | 0.118 | no | Earnings / Financial Results | AMZN Q1 26 TRANSCRIPT  Earnings Call 2026429 RT000000003104401127.pdf | `doc_2c0d5d3e21b31d4a_c0007` |\n| 49 | 0.016 | - | 0.110 | no | Research Note | AMZN Barclays 3.23.26.pdf | `doc_68e41f693073b13b_c0003` |\n| 50 | - | 0.037 | 0.109 | no | Credit Note | AMZN BI 2.26.26.pdf | `doc_6dca2e9ddab0e271_c0001` |\n| 51 | - | 0.037 | 0.109 | no | Credit Note | AMZN BI 2.27.26.pdf | `doc_b8391fec6ddf3fc1_c0001` |\n| 52 | 0.010 | - | 0.106 | no | Research Note | AMZN Needham 3.17.26.pdf | `doc_aa57fa0b39efeee9_c0001` |\n| 53 | - | 0.000 | 0.100 | no | Research Note | AMZN BI 7.7.26 Credit.pdf | `doc_a0d8f9352b5619b6_c0005` |\n| 54 | 0.000 | - | 0.100 | no | Research Note | AMZN BI 1.22.26.pdf | `doc_adc7990bef248ae1_c0008` |\n\n\n## Citation audit\n\n- confidence_ceiling_analyst_opinion: Medium\n- confidence_ceiling_no_direct_company_evidence: Medium\n- confidence_ceiling_interpretive_topic: Medium\n- 6 supplied chunk(s) were never cited: [1], [3], [4], [6], [7], [8]\n\n_Flags only. Nothing was rewritten, and none of these on its own means the answer is wrong - they mark the sentences to check first._\n\n\nRetrieval log: `06_RAG_Index\\retrieval_logs\\AMZN_20261008_161434_retrieval.json`\n",
+   "before_citations": "2,3,4,5",
+   "after_citations": "2,5",
+   "before_confidence": "Medium",
+   "after_confidence": "Medium",
+   "before_sources": {
+    "documents": [
+     "doc_2e208dcd0ee9ddf3",
+     "doc_4724d4da44eebc0a",
+     "doc_7f70660508cbc69e",
+     "doc_875bcfc4259829db",
+     "doc_acc30c62a406e909",
+     "doc_b3f1307f30489504",
+     "doc_d8d292033a71dee6",
+     "doc_de5f3dd804f86fba"
+    ],
+    "chunks": [
+     "doc_2e208dcd0ee9ddf3_c0000",
+     "doc_4724d4da44eebc0a_c0008",
+     "doc_7f70660508cbc69e_c0008",
+     "doc_875bcfc4259829db_c0000",
+     "doc_acc30c62a406e909_c0000",
+     "doc_b3f1307f30489504_c0008",
+     "doc_d8d292033a71dee6_c0008",
+     "doc_de5f3dd804f86fba_c0054"
+    ],
+    "files": [
+     "AMZN BI 2.19.26.pdf",
+     "AMZN BI 7.31.26 Credit.pdf",
+     "AMZN BI 7.7.26.pdf",
+     "AMZN BI 9.8.26.pdf",
+     "AMZN CRM IBM T VZ JPM 12.8.25 Industry.pdf",
+     "AMZN Gimme Credit 5.1.26 (2).pdf",
+     "AMZN GimmeCredit 2.6.26 Credit.pdf"
+    ],
+    "vendors": [
+     "BI",
+     "JPM"
+    ]
+   },
+   "after_sources": {
+    "documents": [
+     "doc_2e208dcd0ee9ddf3",
+     "doc_4724d4da44eebc0a",
+     "doc_7f70660508cbc69e",
+     "doc_875bcfc4259829db",
+     "doc_acc30c62a406e909",
+     "doc_b3f1307f30489504",
+     "doc_d8d292033a71dee6",
+     "doc_de5f3dd804f86fba"
+    ],
+    "chunks": [
+     "doc_2e208dcd0ee9ddf3_c0000",
+     "doc_4724d4da44eebc0a_c0008",
+     "doc_7f70660508cbc69e_c0008",
+     "doc_875bcfc4259829db_c0000",
+     "doc_acc30c62a406e909_c0000",
+     "doc_b3f1307f30489504_c0008",
+     "doc_d8d292033a71dee6_c0008",
+     "doc_de5f3dd804f86fba_c0054"
+    ],
+    "files": [
+     "AMZN BI 2.19.26.pdf",
+     "AMZN BI 7.31.26 Credit.pdf",
+     "AMZN BI 7.7.26.pdf",
+     "AMZN BI 9.8.26.pdf",
+     "AMZN CRM IBM T VZ JPM 12.8.25 Industry.pdf",
+     "AMZN Gimme Credit 5.1.26 (2).pdf",
+     "AMZN GimmeCredit 2.6.26 Credit.pdf"
+    ],
+    "vendors": [
+     "BI",
+     "JPM"
+    ]
+   },
+   "same_sources": true,
+   "after_run_id": 421,
+   "notes": [
+    [
+     "CHANGED",
+     "shorter by 245 words, but citations fell from 4 to 2 - shorter is not better if evidence went with it"
+    ],
+    [
+     "IMPROVED",
+     "moved into the 100-220 word band"
+    ]
+   ]
+  }
+ ]
+}

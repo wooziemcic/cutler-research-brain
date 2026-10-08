@@ -1,0 +1,488 @@
+# =============================================================================
+# Cutler Research Brain - Phase 1.1
+# Ticker candidate detection rules
+# =============================================================================
+#
+# IMPORTANT
+# ---------
+# This produces TICKER CANDIDATES ONLY. Nothing here is a verified ticker.
+# A human (or a later phase with a real security master) must confirm them.
+#
+# THREE SEPARATE OUTPUT COLUMNS (Phase 1.1)
+#   ticker_candidates_raw     every uppercase token that survived the length
+#                             filter - noise included, kept for auditing
+#   ticker_candidates_clean   raw minus exclusions minus vendor tokens that sat
+#                             in a source-like position. This is the column to
+#                             review. `ticker_candidates` mirrors it for
+#                             backward compatibility.
+#   source_vendor_candidates  research providers / broker-dealers (JPM, GS, UBS,
+#                             RBC, KBW ...) detected in a source-like position.
+#                             NOT company tickers by default - though several of
+#                             them are also real listed tickers, which is exactly
+#                             why they get their own column instead of deletion.
+#
+# ticker_confidence is derived, not configured:
+#   High    a clean token appears in the first two tokens of the file name and
+#           is not itself a vendor token
+#   Medium  a clean token exists, but it is late in the name or vendor-ambiguous
+#   Low     only vendor-like / ambiguous tokens were found
+#   None    nothing usable
+#
+# HOW DETECTION WORKS (see scripts/scan_source_archive.py)
+#   1. Take the file name without its extension (the "stem").
+#   2. Strip filing shorthand after digits so 8-K / 10-Q do not leak K and Q.
+#   3. Split into tokens on any non-letter character.
+#   4. Keep a token only if it is entirely UPPERCASE A-Z and its length is
+#      between min_length and max_length  -> ticker_candidates_raw
+#   5. Drop exclusions, split off vendor tokens  -> ticker_candidates_clean
+#      and source_vendor_candidates
+#   6. Skip ALL-CAPS file names entirely (see skip_all_caps_names).
+# =============================================================================
+
+min_length: 1
+max_length: 5
+
+# Cap on how many candidates we will record for one file. Being conservative
+# matters more than being complete: a wrong ticker is worse than a blank.
+max_candidates_per_file: 5
+
+# Cap on the audit column ticker_candidates_raw (noise included).
+max_raw_candidates_per_file: 10
+
+# If the file stem is essentially written in ALL CAPS (this many or more
+# uppercase alphabetic tokens and no lowercase tokens), skip ticker detection
+# for that file entirely. Example: "COMMUNITY BANK QUARTERLY UPDATE FINAL".
+skip_all_caps_names: true
+all_caps_token_threshold: 4
+
+# Also scan the immediate parent folder name for ticker-like tokens.
+# Off by default in Phase 1 to stay conservative.
+scan_parent_folder: false
+
+# ----------------------------------------------------------------------------
+# EXCLUSIONS - known false positives.
+# Matched case-insensitively against the uppercase token.
+# ----------------------------------------------------------------------------
+exclusions:
+  # File format / extension noise
+  - PDF
+  - DOC
+  - DOCX
+  - XLS
+  - XLSX
+  - XLSM
+  - PPT
+  - PPTX
+  - CSV
+  - TXT
+  - MD
+
+  # Entity and common English words
+  - LLC
+  - INC
+  - CORP
+  - THE
+  - AND
+  - FOR
+  - NEW
+  - OLD
+  - USE
+  - THIS
+  - ONE
+  - NOTE
+
+  # Research vocabulary
+  - REPORT
+  - TEMPLATE
+  - RESEARCH
+  - CREDIT
+  - BANK
+  - BANKS
+  - REIT
+  - REITS
+
+  # Months
+  - JUNE
+  - JULY
+  - AUG
+  - SEP
+  - SEPT
+  - OCT
+  - NOV
+  - DEC
+  - JAN
+  - FEB
+  - MAR
+  - APR
+  - MAY
+
+  # ---- Additional conservative exclusions (safe to edit/remove) ----
+  - LTD
+  - CO
+  - PLC
+  - LP
+  - LLP
+  - CORP
+  - HOLD
+  - GROUP
+  - FINAL
+  - DRAFT
+  - COPY
+  - VER
+  - REV
+  - FY
+  - CY
+  - QTR
+  - YTD
+  - EPS
+  - NIM
+  - ROE
+  - ROA
+  - EBIT
+  - NAV
+  - IPO
+  - SEC
+  - FDIC
+  - OCC
+  - FED
+  - GAAP
+  - USA
+  - US
+  - NYSE
+  - AMEX
+  - OTC
+  - CEO
+  - CFO
+  - COO
+  - MD
+  - VP
+  - AM
+  - PM
+  - EST
+  - EDT
+  - Q
+  - QA
+  - KPI
+  - TBD
+  - NA
+  - NM
+  - PRE
+  - POST
+  - MTG
+  - CALL
+  - DECK
+  - SLIDE
+  - MODEL
+  - DATA
+  - LIST
+  - MAIN
+  - MISC
+  - TEMP
+  - TEST
+  - WEEK
+  - DAY
+  - PLUS
+  - VS
+  - RE
+  - FWD
+  - CIK
+  - MRQ
+  - LTM
+  - NTM
+  - DCF
+  - IRR
+  - CAGR
+  - MOM
+  - YOY
+  - QOQ
+  - MOU
+  - LOI
+  - NDA
+  - IPS
+
+# ============================================================================
+# SOURCE / VENDOR TOKENS  (Phase 1.1)
+# ============================================================================
+# Uppercase tokens that usually identify WHO WROTE the document rather than
+# WHICH COMPANY it is about.
+#
+# They are NOT deleted, because several are also real listed tickers
+# (GS, MS, JPM, DB, UBS, RBC, CS, C, BCS, WFC ...). A token from this list is
+# moved to source_vendor_candidates only when it appears in a SOURCE-LIKE
+# POSITION - see source_position_rules below. Otherwise it stays in
+# ticker_candidates_clean and the row is capped at Medium confidence.
+# ----------------------------------------------------------------------------
+vendor_tokens:
+  # Bulge bracket / large banks
+  - JPM
+  - JPMORGAN
+  - GS
+  - GOLDMAN
+  - MS
+  - MORGAN
+  - STANLEY
+  - BAML
+  - BOFA
+  - BAC
+  - CITI
+  - CITIGROUP
+  - UBS
+  - CS
+  - DB
+  - DEUTSCHE
+  - BARC
+  - BARCLAYS
+  - RBC
+  - BMO
+  - TD
+  - SCOTIA
+  - WF
+  - WFC
+  - WELLS
+  - FARGO
+  - HSBC
+  - BNP
+  - SG
+  - MIZUHO
+  - NOMURA
+  - MACQUARIE
+  # Boutiques, mid-cap and specialist research shops
+  - KBW
+  - KEEFE
+  - JEFF
+  - JEFFERIES
+  - STIFEL
+  - PIPER
+  - SANDLER
+  - BAIRD
+  - RJ
+  - RJF
+  - HOVDE
+  - JANNEY
+  - DAD
+  - DADCO
+  - OPCO
+  - OPPENHEIMER
+  - BRILEY
+  - RILEY
+  - TRUIST
+  - SEAPORT
+  - EVERCORE
+  - CANACCORD
+  - CRAIG
+  - HALLUM
+  - NEEDHAM
+  - ROTH
+  - BENCHMARK
+  - BTIG
+  - COWEN
+  - LEERINK
+  - WOLFE
+  - BERNSTEIN
+  - REDBURN
+  - NOBLE
+  - LAKE
+  # Data, ratings and media sources
+  - GSA
+  - GREENSTREET
+  - SNL
+  - SPG
+  - SP
+  - MOODYS
+  - FITCH
+  - DBRS
+  - BI
+  - BBG
+  - BLOOMBERG
+  - REFINITIV
+  - FACTSET
+  - CAPIQ
+  - MSCI
+  - CBRE
+  - JLL
+  - CNN
+  - CNBC
+  - WSJ
+  - FT
+  - REUTERS
+  - BARRONS
+  - QT
+  - VRA
+  - IBES
+
+# Lowercase phrases searched in the WHOLE relative path. A hit here means the
+# document sits in a research-provider context, which makes any vendor token in
+# the file name source-like.
+vendor_phrases:
+  - "j.p. morgan"
+  - "jp morgan"
+  - "jpmorgan"
+  - "goldman sachs"
+  - "morgan stanley"
+  - "bank of america"
+  - "merrill"
+  - "wells fargo"
+  - "deutsche bank"
+  - "credit suisse"
+  - "barclays"
+  - "raymond james"
+  - "piper sandler"
+  - "keefe bruyette"
+  - "green street"
+  - "greenstreet"
+  - "bloomberg intelligence"
+  - "s&p global"
+  - "seeking alpha"
+  - "d.a. davidson"
+  - "b. riley"
+  - "janney"
+  - "hovde"
+  - "stifel"
+  - "jefferies"
+  - "kbw"
+
+# Words that mark the file name as sell-side / provider research. When one of
+# these is present, a vendor token in the name is treated as the source.
+source_context_keywords:
+  - "research"
+  - "note"
+  - "initiation"
+  - "initiating"
+  - "coverage"
+  - "estimates"
+  - "price target"
+  - "rating"
+  - "analyst"
+  - "sell-side"
+  - "sellside"
+  - "morning"
+  - "daily"
+  - "weekly"
+  - "comment"
+  - "flash"
+  - "first take"
+
+# A vendor token counts as being in a SOURCE-LIKE POSITION when any of these
+# is true. Set any of them to false to loosen the rule.
+source_position_rules:
+  # The token sits after the last " - " separator, e.g. "HBT Q2 Note - KBW"
+  after_dash_separator: true
+  # The token is one of the last two tokens of the file name
+  in_last_two_tokens: true
+  # The path or file name matched vendor_phrases / source_context_keywords
+  research_context_in_path: true
+
+# ============================================================================
+# PHASE 1.2 ADDITIONS - ticker noise
+# ============================================================================
+
+# STRONG VENDOR TOKENS
+# These are research sources or media outlets far more often than they are the
+# subject of a Cutler file. They go to source_vendor_candidates by default -
+# the source-position test is skipped. The single exception is when the token
+# is the FIRST token of the file name AND the file name carries company
+# context (see strong_vendor_first_token_exception), which is what a genuine
+# company-specific file looks like: "WF Q2 2026 earnings.pdf".
+strong_vendor_tokens:
+  - BI          # Bloomberg Intelligence
+  - QT          # Quick Take / data vendor shorthand
+  - WF          # Wells Fargo
+  - CNN         # news outlet
+  - CNBC
+  - WSJ
+  - BBG
+  - SNL
+  - GSA
+  - IBES
+
+strong_vendor_first_token_exception: true
+
+# File-name words that make a first-token strong vendor look like a genuine
+# company file rather than a source attribution.
+company_context_keywords:
+  - "earnings"
+  - "results"
+  - "10-k"
+  - "10-q"
+  - "8-k"
+  - "press release"
+  - "investor"
+  - "dividend"
+  - "guidance"
+  - "acquisition"
+  - "merger"
+  - "buyback"
+  - "quarterly"
+  - "annual"
+
+# TOKENS THAT ARE ALMOST NEVER THE SUBJECT
+# Present in raw for auditing, never promoted to a clean ticker candidate.
+never_ticker_tokens:
+  - CNN
+  - CNBC
+  - WSJ
+  - BARRONS
+  - REUTERS
+  - BBG
+
+# THEME TOKENS
+# A token that is usually a concept, not a company. It is dropped from the
+# clean candidates when any of its context words appears in the file name or
+# path; without that context it stays a candidate (AI really is a listed
+# ticker, so this must not be a blanket exclusion).
+theme_tokens:
+  AI:
+    - "artificial intelligence"
+    - "agentic"
+    - "ai infrastructure"
+    - "ai capabilities"
+    - "ai capex"
+    - "ai adoption"
+    - "ai strategy"
+    - "ai data center"
+    - "ai spending"
+    - "generative"
+    - "machine learning"
+    - "llm"
+    - "gpu"
+    - "copilot"
+    - "data center"
+    - "hyperscaler"
+    - "semiconductor"
+  EV:
+    - "electric vehicle"
+    - "ev charging"
+    - "ev adoption"
+  ESG:
+    - "sustainability"
+    - "climate"
+    - "governance"
+
+# PROTECTED TICKERS
+# Never treated as a vendor, a theme word or an exclusion, whatever the file
+# name looks like. Add real, frequently-seen Cutler names here.
+protected_tickers:
+  - MSFT
+  - AMZN
+  - AAPL
+  - GOOG
+  - GOOGL
+  - META
+  - NVDA
+  - KR
+  - ACI
+  - VICI
+  - KIM
+  - ABBV
+  - PFE
+  - CVX
+  - XOM
+  - HBT
+  - LUMN
+  - SPG
+  - O
+  - PLD
+  - WPC
+  - NNN
+  - ADC
+  - EPRT

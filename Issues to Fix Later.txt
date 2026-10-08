@@ -1,0 +1,19 @@
+One issue to fix later
+
+Run 4 still shows:
+
+Model confidence: Low
+Rule confidence: High
+
+This happened because the selected evidence had direct company/transcript chunks, but the chunks did not directly answer the exact FY26 question. So the rule confidence is still too evidence-pack based and not enough answer-relevance based.
+
+Not a blocker, but Phase 6 should add:
+
+answer relevance / directness check
+
+Simple future rule:
+
+If the answer says "does not directly answer the question":
+    rule confidence should be capped at Low
+
+That will align the deterministic score with the actual answer quality.

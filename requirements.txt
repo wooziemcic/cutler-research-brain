@@ -1,0 +1,42 @@
+# =============================================================================
+# Cutler Research Brain - Python dependencies
+# =============================================================================
+# Phase 1 (source archive scan + metadata index) deliberately keeps the
+# dependency surface tiny. Everything else it needs (sqlite3, hashlib, csv,
+# pathlib, argparse, logging) ships with the Python standard library.
+#
+# Install:
+#   pip install -r requirements.txt
+# =============================================================================
+
+# ---- Phase 1: required ------------------------------------------------------
+PyYAML>=6.0            # reads configs/source_type_rules.yaml and ticker_rules.yaml
+
+# ---- Phase 2: required ------------------------------------------------------
+PyMuPDF>=1.24.0        # page-level PDF text extraction (scripts/extract_pdf_text.py)
+
+# ---- Phase 1: optional ------------------------------------------------------
+# pandas>=2.0          # not required; Phase 1 uses the stdlib csv module
+
+# ---- Phase 5A / 5B: required ------------------------------------------------
+# Phase 5A calls one OpenAI endpoint: embeddings.
+# Phase 5B adds one more: responses (Ask Brain, one call per question).
+# No chat/completions call is made anywhere in this project, and no
+# Claude/Anthropic API is used at all.
+openai>=1.40           # embeddings (5A) + responses (5B). Nothing else.
+chromadb>=0.5          # local persistent vector store -> 06_RAG_Index/chroma
+tiktoken>=0.7          # token counting for chunk sizing
+python-dotenv>=1.0     # reads OPENAI_API_KEY from .env; the key is never logged
+
+# ---- Phase 7A: required only for the local demo UI --------------------------
+# A local, single-user web page that runs Ask Brain without PowerShell. It is
+# bound to 127.0.0.1, has no authentication, and makes no API call of its own -
+# it launches scripts/ask_brain.py as a subprocess and shows what came back.
+# Nothing here is needed to run the pipeline from the command line.
+fastapi>=0.110         # 09_Web_App_Future/phase7a_local_ui/app.py
+uvicorn>=0.27          # the local server: py -3.11 -m uvicorn app:app --host 127.0.0.1
+jinja2>=3.1            # renders the single HTML template
+python-multipart>=0.0.9  # form parsing support for FastAPI
+
+# ---- Phase 8+ (DO NOT INSTALL YET) ------------------------------------------
+# ragas>=0.2           # retrieval / answer evaluation (later phase)

@@ -1,0 +1,489 @@
+{
+  "pipeline_version": "phase11.3-1.0",
+  "completed_at": "2026-09-15T09:16:51.113424",
+  "tickers": [
+    "MSFT",
+    "KR",
+    "MRK",
+    "T",
+    "VZ",
+    "ABBV"
+  ],
+  "chunk_key_is_ticker_scoped": true,
+  "estimated_total_cost_usd": 0.088935,
+  "max_total_cost": 1.0,
+  "results": [
+    {
+      "ticker": "MSFT",
+      "documents_to_repair": 9,
+      "estimated_cost_usd": 0.003222,
+      "diffs": [
+        {
+          "ticker": "MSFT",
+          "lost_document_ids": [],
+          "gained_document_ids": [
+            "doc_1a57ceba35c34a24",
+            "doc_1edd6478e1b5f266",
+            "doc_2f4d5e42bb2f536f",
+            "doc_414d473f8baf959b",
+            "doc_6d9b8cce9f4113f3",
+            "doc_822f82fc6b5d893d",
+            "doc_8339f9681f490947",
+            "doc_84b1632da64265ce",
+            "doc_f7bbf169fbbd61db"
+          ],
+          "lost_documents": 0,
+          "gained_documents": 9,
+          "chunk_rows_before": 2221,
+          "chunk_rows_after": 2221,
+          "lost_chunk_rows": 0,
+          "embedded_chunk_rows_before": 2122,
+          "embedded_chunk_rows_after": 2221,
+          "lost_embedded_chunk_rows": 0,
+          "chroma_before": 2221,
+          "chroma_after": 2221,
+          "chroma_lost": 0,
+          "regressed": false,
+          "repaired_ticker": "MSFT"
+        }
+      ],
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "MSFT",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "MSFT"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "KR",
+      "documents_to_repair": 14,
+      "estimated_cost_usd": 0.014452,
+      "diffs": [
+        {
+          "ticker": "KR",
+          "lost_document_ids": [],
+          "gained_document_ids": [
+            "doc_23a56c89b0b826c6",
+            "doc_347dfae8c8b0d3af",
+            "doc_45f835ef01c00834",
+            "doc_476074b1572d2427",
+            "doc_5ed5a1a204cffcb7",
+            "doc_5ff676ca7e057ea4",
+            "doc_8e7c732403f05d0e",
+            "doc_97a52bf6c3b23862",
+            "doc_a45cd96d5470cbde",
+            "doc_a66cc5db6e908c1d",
+            "doc_c3c9af3677bb0d6b",
+            "doc_c501d380b543fbc4",
+            "doc_c8fdba8397593443",
+            "doc_ff715c7997174b24"
+          ],
+          "lost_documents": 0,
+          "gained_documents": 14,
+          "chunk_rows_before": 3746,
+          "chunk_rows_after": 3746,
+          "lost_chunk_rows": 0,
+          "embedded_chunk_rows_before": 3235,
+          "embedded_chunk_rows_after": 3746,
+          "lost_embedded_chunk_rows": 0,
+          "chroma_before": 3746,
+          "chroma_after": 3746,
+          "chroma_lost": 0,
+          "regressed": false,
+          "repaired_ticker": "KR"
+        }
+      ],
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "KR",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "KR"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "MRK",
+      "documents_to_repair": 16,
+      "estimated_cost_usd": 0.018309,
+      "diffs": [
+        {
+          "ticker": "MRK",
+          "lost_document_ids": [],
+          "gained_document_ids": [
+            "doc_18dcd1458a978f89",
+            "doc_2267c282e4fe9245",
+            "doc_4c2143f17ca3d9fb",
+            "doc_5acaeec58869ff29",
+            "doc_7b5316b96219ae22",
+            "doc_8ffded6c000d6502",
+            "doc_924b30dfd843601c",
+            "doc_9ab0a089cea8fdb4",
+            "doc_a84af8bc50604350",
+            "doc_a8cb5e68c7741796",
+            "doc_c8b26f91b6cafaa6",
+            "doc_cdea34d2d50cf0cf",
+            "doc_d6071e64cb3f1415",
+            "doc_f3f5dc565d9b3c14",
+            "doc_f4a3fe5f61c19a89",
+            "doc_f7c02fddb066fad7"
+          ],
+          "lost_documents": 0,
+          "gained_documents": 16,
+          "chunk_rows_before": 5675,
+          "chunk_rows_after": 5675,
+          "lost_chunk_rows": 0,
+          "embedded_chunk_rows_before": 5111,
+          "embedded_chunk_rows_after": 5675,
+          "lost_embedded_chunk_rows": 0,
+          "chroma_before": 5675,
+          "chroma_after": 5675,
+          "chroma_lost": 0,
+          "regressed": false,
+          "repaired_ticker": "MRK"
+        },
+        {
+          "ticker": "ABBV",
+          "lost_document_ids": [],
+          "gained_document_ids": [
+            "doc_18dcd1458a978f89",
+            "doc_2267c282e4fe9245",
+            "doc_4c2143f17ca3d9fb",
+            "doc_5acaeec58869ff29",
+            "doc_7b5316b96219ae22",
+            "doc_8ffded6c000d6502",
+            "doc_924b30dfd843601c",
+            "doc_9ab0a089cea8fdb4",
+            "doc_a84af8bc50604350",
+            "doc_a8cb5e68c7741796",
+            "doc_c8b26f91b6cafaa6",
+            "doc_cdea34d2d50cf0cf",
+            "doc_d6071e64cb3f1415",
+            "doc_f3f5dc565d9b3c14",
+            "doc_f4a3fe5f61c19a89",
+            "doc_f7c02fddb066fad7"
+          ],
+          "lost_documents": 0,
+          "gained_documents": 16,
+          "chunk_rows_before": 3725,
+          "chunk_rows_after": 3725,
+          "lost_chunk_rows": 0,
+          "embedded_chunk_rows_before": 3161,
+          "embedded_chunk_rows_after": 3725,
+          "lost_embedded_chunk_rows": 0,
+          "chroma_before": 3725,
+          "chroma_after": 3725,
+          "chroma_lost": 0,
+          "regressed": false,
+          "repaired_ticker": "MRK"
+        }
+      ],
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "MRK",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "MRK"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "T",
+      "documents_to_repair": 8,
+      "estimated_cost_usd": 0.004244,
+      "diffs": [
+        {
+          "ticker": "T",
+          "lost_document_ids": [],
+          "gained_document_ids": [
+            "doc_002973d857c9cd15",
+            "doc_6a284335a045bf8f",
+            "doc_730335b92fce073a",
+            "doc_c14a9a2998bce213",
+            "doc_de5f3dd804f86fba",
+            "doc_e1ab07580420c307",
+            "doc_e72d502daa09f03b",
+            "doc_f9644cf1d8315fbc"
+          ],
+          "lost_documents": 0,
+          "gained_documents": 8,
+          "chunk_rows_before": 4525,
+          "chunk_rows_after": 4851,
+          "lost_chunk_rows": 0,
+          "embedded_chunk_rows_before": 4525,
+          "embedded_chunk_rows_after": 4851,
+          "lost_embedded_chunk_rows": 0,
+          "chroma_before": 4851,
+          "chroma_after": 4851,
+          "chroma_lost": 0,
+          "regressed": false,
+          "repaired_ticker": "T"
+        }
+      ],
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "T",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "T"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "VZ",
+      "documents_to_repair": 59,
+      "estimated_cost_usd": 0.030399,
+      "diffs": [
+        {
+          "ticker": "VZ",
+          "lost_document_ids": [],
+          "gained_document_ids": [
+            "doc_002973d857c9cd15",
+            "doc_04b1f7f56f888142",
+            "doc_066ab94a3d920dc1",
+            "doc_0a401f62e25c1f32",
+            "doc_0b546ff2f66b8069",
+            "doc_116c5f9f11f311d6",
+            "doc_1b9013eb483217d1",
+            "doc_2b1814d8cd11dd54",
+            "doc_2dd020d12e690ad4",
+            "doc_2f05b18882b6afb2",
+            "doc_324f049da05c49eb",
+            "doc_35c172ee3b9c444d",
+            "doc_424a639f1b8ba376",
+            "doc_5240b8afaa97e3b9",
+            "doc_6a284335a045bf8f",
+            "doc_6d733f6c5d513dc7",
+            "doc_6da1a8ea8254b3f4",
+            "doc_6f55d8a065261a09",
+            "doc_709245e1af49f33e",
+            "doc_73e0923864bc9447",
+            "doc_74ee9527fc541025",
+            "doc_7b8b5de81f4f63d3",
+            "doc_7c818fb51e64cca1",
+            "doc_80600c3f4683b08e",
+            "doc_81b8bb120b52b29b",
+            "doc_8339b649e3115675",
+            "doc_89561f6847422ce4",
+            "doc_8a1bfcdb1a68b3ae",
+            "doc_8abac1bc29ecf687",
+            "doc_8cb58a0bd62bbcbb",
+            "doc_8d05123b41c6f1f9",
+            "doc_8e40c6f271e70ff6",
+            "doc_910e437d387a4522",
+            "doc_943a119ca72f5101",
+            "doc_9956d6d652ceb7b6",
+            "doc_9c4a4a652f449369",
+            "doc_a0f1aea85634dcab",
+            "doc_a1a938c644aeb2de",
+            "doc_a2e29ef49db67d62",
+            "doc_a47530607d78517c",
+            "doc_a5a26dd7cbba8a22",
+            "doc_a5d38766e97be175",
+            "doc_afa3823bd8371813",
+            "doc_b26cc8d77a07d516",
+            "doc_b52cc1802874076a",
+            "doc_b8d9b8424e9c96a4",
+            "doc_c0e202e7cf6b34f3",
+            "doc_c14a9a2998bce213",
+            "doc_c1771048e1b613e6",
+            "doc_c1f1b41264e5ae48",
+            "doc_c25f0da787ce76de",
+            "doc_c3675949465ad9a2",
+            "doc_d000502c74e88da7",
+            "doc_d172f4fbe45bf0ba",
+            "doc_de5f3dd804f86fba",
+            "doc_e1ab07580420c307",
+            "doc_e382bc1a73e42f7f",
+            "doc_e431787923a6641c",
+            "doc_ecbf40c8d1bc566d"
+          ],
+          "lost_documents": 0,
+          "gained_documents": 59,
+          "chunk_rows_before": 2125,
+          "chunk_rows_after": 4296,
+          "lost_chunk_rows": 0,
+          "embedded_chunk_rows_before": 2125,
+          "embedded_chunk_rows_after": 4296,
+          "lost_embedded_chunk_rows": 0,
+          "chroma_before": 4296,
+          "chroma_after": 4296,
+          "chroma_lost": 0,
+          "regressed": false,
+          "repaired_ticker": "VZ"
+        }
+      ],
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "VZ",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "VZ"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    },
+    {
+      "ticker": "ABBV",
+      "documents_to_repair": 16,
+      "estimated_cost_usd": 0.018309,
+      "diffs": [],
+      "steps": [
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_rag_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "ABBV",
+            "--chunk-size",
+            "900"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        },
+        {
+          "command": [
+            "C:\\Users\\AI Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\scripts\\build_keyword_index.py",
+            "--project-root",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain",
+            "--db",
+            "C:\\Users\\AI Admin\\Documents\\CutlerResearchBrain\\data\\document_metadata.sqlite",
+            "--ticker",
+            "ABBV"
+          ],
+          "returncode": 0,
+          "timed_out": false
+        }
+      ]
+    }
+  ],
+  "regression": null,
+  "still_missing": 0,
+  "still_repairable": 0
+}

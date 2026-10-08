@@ -1,0 +1,918 @@
+# =============================================================================
+# Cutler Research Brain - Phase 1
+# Source type / document type / strategy theme classification rules
+# =============================================================================
+#
+# HOW THIS FILE IS USED
+# ---------------------
+# scripts/scan_source_archive.py lowercases the file's relative path
+# (folders + file name) and tests each rule in the order listed below.
+# The FIRST rule whose keyword appears in the text wins. If no rule matches,
+# the value falls back to the extension defaults (if any), otherwise "Unknown".
+#
+# These are GUESSES, not verified classifications. Every guess is written to a
+# *_guess column and anything Unknown is flagged for human review.
+# Principle: AI drafts. Humans verify. Cutler decides.
+#
+# EDITING
+# -------
+# - Keywords are matched as plain lowercase substrings (no regex).
+# - Put the most specific rules FIRST (e.g. Green Street before Sell-Side).
+# - Keep keywords distinctive; short generic words cause false positives.
+# =============================================================================
+
+# ----------------------------------------------------------------------------
+# SOURCE TYPE - where the document came from
+# Allowed values: SEC Filing, Company Press Release, Sell-Side Research,
+#   Credit Research, Convertible Research, REIT Research, Bank Research,
+#   Green Street Research, Market Monitor, Short Sale Research,
+#   Industry Research, Template, Unknown
+# ----------------------------------------------------------------------------
+source_types:
+  - name: Template
+    keywords:
+      - "template"
+      - "_blank"
+      - "blank form"
+      - "checklist"
+      - "worksheet"
+      - "boilerplate"
+
+  - name: Green Street Research
+    keywords:
+      - "green street"
+      - "greenstreet"
+      - "green_street"
+      - "gsa research"
+
+  - name: Short Sale Research
+    keywords:
+      - "short sale"
+      - "short report"
+      - "short thesis"
+      - "short idea"
+      - "short seller"
+      - "hindenburg"
+      - "muddy waters"
+      - "kerrisdale"
+      - "spruce point"
+      - "culper"
+      - "grizzly research"
+      - "wolfpack"
+      - "citron"
+      - "scorpion capital"
+      - "bleecker street"
+
+  - name: SEC Filing
+    keywords:
+      - "sec filing"
+      - "edgar"
+      - "10-k"
+      - "10k filing"
+      - "10-q"
+      - "10q filing"
+      - "8-k"
+      - "s-1"
+      - "s-4"
+      - "424b"
+      - "def 14a"
+      - "defa14a"
+      - "proxy statement"
+      - "13d"
+      - "13g"
+      - "form 4"
+      - "form4"
+      - "prospectus"
+      - "registration statement"
+
+  - name: Company Press Release
+    keywords:
+      - "press release"
+      - "press_release"
+      - "pressrelease"
+      - "earnings release"
+      - "news release"
+      - "announces"
+      - "announcement"
+
+  - name: Convertible Research
+    keywords:
+      - "convertible"
+      - "converts"
+      - "convert note"
+      - "exchangeable"
+      - "conv bond"
+      - "coco"
+
+  - name: Credit Research
+    keywords:
+      - "credit research"
+      - "credit note"
+      - "credit memo"
+      - "credit update"
+      - "bond report"
+      - "high yield"
+      - "leveraged loan"
+      - "indenture"
+      - "covenant"
+      - "debenture"
+      - "capital structure"
+
+  - name: REIT Research
+    keywords:
+      - "reit"
+      - "real estate"
+      - "net lease"
+      - "self storage"
+      - "self-storage"
+      - "data center reit"
+      - "property sector"
+
+  - name: Bank Research
+    keywords:
+      - "bank"
+      - "bancorp"
+      - "bancshares"
+      - "banshares"
+      - "thrift"
+      - "savings bank"
+      - "community bank"
+      - "credit union"
+
+  - name: Market Monitor
+    keywords:
+      - "monitor"
+      - "market update"
+      - "market recap"
+      - "daily recap"
+      - "weekly recap"
+      - "weekly wrap"
+      - "morning note"
+      - "dashboard"
+      - "tracker"
+      - "flows"
+      - "market snapshot"
+
+  - name: Industry Research
+    keywords:
+      - "industry"
+      - "sector"
+      - "primer"
+      - "landscape"
+      - "outlook"
+      - "survey"
+      - "conference"
+      - "white paper"
+      - "whitepaper"
+
+  - name: Sell-Side Research
+    keywords:
+      - "sell-side"
+      - "sellside"
+      - "research note"
+      - "initiation"
+      - "initiating coverage"
+      - "analyst"
+      - "raymond james"
+      - "jefferies"
+      - "stifel"
+      - "kbw"
+      - "keefe"
+      - "piper sandler"
+      - "baird"
+      - "hovde"
+      - "janney"
+      - "d.a. davidson"
+      - "da davidson"
+      - "oppenheimer"
+      - "b. riley"
+      - "b riley"
+      - "truist"
+      - "wells fargo"
+      - "bofa"
+      - "morgan stanley"
+      - "goldman"
+      - "barclays"
+      - "evercore"
+      - "seaport"
+      - "craig-hallum"
+      - "canaccord"
+      - "needham"
+      - "lake street"
+      - "noble capital"
+
+# Extension-based fallback for source_type when no keyword matched.
+# Left intentionally empty: extension alone does not tell us the source.
+source_type_extension_defaults: {}
+
+# ----------------------------------------------------------------------------
+# DOCUMENT TYPE - what kind of document it is
+# Allowed values: Research Note, 8-K, 10-K, 10-Q, Press Release,
+#   Investor Presentation, Credit Note, Convertible Note, Spreadsheet,
+#   Template, Unknown
+# ----------------------------------------------------------------------------
+document_types:
+  - name: Template
+    keywords:
+      - "template"
+      - "_blank"
+      - "blank form"
+      - "checklist"
+      - "worksheet"
+      - "boilerplate"
+
+  - name: 10-K
+    keywords:
+      - "10-k"
+      - "10k"
+      - "annual report"
+
+  - name: 10-Q
+    keywords:
+      - "10-q"
+      - "10q"
+      - "quarterly report"
+
+  - name: 8-K
+    keywords:
+      - "8-k"
+      - "8k"
+      - "current report"
+
+  - name: Press Release
+    keywords:
+      - "press release"
+      - "press_release"
+      - "pressrelease"
+      - "earnings release"
+      - "news release"
+      - "announces"
+      - "announcement"
+
+  - name: Investor Presentation
+    keywords:
+      - "investor presentation"
+      - "investor deck"
+      - "investor day"
+      - "presentation"
+      - "roadshow"
+      - "slide deck"
+      - "ir deck"
+
+  - name: Convertible Note
+    keywords:
+      - "convertible"
+      - "converts"
+      - "exchangeable"
+      - "conv bond"
+
+  - name: Credit Note
+    keywords:
+      - "credit note"
+      - "credit memo"
+      - "credit research"
+      - "credit update"
+      - "bond report"
+      - "indenture"
+      - "covenant"
+
+  - name: Research Note
+    keywords:
+      - "research"
+      - "note"
+      - "memo"
+      - "write-up"
+      - "writeup"
+      - "thesis"
+      - "initiation"
+      - "update"
+      - "review"
+      - "comment"
+      - "analysis"
+      - "report"
+      - "recap"
+      - "summary"
+      - "monitor"
+
+# Extension-based OVERRIDES for document_type. These win over the keyword rules
+# above, because the file format is a harder fact than a word in a file name:
+# a workbook is a spreadsheet even if it is called "Weekly Recap".
+document_type_extension_overrides:
+  ".xls": Spreadsheet
+  ".xlsx": Spreadsheet
+  ".xlsm": Spreadsheet
+  ".csv": Spreadsheet
+
+# Extension-based fallback for document_type when no keyword matched.
+document_type_extension_defaults:
+  ".ppt": Investor Presentation
+  ".pptx": Investor Presentation
+
+# ----------------------------------------------------------------------------
+# STRATEGY THEME - which Cutler research theme the document likely belongs to
+# Allowed values: Community Banks, Convertibles and Exchangeables,
+#   REITs and Real Estate, Credit and Capital Structure,
+#   M&A and Strategic Transactions, Healthcare Catalysts,
+#   Energy and Commodities, Retail and Consumer,
+#   Technology and AI Infrastructure, Market Sentiment and Monitors,
+#   Short Sale Research, Unknown
+# ----------------------------------------------------------------------------
+strategy_themes:
+  - name: Short Sale Research
+    keywords:
+      - "short sale"
+      - "short report"
+      - "short thesis"
+      - "short idea"
+      - "short interest"
+      - "borrow rate"
+      - "squeeze"
+
+  - name: Convertibles and Exchangeables
+    keywords:
+      - "convertible"
+      - "converts"
+      - "exchangeable"
+      - "conv bond"
+      - "coco"
+
+  - name: Community Banks
+    keywords:
+      - "bank"
+      - "bancorp"
+      - "bancshares"
+      - "thrift"
+      - "savings bank"
+      - "community bank"
+      - "credit union"
+      - "net interest margin"
+      - "nim"
+
+  - name: REITs and Real Estate
+    keywords:
+      - "reit"
+      - "real estate"
+      - "net lease"
+      - "self storage"
+      - "self-storage"
+      - "multifamily"
+      - "office property"
+      - "industrial property"
+      - "green street"
+      - "cap rate"
+      - "hotel"
+      - "mall"
+
+  - name: M&A and Strategic Transactions
+    keywords:
+      - "merger"
+      - "m&a"
+      - "acquisition"
+      - "acquires"
+      - "takeover"
+      - "tender offer"
+      - "spin-off"
+      - "spinoff"
+      - "divestiture"
+      - "lbo"
+      - "go private"
+      - "strategic alternatives"
+      - "merger arb"
+
+  - name: Healthcare Catalysts
+    keywords:
+      - "pharma"
+      - "biotech"
+      - "fda"
+      - "clinical"
+      - "phase 1"
+      - "phase 2"
+      - "phase 3"
+      - "oncology"
+      - "healthcare"
+      - "medical device"
+      - "drug"
+
+  - name: Energy and Commodities
+    keywords:
+      - "energy"
+      - "oil"
+      - "natural gas"
+      - "lng"
+      - "coal"
+      - "uranium"
+      - "copper"
+      - "gold"
+      - "commodity"
+      - "midstream"
+      - "refiner"
+      - "pipeline"
+      - "solar"
+      - "utility"
+
+  - name: Retail and Consumer
+    keywords:
+      - "retail"
+      - "consumer"
+      - "restaurant"
+      - "apparel"
+      - "grocery"
+      - "e-commerce"
+      - "ecommerce"
+      - "brands"
+
+  - name: Technology and AI Infrastructure
+    keywords:
+      - "semiconductor"
+      - "semis"
+      - "software"
+      - "saas"
+      - "data center"
+      - "datacenter"
+      - "artificial intelligence"
+      - " ai "
+      - "ai infrastructure"
+      - "gpu"
+      - "cloud"
+      - "fiber"
+      - "technology"
+
+  - name: Credit and Capital Structure
+    keywords:
+      - "credit"
+      - "bond"
+      - "debt"
+      - "leverage"
+      - "refinanc"
+      - "capital structure"
+      - "covenant"
+      - "restructuring"
+      - "bankruptcy"
+      - "chapter 11"
+      - "high yield"
+
+  - name: Market Sentiment and Monitors
+    keywords:
+      - "sentiment"
+      - "monitor"
+      - "market update"
+      - "market recap"
+      - "weekly recap"
+      - "daily recap"
+      - "breadth"
+      - "positioning"
+      - "vix"
+      - "fund flows"
+
+strategy_theme_extension_defaults: {}
+
+# ----------------------------------------------------------------------------
+# SENSITIVE DATA KEYWORDS
+# Phase 1 does NOT open files. If any of these appear in the file path or file
+# name, the row is flagged needs_review so a human can confirm whether the file
+# contains client / portfolio data that must be excluded from later phases.
+# ----------------------------------------------------------------------------
+sensitive_keywords:
+  - "client"
+  - "clients"
+  - "portfolio"
+  - "portfolios"
+  - "holding"
+  - "holdings"
+  - "account"
+  - "accounts"
+  - "performance"
+  - "allocation"
+  - "position"
+  - "positions"
+  - "aum"
+  - "nav"
+  - "custody"
+  - "statement"
+  - "blotter"
+  - "pnl"
+  - "p&l"
+  - "capital account"
+  - "investor letter"
+  - "separately managed"
+  - "sma"
+
+# ----------------------------------------------------------------------------
+# "Research-looking" classes. A document in one of these classes with NO ticker
+# candidate is flagged needs_review (we probably failed to detect the company).
+# ----------------------------------------------------------------------------
+research_looking_source_types:
+  - Sell-Side Research
+  - Credit Research
+  - Convertible Research
+  - REIT Research
+  - Bank Research
+  - Green Street Research
+  - Short Sale Research
+  - SEC Filing
+  - Company Press Release
+
+research_looking_document_types:
+  - Research Note
+  - 8-K
+  - 10-K
+  - 10-Q
+  - Press Release
+  - Investor Presentation
+  - Credit Note
+  - Convertible Note
+
+# ============================================================================
+# PHASE 1.1 ADDITIONS
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# SECURITY CONTEXT KEYWORDS
+# Used for possible_maturity_years. A future year inside a file name that also
+# carries one of these words is almost certainly a bond/convert maturity
+# ("XYZ 3.25% Convertible Notes due 2029"), not the year the document belongs
+# to. Such years are recorded in possible_maturity_years and are BLOCKED from
+# becoming detected_year.
+# ----------------------------------------------------------------------------
+security_context_keywords:
+  - "convertible"
+  - "convert"
+  - "converts"
+  - "exchangeable"
+  - "note"
+  - "notes"
+  - "bond"
+  - "bonds"
+  - "debenture"
+  - "due"
+  - "maturity"
+  - "matures"
+  - "coupon"
+  - "senior"
+  - "subordinated"
+  - "sub notes"
+  - "sr notes"
+  - "preferred"
+  - "pfd"
+  - "term loan"
+  - "revolver"
+  - "indenture"
+  - "call schedule"
+  - "yield"
+  - "ytm"
+  - "ytw"
+  - "cusip"
+  - "isin"
+  - "%"
+
+# Any file-name year further out than (current year + this many years) is
+# treated as a possible maturity year even without a security keyword.
+# With the archive currently at 2026, 1 means 2028 and beyond are captured.
+maturity_year_lookahead: 1
+
+# Oldest / newest year that may ever be accepted as detected_year.
+min_plausible_year: 1990
+max_plausible_year_offset: 1     # current year + 1
+
+# ----------------------------------------------------------------------------
+# REVIEW SEVERITY MAP (Phase 1.1)
+# review_category is a semicolon-separated list of the categories below.
+# review_severity is the HIGHEST severity among the categories present.
+#
+# The point of this change: needs_review was true for ~2/3 of the archive,
+# which is not a work queue. Severity turns it into one - work High first,
+# then Medium; Low is background cleanup that mostly gets fixed by editing
+# the keyword rules in this file rather than by touching files.
+# ----------------------------------------------------------------------------
+review_severity_map:
+  sensitive_data: High          # possible client / portfolio / holdings / account /
+                                # performance / allocation reference in the path
+  scan_error: High              # metadata or hash could not be read - inventory gap
+  duplicate: Medium             # same SHA-256 as another file
+  no_ticker_on_research: Medium # research-looking document with no clean ticker
+  unknown_source_type: Low      # classification gap, fix by editing rules
+  unknown_document_type: Low    # classification gap, fix by editing rules
+
+# Order used when rendering review_category, most severe first.
+review_category_order:
+  - sensitive_data
+  - scan_error
+  - duplicate
+  - no_ticker_on_research
+  - unknown_source_type
+  - unknown_document_type
+
+# ============================================================================
+# PHASE 1.2 ADDITIONS - metadata QA cleanup
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# SENSITIVE DATA, TWO TIERS
+#
+# Phase 1.1 treated any occurrence of "portfolio", "client", "performance" and
+# friends as High severity. In a research archive most of those are ordinary
+# public-company language ("Expands Portfolio", "Financial Statements",
+# "performance-based equity award"), which buried the genuinely restricted
+# material. Phase 1.2 splits the test in two.
+#
+#   sensitive_strong_phrases  -> sensitive_context_guess = possible_restricted_data
+#                                review_severity = High
+#   sensitive_weak_keywords   -> depends on context:
+#       + a public_language_phrase        -> public_company_language      (Low)
+#       + research/business context       -> research_business_language   (Low)
+#       + nothing to explain it           -> needs_manual_check           (Medium)
+#
+# Every row with any hit still appears in sensitive_data_review_report.csv,
+# with sensitive_keyword_hits and sensitive_context_guess so a human can judge.
+# When in doubt the row stays visible - we downgrade severity, never hide it.
+# ----------------------------------------------------------------------------
+sensitive_strong_phrases:
+  - "client account"
+  - "client accounts"
+  - "client portfolio"
+  - "client portfolios"
+  - "client holdings"
+  - "client list"
+  - "client statement"
+  - "client report"
+  - "client review"
+  - "portfolio holdings"
+  - "holdings detail"
+  - "holdings report"
+  - "holdings list"
+  - "account statement"
+  - "account statements"
+  - "account balance"
+  - "portfolio performance"
+  - "performance report"
+  - "performance summary"
+  - "performance attribution"
+  - "attribution report"
+  - "model portfolio"
+  - "model portfolios"
+  - "asset allocation"
+  - "target allocation"
+  - "allocation model"
+  - "allocation schedule"
+  - "portfolio allocation"
+  - "portfolio review"
+  - "portfolio summary"
+  - "portfolio positions"
+  - "current holdings"
+  - "position report"
+  - "trade blotter"
+  - "capital account"
+  - "investor letter"
+  - "separately managed"
+  - "managed account"
+  - "custody statement"
+  - "aum summary"
+  - "book of business"
+  - "household"
+
+# Weak signals. On their own these mean very little in a research archive.
+sensitive_weak_keywords:
+  - "client"
+  - "clients"
+  - "portfolio"
+  - "portfolios"
+  - "holding"
+  - "holdings"
+  - "account"
+  - "accounts"
+  - "performance"
+  - "allocation"
+  - "position"
+  - "positions"
+  - "aum"
+  - "nav"
+  - "custody"
+  - "statement"
+  - "statements"
+  - "blotter"
+  - "pnl"
+  - "p&l"
+
+# Ordinary public-company / sell-side wording. A weak hit sitting next to one
+# of these is almost certainly NOT restricted data.
+public_language_phrases:
+  - "expands portfolio"
+  - "expand portfolio"
+  - "portfolio expansion"
+  - "product portfolio"
+  - "brand portfolio"
+  - "loan portfolio"
+  - "credit portfolio"
+  - "property portfolio"
+  - "portfolio company"
+  - "portfolio companies"
+  - "portfolio acquisition"
+  - "acquires portfolio"
+  - "financial statement"
+  - "financial statements"
+  - "income statement"
+  - "statement of operations"
+  - "cash flow statement"
+  - "proxy statement"
+  - "registration statement"
+  - "press statement"
+  - "statement regarding"
+  - "performance-based"
+  - "performance based"
+  - "stock performance"
+  - "share performance"
+  - "operating performance"
+  - "financial performance"
+  - "performance obligation"
+  - "clients rank"
+  - "client wins"
+  - "client demand"
+  - "customer accounts"
+  - "deposit accounts"
+  - "checking account"
+  - "savings account"
+  - "market position"
+  - "competitive position"
+  - "positioned for"
+  - "positions for"
+  - "cash position"
+  - "capital position"
+  - "liquidity position"
+  - "short position"
+  - "net position"
+  - "capital allocation"
+
+# Research/business context. If a weak keyword appears in something that is
+# obviously a research document, treat it as business language.
+research_business_phrases:
+  - "research note"
+  - "initiation"
+  - "press release"
+  - "earnings release"
+  - "investor presentation"
+  - "10-k"
+  - "10-q"
+  - "8-k"
+  - "conference call"
+  - "transcript"
+  - "market monitor"
+  - "weekly monitor"
+  - "sector"
+  - "industry"
+  - "green street"
+  - "sell-side"
+
+# ----------------------------------------------------------------------------
+# FOLDER PATH RULES (Phase 1.2)
+#
+# The archive's own folder structure is a stronger signal than any keyword in a
+# file name, and it is what cuts the Unknown counts down. A rule fires when the
+# named folder appears as a path SEGMENT (case-insensitive).
+#
+# Precedence used by scan_source_archive.py:
+#   1. a strong filing / press-release signal in the FILE NAME
+#   2. these folder rules
+#   3. the keyword rules higher up this file
+#   4. extension defaults, else Unknown
+# ----------------------------------------------------------------------------
+source_type_folder_rules:
+  - folders: ["green street", "greenstreet", "green_street"]
+    source_type: Green Street Research
+  - folders: ["converts", "convert", "convertibles", "convertible", "exchangeables"]
+    source_type: Convertible Research
+  - folders: ["reits", "reit", "real estate"]
+    source_type: REIT Research
+  - folders: ["credit", "credits", "bonds", "fixed income"]
+    source_type: Credit Research
+  - folders: ["banks", "bank", "community banks", "banking"]
+    source_type: Bank Research
+  - folders: ["short sale", "short sales", "shorts", "short ideas"]
+    source_type: Short Sale Research
+  - folders: ["monitors", "monitor", "market monitor"]
+    source_type: Market Monitor
+  - folders: ["research", "sell side", "sell-side", "street research", "broker research"]
+    source_type: Sell-Side Research
+    # If the file name looks like sector/industry work rather than a single
+    # name, Industry Research is used instead.
+    industry_alternate: Industry Research
+  - folders: ["industry", "industries", "sectors", "sector"]
+    source_type: Industry Research
+  - folders: ["companies", "company", "company files", "names"]
+    source_type: Company Material
+  - folders: ["templates", "template"]
+    source_type: Template
+
+# Folder rules for document_type. Same precedence.
+document_type_folder_rules:
+  - folders: ["companies", "company", "company files", "names"]
+    document_type: Company Material
+  - folders: ["templates", "template"]
+    document_type: Template
+  - folders: ["converts", "convertibles", "exchangeables"]
+    document_type: Convertible Note
+  - folders: ["credit", "bonds", "fixed income"]
+    document_type: Credit Note
+  - folders: ["research", "monitors", "banks", "reits", "industry", "green street"]
+    document_type: Research Note
+
+# Words in the FILE NAME that decide the type on their own, before folder rules.
+strong_filename_signals:
+  # Checked first: a template is a template whatever else the name says.
+  template:
+    - "template"
+    - "blank form"
+    - "checklist"
+    - "worksheet"
+    - "boilerplate"
+  sec_filing:
+    - "10-k"
+    - "10k"
+    - "10-q"
+    - "10q"
+    - "8-k"
+    - "8k"
+    - "s-1"
+    - "s-4"
+    - "424b"
+    - "def 14a"
+    - "defa14a"
+    - "13d"
+    - "13g"
+    - "form 4"
+    - "proxy statement"
+    - "prospectus"
+    - "registration statement"
+  press_release:
+    - "press release"
+    - "press_release"
+    - "news release"
+    - "earnings release"
+    - "announces"
+    - "announcement"
+  research_note:
+    - "research note"
+    - "initiation"
+    - "initiating coverage"
+    - "analyst note"
+    - "flash note"
+    - "first take"
+
+# File-name words that mean "sector / industry work", used with the
+# industry_alternate above.
+industry_filename_signals:
+  - "sector"
+  - "industry"
+  - "primer"
+  - "landscape"
+  - "outlook"
+  - "survey"
+  - "themes"
+  - "quarterly review"
+  - "monitor"
+
+# Earnings / financial results wording -> document_type "Earnings / Financial Results".
+# This is a new document type added in Phase 1.2 to cut the Unknown count.
+earnings_filename_signals:
+  - "earnings"
+  - "results"
+  - "quarterly"
+  - "annual report"
+  - "annual results"
+  - "financial statement"
+  - "financial statements"
+  - "financial results"
+  - "q1"
+  - "q2"
+  - "q3"
+  - "q4"
+  - "fy20"
+  - "fy21"
+  - "fy22"
+  - "fy23"
+  - "fy24"
+  - "fy25"
+  - "fy26"
+
+# ----------------------------------------------------------------------------
+# REVIEW SEVERITY MAP (Phase 1.2 replaces the Phase 1.1 map above)
+# The last definition of a key wins in YAML, so this is the effective map.
+# ----------------------------------------------------------------------------
+review_severity_map:
+  sensitive_data: High               # strong restricted-data phrase in the path
+  scan_error: High                   # metadata or hash could not be read
+  possible_sensitive_data: Medium    # weak keyword, nothing explains it
+  duplicate: Medium                  # same SHA-256 as another file
+  no_ticker_on_research: Medium      # research-looking document, no clean ticker
+  public_language_sensitive: Low     # weak keyword in ordinary company language
+  unknown_source_type: Low           # classification gap, fix by editing rules
+  unknown_document_type: Low         # classification gap, fix by editing rules
+
+review_category_order:
+  - sensitive_data
+  - scan_error
+  - possible_sensitive_data
+  - duplicate
+  - no_ticker_on_research
+  - public_language_sensitive
+  - unknown_source_type
+  - unknown_document_type

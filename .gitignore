@@ -1,0 +1,74 @@
+# =============================================================================
+# Cutler Research Brain - .gitignore
+# =============================================================================
+# Rule of thumb: code and configs are versioned. Scanned data, extracted text,
+# indexes, logs and anything derived from the research archive are NOT.
+# Nothing from the V Drive should ever end up in git.
+# =============================================================================
+
+# ---- Generated Phase 1 outputs ----------------------------------------------
+data/
+logs/
+02_Metadata_Index/*.csv
+02_Metadata_Index/*.md
+!02_Metadata_Index/README.md
+*.sqlite
+*.sqlite3
+*.db
+*.jsonl
+
+# ---- Future phase outputs ---------------------------------------------------
+03_Extracted_Text/
+04_Document_Cards/
+05_Obsidian_Brain/
+06_RAG_Index/
+07_Evaluation/outputs/
+09_Web_App_Future/node_modules/
+
+# ---- Anything that could contain archive or client material -----------------
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.xlsm
+*.ppt
+*.pptx
+**/client*/
+**/portfolio*/
+**/holdings*/
+
+# ---- Secrets ----------------------------------------------------------------
+.env
+.env.*
+*.key
+*.pem
+secrets.*
+credentials.*
+
+# ---- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- Editors / OS -----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+~$*

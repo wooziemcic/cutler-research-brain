@@ -1,0 +1,1 @@
+ticker,document_id,file_name,document_date,source_type,document_type,usable_for_rag,extraction_status,extraction_quality,card_status,stale_rag_index,has_chunks,embedded_chunks,pending_chunks,failed_chunks,superseded_chunks,total_text_chars,text_chars_on_disk,text_path,reason,reason_text,repairable
